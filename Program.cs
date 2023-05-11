@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "SynthNetVoice",
+        Title = "SynthNetVoice, Fallout 4 NPC simulator",
         Description = "An ASP.NET Core Web API for Windows-only TTS. To perform text-to-speech, a speech synthesis engine that supports your language-country code must be installed.",
         TermsOfService = new Uri("https://www.youtube.com/@ImmanuelVanMeirhaeghe"),
         Contact = new OpenApiContact
@@ -44,5 +44,21 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// For route configs:
+/*
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "areaRoute",
+    pattern: "{area:exists}/{controller=home}/{action=index}/{id?}");
+    
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=home}/{action=index}/{id?}");
+	
+*/
 
 app.Run();

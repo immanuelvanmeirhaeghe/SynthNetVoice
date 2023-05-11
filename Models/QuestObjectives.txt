@@ -1,0 +1,1198 @@
+FormID: 0001CB51	MS07a	10	Search Earl Sterling's House for Clues
+FormID: 0001CB51	MS07a	15	(Optional) Obtain the Key to Earl Sterling's House
+FormID: 0001CB51	MS07a	20	Investigate the Mega Surgery Center
+FormID: 0001CB51	MS07a	30	Investigate the Surgery Cellar
+FormID: 0001CB51	MS07a	35	(Optional) Obtain the Key to Surgery Cellar
+FormID: 0001CB51	MS07a	40	Talk to Ellie
+FormID: 0001CB51	MS07a	50	Talk to Doctor Sun
+FormID: 0001CC2A	MQ102	1	Exit Vault 111
+FormID: 0001CC2A	MQ102	10	Go home
+FormID: 0001CC2A	MQ102	20	Talk to Codsworth
+FormID: 0001CC2A	MQ102	30	Search the Neighborhood with Codsworth
+FormID: 0001CC2A	MQ102	32	Kill the Insects
+FormID: 0001CC2A	MQ102	34	Kill the Insects
+FormID: 0001CC2A	MQ102	55	Investigate Concord
+FormID: 0001CC2A	MQ102	60	Enter the Museum
+FormID: 0001CC2A	MQ102	70	(Optional) Take the Laser Musket
+FormID: 0001CC2A	MQ102	80	Locate the Trapped Settlers
+FormID: 0001CC2A	MQ102	85	Kill the Raiders (<Global=MQ102FirstRaiderCount>/<Global=MQ102FirstRaiderTotal>)
+FormID: 0001CC2A	MQ102	86	Talk to Preston Garvey
+FormID: 0001CC2A	MQ102	87	Unlock the Security Gate
+FormID: 0001CC2A	MQ102	90	Get a Fusion Core
+FormID: 0001CC2A	MQ102	105	Put the Fusion Core in the Power Armor
+FormID: 0001CC2A	MQ102	110	Enter the Power Armor
+FormID: 0001CC2A	MQ102	115	Grab the Minigun
+FormID: 0001CC2A	MQ102	120	Clear Concord of Hostiles
+FormID: 0001CC2A	MQ102	140	Report back to Preston
+FormID: 0001D727	FFDiamondCity01	10	Search the Hardware Store for Paint
+FormID: 0001D727	FFDiamondCity01	20	Return to Abbot
+FormID: 0001D727	FFDiamondCity01	30	(Optional) Mix a batch of Green Paint
+FormID: 0001D727	FFDiamondCity01	40	Apply a paint to the Wall
+FormID: 0001D727	FFDiamondCity01	50	Talk to Abbot
+FormID: 0001ED86	MQ101	100	
+FormID: 0001ED86	MQ101	110	
+FormID: 0001ED86	MQ101	130	
+FormID: 0001ED86	MQ101	140	
+FormID: 0001ED86	MQ101	145	
+FormID: 0001ED86	MQ101	150	
+FormID: 0001F25E	MQ104	10	Find Nick Valentine
+FormID: 0001F25E	MQ104	20	Free Nick Valentine
+FormID: 0001F25E	MQ104	30	Talk to Nick Valentine
+FormID: 0001F25E	MQ104	40	Follow Nick Valentine
+FormID: 00020748	CZ_Arena	100	(Optional) Place Wager
+FormID: 00020748	CZ_Arena	200	Collect Payout before next match
+FormID: 00020748	CZ_Arena	300	Collect Prize before next match
+FormID: 00020748	CZ_Arena	500	Enter the cage from below.
+FormID: 00020748	CZ_Arena	600	[Optional] Stand in Corner
+FormID: 0002074B	CZ	290	Eliminate the remaining Raiders
+FormID: 0002074B	CZ	400	Talk to Tommy
+FormID: 0002125F	FFDiamondCity03	10	Bring a Mutated Fern Flower to Solomon
+FormID: 000229E5	MQ103	10	Go to Diamond City
+FormID: 000229E5	MQ103	20	Find Information about Shaun
+FormID: 000229E5	MQ103	30	Go to Valentine's Detective Agency
+FormID: 000229E6	MQ105	10	Go to Valentine's Detective Agency
+FormID: 000229E6	MQ105	15	Talk to Ellie
+FormID: 000229E6	MQ105	20	Sit Down
+FormID: 000229E6	MQ105	30	Tell Nick Your Story
+FormID: 000229E6	MQ105	40	Follow Nick
+FormID: 000229E6	MQ105	60	Get the Key to Kellogg's House
+FormID: 000229E6	MQ105	70	Investigate Kellogg's House
+FormID: 000229E6	MQ105	75	Follow Nick
+FormID: 000229E6	MQ105	80	Show Dogmeat the Cigar
+FormID: 000229E7	MQ106	10	Follow Dogmeat
+FormID: 000229E7	MQ106	11	Search for clues to Kellogg
+FormID: 000229E7	MQ106	12	Search for clues to Kellogg
+FormID: 000229E7	MQ106	13	Search for clues to Kellogg
+FormID: 000229E7	MQ106	14	Search for clues to Kellogg
+FormID: 000229E7	MQ106	15	Search for clues to Kellogg
+FormID: 000229E7	MQ106	40	Check on Dogmeat
+FormID: 000229E7	MQ106	50	Find a way into Fort Hagen
+FormID: 000229E7	MQ106	75	Search Fort Hagen
+FormID: 000229E7	MQ106	100	Confront Kellogg
+FormID: 000229E7	MQ106	125	Kill Kellogg
+FormID: 000229E7	MQ106	150	Search for More Information
+FormID: 000229E7	MQ106	200	Discuss Your Findings with Nick
+FormID: 000229E7	MQ106	250	Discuss Your Findings with Piper
+FormID: 000229E9	MQ202	5	Retrieve a Piece of Kellogg's Brain
+FormID: 000229E9	MQ202	10	Talk to Doctor Amari
+FormID: 000229E9	MQ202	100	Sit in the Memory Lounger
+FormID: 000229E9	MQ202	110	Explore Kellogg's memories
+FormID: 000229E9	MQ202	120	Talk to Doctor Amari
+FormID: 000229EB	MQ205	10	Travel to C.I.T.
+FormID: 000229EB	MQ205	15	Tune to Courser's Radio Frequency
+FormID: 000229EB	MQ205	20	Use the Courser's Radio Frequency to Track Courser
+FormID: 000229EB	MQ205	30	Kill the Courser
+FormID: 000229EB	MQ205	40	Recover Courser Chip
+FormID: 000229EC	MQ207	10	Enter the Elevator
+FormID: 000229EC	MQ207	150	Meet the Division Leaders
+FormID: 000229EC	MQ207	160	Use the Network Scanner Holotape
+FormID: 000229EC	MQ207	180	Exit the Institute
+FormID: 000229EE	MQ302	100	Talk to <Alias=FactionLeader>
+FormID: 000229EE	MQ302	200	Talk to <Alias=FactionScientist>
+FormID: 000229EE	MQ302	300	Activate Institute Relay
+FormID: 000229EE	MQ302	400	Reach Institute Reactor
+FormID: 000229EE	MQ302	450	(Optional) Issue Evacuation Order
+FormID: 000229EE	MQ302	500	Plant Fusion Pulse Charge
+FormID: 000229EE	MQ302	600	Escape the Institute
+FormID: 000229F6	MS01	45	Leave or Ambush Bullet
+FormID: 000229F6	MS01	100	Talk to Billy
+FormID: 000229F6	MS01	200	Take Billy home
+FormID: 000229F6	MS01	400	Sell Billy to Bullet
+FormID: 000229F6	MS01	500	Take care of Billy
+FormID: 000229F6	MS01	1000	Talk to Matt Peabody
+FormID: 000229F6	MS01	1050	Talk to Bullet
+FormID: 000229F7	MS02	20	Investigate the submarine
+FormID: 000229F7	MS02	100	Find the sea monster
+FormID: 000229F7	MS02	210	Talk to Captain Zao
+FormID: 000229F7	MS02	300	Get the warhead
+FormID: 000229F7	MS02	310	Talk to Captain Zao
+FormID: 000229F7	MS02	500	Get the dampening rods
+FormID: 000229F7	MS02	600	Talk to Captain Zao
+FormID: 000229F7	MS02	700	Talk to Captain Zao
+FormID: 000229F7	MS02	800	Install Dampening Rods
+FormID: 000229F7	MS02	850	Install Warhead
+FormID: 000229F7	MS02	900	Talk to Zao
+FormID: 000229FC	MS07	3	Talk to Ellie
+FormID: 000229FC	MS07	5	Check the Detective Cases
+FormID: 000229FC	MS07	10	Read Earl Sterling's Case File
+FormID: 000229FC	MS07	60	Read Marty Bullfinch's Case File
+FormID: 000229FC	MS07	70	Listen to Marty's holotape
+FormID: 000229FC	MS07	95	Report back to Valentine Detective Agency
+FormID: 000229FD	MS07b	10	Find the Gilded Grasshopper
+FormID: 000229FD	MS07b	20	Read [QUOTE]Food for the Grasshopper[QUOTE]
+FormID: 000229FD	MS07b	30	Find Shem Drowne's grave
+FormID: 000229FE	MS07c	10	(Optional) Access Cambridge evidence terminal
+FormID: 000229FE	MS07c	20	Find Eddie Winter's holotapes (<Global=MS07cHolotapeCountGlobal>/10)
+FormID: 000229FE	MS07c	200	Talk to Nick
+FormID: 000229FE	MS07c	210	Travel to Eddie's Hideout
+FormID: 000229FE	MS07c	217	Access Eddie Winter's Bunker
+FormID: 000229FE	MS07c	230	Confront Eddie Winter
+FormID: 000229FE	MS07c	260	Follow Nick
+FormID: 000229FE	MS07c	270	Speak with Nick
+FormID: 00022A00	MS09	110	Meet Jack outside Parsons State Insane Asylum
+FormID: 00022A00	MS09	120	Help Jack reach his office
+FormID: 00022A00	MS09	130	Help Jack reach the basement
+FormID: 00022A00	MS09	140	Stop the raiders from freeing Lorenzo Cabot
+FormID: 00022A00	MS09	150	Kill or Free Lorenzo Cabot
+FormID: 00022A00	MS09	155	Talk to Lorenzo Cabot
+FormID: 00022A00	MS09	160	Talk to Jack Cabot
+FormID: 00022A00	MS09	170	Return to Cabot House
+FormID: 00022A00	MS09	175	Talk to Jack Cabot
+FormID: 00022A00	MS09	180	Kill the Cabots
+FormID: 00022A00	MS09	190	Kill Lorenzo Cabot
+FormID: 00022A00	MS09	200	Talk to Lorenzo Cabot
+FormID: 00022A00	MS09	210	Talk to Jack Cabot
+FormID: 00022A02	MS11	100	Meet the captain
+FormID: 00022A02	MS11	173	OPTIONAL: Fire the Cannons
+FormID: 00022A02	MS11	200	Talk with the Navigator
+FormID: 00022A02	MS11	205	Repulse scavenger attack
+FormID: 00022A02	MS11	210	Talk with the Bosun
+FormID: 00022A02	MS11	300	Recover the Guidance Chip
+FormID: 00022A02	MS11	310	Install the Guidance Chip
+FormID: 00022A02	MS11	320	Talk with the Navigator
+FormID: 00022A02	MS11	350	Meet up with the scavengers
+FormID: 00022A02	MS11	400	Repair or replace Poseidon Radar Transmitter
+FormID: 00022A02	MS11	410	Install the Poseidon Radar Transmitter
+FormID: 00022A02	MS11	440	Talk with the Navigator
+FormID: 00022A02	MS11	500	(Optional) Grab power cables
+FormID: 00022A02	MS11	510	Repair or replace power cables (<Global=MS11PowerCablesFixed>/<Global=MS11PowerCablesBroken>)
+FormID: 00022A02	MS11	540	Talk with Bosun
+FormID: 00022A02	MS11	600	Repair or buy a replacement Power Relay Coil
+FormID: 00022A02	MS11	610	Install the Power Relay Coil
+FormID: 00022A02	MS11	640	Talk with the Bosun
+FormID: 00022A02	MS11	700	Talk with Ironsides
+FormID: 00022A02	MS11	710	Find FLL3 Turbopump Bearings
+FormID: 00022A02	MS11	720	Install Turbopump Bearings
+FormID: 00022A02	MS11	730	(Optional) Sabotage Turbopump with Mandy
+FormID: 00022A02	MS11	735	Install the Sabotaged Turbopump
+FormID: 00022A02	MS11	740	Return to Ironsides
+FormID: 00022A02	MS11	800	Defend the USS Constitution
+FormID: 00022A02	MS11	850	Return to Ironsides
+FormID: 00022A02	MS11	900	Connect auxiliary power to the ship
+FormID: 00022A02	MS11	925	Fire up auxiliary power
+FormID: 00022A02	MS11	1000	Talk to Mandy
+FormID: 00022A02	MS11	1100	Defeat Ironsides
+FormID: 00022A02	MS11	1190	Talk to Mandy
+FormID: 00022A02	MS11	1200	Defeat the scavengers
+FormID: 00022A03	MS12	10	TEMP
+FormID: 00022A04	MS13	10	Intimidate Henry Cooke
+FormID: 00022A04	MS13	11	Help Paul Pembroke intimidate Henry Cooke
+FormID: 00022A04	MS13	15	Talk to Henry Cooke
+FormID: 00022A04	MS13	20	Kill Henry Cooke
+FormID: 00022A04	MS13	25	Report back to Paul Pembroke
+FormID: 00022A04	MS13	30	Search Cooke's body
+FormID: 00022A04	MS13	40	Read Cooke's Note
+FormID: 00022A04	MS13	100	Ambush Nelson Latimer's chem deal
+FormID: 00022A04	MS13	150	Interrogate Trish
+FormID: 00022A04	MS13	160	Kill Trish
+FormID: 00022A04	MS13	170	Search Trish
+FormID: 00022A04	MS13	180	Read Trish's Note
+FormID: 00022A04	MS13	200	Divide the spoils
+FormID: 00022A04	MS13	220	Gain access to Marowski's chems lab
+FormID: 00022A05	MS14	10	Speak to Vadim
+FormID: 00022A05	MS14	20	Meet Travis in the Dugout Inn after 6 PM
+FormID: 00022A05	MS14	30	Help Travis
+FormID: 00022A05	MS14	40	Talk to Vadim
+FormID: 00022A05	MS14	50	Convince Scarlett to meet Travis
+FormID: 00022A05	MS14	60	Talk to Yefim
+FormID: 00022A05	MS14	65	Talk to Travis
+FormID: 00022A05	MS14	70	Meet Travis at Beantown Brewery
+FormID: 00022A05	MS14	80	Help Travis rescue Vadim
+FormID: 00022A05	MS14	90	Talk to Travis
+FormID: 00022A07	MS16	10	Talk to Bobbi
+FormID: 00022A07	MS16	20	Meet Bobbi inside
+FormID: 00022A07	MS16	30	Join the dig
+FormID: 00022A07	MS16	35	Exterminate the Mirelurks (<Global=MS16Phase1MirelurksGlobal>/3)
+FormID: 00022A07	MS16	40	Talk to Bobbi
+FormID: 00022A07	MS16	50	Meet Bobbi in Diamond City
+FormID: 00022A07	MS16	55	Get Mel Out of Jail
+FormID: 00022A07	MS16	58	Recruit Mel
+FormID: 00022A07	MS16	60	Meet the gang in the Dig
+FormID: 00022A07	MS16	70	Dig to the Strongroom
+FormID: 00022A07	MS16	120	Dig through the subway area
+FormID: 00022A07	MS16	140	Dig through the basement area
+FormID: 00022A07	MS16	150	Meet with the gang in the strongroom basement
+FormID: 00022A07	MS16	155	Get out of the basement
+FormID: 00022A07	MS16	158	Enter the Strongroom
+FormID: 00022A07	MS16	160	Kill Fahrenheit and her men
+FormID: 00022A07	MS16	165	Kill Bobbi
+FormID: 00022A07	MS16	170	Open the Train Car
+FormID: 00022A07	MS16	175	Get paid
+FormID: 00022A07	MS16	178	Talk to Mel
+FormID: 00022A07	MS16	180	Talk to Fahrenheit
+FormID: 00022A08	MS17	200	Search Covenant for clues
+FormID: 00022A08	MS17	205	(Optional) Search destroyed caravan for clues
+FormID: 00022A08	MS17	210	(Optional) Talk with Honest Dan
+FormID: 00022A08	MS17	245	(Optional) Ask Dan about Synths
+FormID: 00022A08	MS17	250	Find the location of the secret Compound
+FormID: 00022A08	MS17	300	Find the Covenant Compound
+FormID: 00022A08	MS17	320	Search for any caravan survivors
+FormID: 00022A08	MS17	400	Rescue Amelia Stockton
+FormID: 00022A08	MS17	407	(Optional) Wait for Chambers to kill Amelia
+FormID: 00022A08	MS17	500	Talk with Honest Dan
+FormID: 00022A08	MS17	600	Find Old Man Stockton
+FormID: 00022A08	MS17	740	Talk with Dr. Chambers
+FormID: 00022A09	MS18	10	TEMP
+FormID: 00022A0A	MS19	700	Find the cure
+FormID: 00022A0A	MS19	800	Give cure to Dr. Forsythe
+FormID: 00022A0A	MS19	900	Watch Austin
+FormID: 000254B7	DN154	40	Search the Atomatoys Factory for Toy Parts
+FormID: 000254B7	DN154	80	Return to Arlen Glass
+FormID: 0002633E	DN079	50	Inspect the cannery.
+FormID: 0002633E	DN079	100	Clear out the molerats from Longneck Lukowski's.
+FormID: 0002633E	DN079	200	Confront Theodore Collins.
+FormID: 00026340	DN121	1	Travel to Finch Farm
+FormID: 00026340	DN121	3	Talk to Abraham Finch
+FormID: 00026340	DN121	5	Retrieve Abraham Finch's sword from Saugus Ironworks.
+FormID: 00026340	DN121	7	[Optional] Bring Jake back from Saugus Ironworks
+FormID: 00026340	DN121	10	Meet Jake at the farm with the sword
+FormID: 00026340	DN121	20	Return Abraham Finch's sword to him at Finch Farm
+FormID: 00026340	DN121	100	Talk to Preston Garvey
+FormID: 00027411	COMMacCreadyQuest	10	Travel to the Mass Pike Interchange
+FormID: 00027411	COMMacCreadyQuest	20	Kill Winlock
+FormID: 00027411	COMMacCreadyQuest	30	Kill Barnes
+FormID: 00027411	COMMacCreadyQuest	40	Speak to MacCready
+FormID: 00027411	COMMacCreadyQuest	50	Continue Traveling with MacCready
+FormID: 00027411	COMMacCreadyQuest	60	Bring MacCready to Med-Tek Research
+FormID: 00027411	COMMacCreadyQuest	70	Enter Med-Tek Research
+FormID: 00027411	COMMacCreadyQuest	80	Locate the Executive Terminal
+FormID: 00027411	COMMacCreadyQuest	90	Override Containment Lockdown
+FormID: 00027411	COMMacCreadyQuest	100	Enter Med-Tek Sub-Level
+FormID: 00027411	COMMacCreadyQuest	110	Retrieve cure for MacCready
+FormID: 00027411	COMMacCreadyQuest	120	Speak to MacCready
+FormID: 00027411	COMMacCreadyQuest	130	Bring cure to Daisy in Goodneighbor
+FormID: 00027556	MS04	25	Talk with Kent Connolly
+FormID: 00027556	MS04	100	Get the Silver Shroud costume
+FormID: 00027556	MS04	200	Give Kent the Silver Shroud costume
+FormID: 00027556	MS04	390	Talk with Kent
+FormID: 00027556	MS04	405	Listen to Silver Shroud station in Goodneighbor
+FormID: 00027556	MS04	410	Talk with Whitechapel Charlie
+FormID: 00027556	MS04	420	Kill Kendra
+FormID: 00027556	MS04	430	Put calling card on Kendra's body
+FormID: 00027556	MS04	440	Listen to Silver Shroud station in Goodneighbor
+FormID: 00027556	MS04	442	(Optional) Assassinate Shelly Tiller
+FormID: 00027556	MS04	445	(Optional) Collect assassination payment
+FormID: 00027556	MS04	450	Deal with AJ
+FormID: 00027556	MS04	490	Put calling card on AJ's body
+FormID: 00027556	MS04	500	Kill Wayne Delancy
+FormID: 00027556	MS04	590	Put calling card on Wayne's body
+FormID: 00027556	MS04	598	Talk with Hancock
+FormID: 00027556	MS04	599	Listen to Silver Shroud station in Goodneighbor
+FormID: 00027556	MS04	600	Meet with Hancock as the Shroud
+FormID: 00027556	MS04	800	Kill Smiling Kate
+FormID: 00027556	MS04	900	Kill Northy
+FormID: 00027556	MS04	950	Search body for clues
+FormID: 00027556	MS04	1000	Find Kent
+FormID: 00027556	MS04	1100	Listen to Silver Shroud station
+FormID: 00027556	MS04	1200	Kill Sinjin
+FormID: 00027556	MS04	1210	(Optional) Save Kent Connolly
+FormID: 00027556	MS04	1300	Talk with Kent
+FormID: 00027556	MS04	1360	Talk with Kent
+FormID: 00027556	MS04	1400	Meet with Hancock as the Shroud
+FormID: 000284BC	DN015	0	Complete the research project
+FormID: 000284BC	DN015	10	[Optional] Find another way to escape the laboratory
+FormID: 000284BC	DN015	20	Follow Molly to speak with the Director
+FormID: 00028657	MS01MiscObj	10	Investigate the voice
+FormID: 000289E4	Followers	100	Dogmeat
+FormID: 000289E4	Followers	200	Companion
+FormID: 0002B4BD	RETreasureHunt_TEMPLATE	40	Look for the gun in <Alias=Dungeon>
+FormID: 0002B4E9	Inst303	10	Speak with Father
+FormID: 0002B4E9	Inst303	20	Attend Directorate Meeting
+FormID: 0002B4E9	Inst303	30	Speak with Father
+FormID: 0002BDE6	RETreasureHuntSC01	40	Search for caps in <Alias=Dungeon>
+FormID: 0002BDE9	RETreasureHuntSC02	40	Look for the stash of chems in <Alias=Dungeon>
+FormID: 0002BEED	RETreasureHuntSC03	40	Find the <Alias=Weapon> in <Alias=Dungeon>
+FormID: 0002BEF6	RETreasureHuntSC04	40	Search for scrap in <Alias=Dungeon>
+FormID: 0002BEF9	RETreasureHuntSC05	40	Search for tech in <Alias=Dungeon>.
+FormID: 0002BF20	BoS200	10	Return to Cambridge Police Station
+FormID: 0002BF20	BoS200	20	Speak with Paladin Danse
+FormID: 0002BF20	BoS200	30	Support the Brotherhood Recon Team
+FormID: 0002BF21	BoS201	5	Listen to Military Frequency AF95
+FormID: 0002BF21	BoS201	10	Report to Paladin Danse
+FormID: 0002BF21	BoS201	20	Board the Vertibird
+FormID: 0002BF21	BoS201	40	Attend the debriefing
+FormID: 0002BF21	BoS201	50	Speak to Lancer-Captain Kells
+FormID: 0002BF21	BoS201	60	Attend Elder Maxson's Address
+FormID: 0002BF21	BoS201	70	Speak to Elder Maxson
+FormID: 0002BF21	BoS201	80	Report to Paladin Danse
+FormID: 0002C59B	FFDiamondCity05	10	Bring a Bloatfly Gland to Doctor Duff
+FormID: 0002C8CB	RR302	101	Warn Desdemona
+FormID: 0002C8CB	RR302	200	Defend Railroad HQ
+FormID: 0002C8CB	RR302	300	Talk with Desdemona
+FormID: 0002C8CB	RR302	400	Secure the Catacombs
+FormID: 0002C8CB	RR302	500	Secure the Church
+FormID: 0002C8CB	RR302	600	Talk with Desdemona
+FormID: 0002C8CB	RR302	700	Meet Tinker Tom at the Police Station
+FormID: 0002C8CB	RR302	800	Eliminate Brotherhood forces
+FormID: 0002C8CB	RR302	900	Talk with Tinker Tom
+FormID: 0002C8CB	RR302	950	Defend the vertibird
+FormID: 0002C8CB	RR302	1000	Talk with Deacon
+FormID: 0002FD6A	RESceneKMK01	10	Recover the <Alias=Item> from <Alias=Dungeon>
+FormID: 00030854	RESceneKMK02	10	Explore <Alias=Dungeon> and recover the <Alias=Item>
+FormID: 00033520	V81_01	10	Talk to Erin
+FormID: 00033520	V81_01	100	Find Ashes
+FormID: 00033520	V81_01	200	Talk To Erin
+FormID: 00033527	V81_03	100	Get Bobby off chems
+FormID: 00033527	V81_03	200	Talk to Rachel
+FormID: 00033527	V81_03	300	Persuade Bobby to get treatment
+FormID: 00033527	V81_03	400	Talk to Tina
+FormID: 00035D03	FFDiamondCity06	10	Find a Signed Baseball
+FormID: 00035D03	FFDiamondCity06	20	Find a Signed Catcher's Mitt
+FormID: 00035D03	FFDiamondCity06	30	Find a Signed Baseball Card
+FormID: 00035D03	FFDiamondCity06	40	Return to Moe Cronin
+FormID: 0003A457	Min02	5	Talk to Preston
+FormID: 0003A457	Min02	10	Meet the Minutemen near the Castle
+FormID: 0003A457	Min02	20	Decide on a plan of attack
+FormID: 0003A457	Min02	50	Wait for the Minutemen to get into position
+FormID: 0003A457	Min02	100	Clear the courtyard
+FormID: 0003A457	Min02	101	Destroy the egg clutches
+FormID: 0003A457	Min02	105	Kill the Mirelurk Queen
+FormID: 0003A457	Min02	110	Meet the Minutemen in the courtyard
+FormID: 0003A457	Min02	150	Repair the radio transmitter
+FormID: 0003A457	Min02	160	Power up the radio transmitter
+FormID: 0003A457	Min02	200	Talk to Preston Garvey
+FormID: 0003DF95	MinRadiantOwned02	10	Travel to <Alias=ActualLocation>
+FormID: 0003DF95	MinRadiantOwned02	20	Kill the raiders in <Alias=RaiderDungeon>
+FormID: 0003DF95	MinRadiantOwned02	30	Report your success to the people of <Alias=ActualLocation>
+FormID: 0003DF95	MinRadiantOwned02	40	Talk to Preston Garvey
+FormID: 0003E0C1	MinRadiantOwned03ChangeLocOnly	10	Travel to <Alias=ActualLocation>
+FormID: 0003E0C1	MinRadiantOwned03ChangeLocOnly	15	(Optional) Pay the ransom (<Global=MinRadiantOwned03Ransom> Caps)
+FormID: 0003E0C1	MinRadiantOwned03ChangeLocOnly	20	Rescue the kidnapped trader from <Alias=KidnapperDungeon>
+FormID: 0003E0C1	MinRadiantOwned03ChangeLocOnly	30	Report back to the people of <Alias=ActualLocation>
+FormID: 0003E0C1	MinRadiantOwned03ChangeLocOnly	40	Talk to Preston Garvey
+FormID: 00043275	RR303	300	Secure the Old North Church
+FormID: 00043275	RR303	400	Talk with Desdemona
+FormID: 00043275	RR303	600	(Optional) Light the signal lanterns
+FormID: 00043275	RR303	800	Talk to Desdemona
+FormID: 00043275	RR303	1100	Fly to the Prydwen
+FormID: 00043275	RR303	1200	Plant explosives (<Global=RR303ExplosivePlanted>/<Global=RR303ExplosiveTotal>)
+FormID: 00043275	RR303	1300	Escape the Prydwen
+FormID: 00043275	RR303	1400	Talk to Desdemona
+FormID: 0004402C	BoSM02	15	Speak to Captain Kells
+FormID: 0004402C	BoSM02	30	Speak to Knight-Sergeant Gavil
+FormID: 0004402C	BoSM02	50	Question Knight Lucia
+FormID: 0004402C	BoSM02	51	Question Initiate Clarke
+FormID: 0004402C	BoSM02	70	Speak to Knight-Sergeant Gavil
+FormID: 0004402C	BoSM02	75	Search for Evidence
+FormID: 0004402C	BoSM02	80	Read Knight Lucia's Log
+FormID: 0004402C	BoSM02	90	Confront Knight Lucia
+FormID: 0004402C	BoSM02	150	Shadow Initiate Clarke
+FormID: 0004402C	BoSM02	200	Find Initiate Clarke
+FormID: 0004402C	BoSM02	220	Optional: Exterminate the Ghouls
+FormID: 0004402C	BoSM02	240	Confront Initiate Clarke
+FormID: 0004402C	BoSM02	350	Report to Captain Kells
+FormID: 0004402C	BoSM02	380	Kill Initiate Clarke
+FormID: 0004542B	DN049	30	Report to the Director of the General Atomics Galleria
+FormID: 000456E8	FFDiamondCity07	10	Go to Piper's Office
+FormID: 000456E8	FFDiamondCity07	15	Talk to Piper
+FormID: 000457C6	MS13FindPhoto	10	Talk to Marowski about photo
+FormID: 000457C6	MS13FindPhoto	20	Talk to Henry Cooke about photo
+FormID: 000457C6	MS13FindPhoto	30	Talk to Malcolm Latimer about photo
+FormID: 000457C6	MS13FindPhoto	100	Kill Henry Cooke
+FormID: 000457C6	MS13FindPhoto	110	Kill Malcolm Latimer
+FormID: 000457C6	MS13FindPhoto	120	Talk to Marowski
+FormID: 000459D2	RR101	100	Follow the Freedom Trail
+FormID: 000459D2	RR101	111	Solve the Freedom Trail markers (<Global=RR101MarksSolved>/<Global=RR101ToBeSolved>)
+FormID: 000459D2	RR101	112	Solve the Freedom Trail markers (<Global=RR101MarksSolved>/<Global=RR101ToBeSolved>)
+FormID: 000459D2	RR101	113	Solve the Freedom Trail markers (<Global=RR101MarksSolved>/<Global=RR101ToBeSolved>)
+FormID: 000459D2	RR101	114	Solve the Freedom Trail markers (<Global=RR101MarksSolved>/<Global=RR101ToBeSolved>)
+FormID: 000459D2	RR101	115	Solve the Freedom Trail markers (<Global=RR101MarksSolved>/<Global=RR101ToBeSolved>)
+FormID: 000459D2	RR101	116	Solve the Freedom Trail markers (<Global=RR101MarksSolved>/<Global=RR101ToBeSolved>)
+FormID: 000459D2	RR101	117	Solve the Freedom Trail markers (<Global=RR101MarksSolved>/<Global=RR101ToBeSolved>)
+FormID: 000459D2	RR101	118	Solve the Freedom Trail markers (<Global=RR101MarksSolved>/<Global=RR101ToBeSolved>)
+FormID: 000459D2	RR101	120	(Optional) Talk to the Tour Bot
+FormID: 000459D2	RR101	200	Continue following the Freedom Trail
+FormID: 000459D2	RR101	400	Search for the Railroad
+FormID: 000459D2	RR101	1000	Talk with Desdemona
+FormID: 000482CD	DN151	5	Travel to <Alias=ActualLocation>
+FormID: 000482CD	DN151	100	Investigate the Water Treatment Plant
+FormID: 000482CD	DN151	120	Drain the flooded Water Treatment Plant
+FormID: 000482CD	DN151	130	Restart the Main Pump
+FormID: 000482CD	DN151	200	Return to Supervisor White
+FormID: 000482CD	DN151	450	Talk to Preston Garvey
+FormID: 00048516	DN054	5	Talk to Zeke
+FormID: 00048516	DN054	10	Talk to Rowdy
+FormID: 00048516	DN054	20	Repair the water pump at Warwick
+FormID: 00048516	DN054	30	Tell June Warwick about the fix
+FormID: 00048516	DN054	40	Return to Rowdy
+FormID: 00048516	DN054	50	Defeat the Gunners
+FormID: 00048516	DN054	60	Talk to Zeke
+FormID: 000498B5	InstM01_OLD	10	Talk to Isaac Karlin
+FormID: 000498B5	InstM01_OLD	20	Deliver the Seeds to Roger Warwick
+FormID: 000498B5	InstM01_OLD	25	Follow Roger Warwick
+FormID: 000498B5	InstM01_OLD	26	Talk to Roger Warwick
+FormID: 000498B5	InstM01_OLD	27	Discover Bill's Plans
+FormID: 000498B5	InstM01_OLD	30	Talk to Cedric Hopton
+FormID: 000498B5	InstM01_OLD	40	Talk to Roger Warwick
+FormID: 000498B5	InstM01_OLD	50	Confront Bill Sutton
+FormID: 000498B5	InstM01_OLD	55	Talk to Roger Warwick
+FormID: 000498B5	InstM01_OLD	60	Talk to Isaac Karlin
+FormID: 0004ACE8	CZMisc	10	Explore the Combat Zone
+FormID: 0004AD05	DN101	10	Retrieve Pickman's gift
+FormID: 0004F623	FFDiamondCity01Misc	10	See Abbot at the Wall
+FormID: 000502AC	FFDiamondCity08	10	Give Sheffield a Nuka-Cola
+FormID: 000503B8	MS09Mission01	10	Talk to Edward Deegan at Cabot House
+FormID: 000503B8	MS09Mission01	15	Talk to Jack Cabot
+FormID: 000503B8	MS09Mission01	20	Talk to Edward
+FormID: 000503B8	MS09Mission01	30	Talk to guard captain
+FormID: 000503B8	MS09Mission01	40	Recover package
+FormID: 000503B8	MS09Mission01	50	Return serum to Cabot House
+FormID: 000503B9	MS09Mission02	55	Talk to Edward
+FormID: 000503B9	MS09Mission02	60	Find Emogene Cabot
+FormID: 000503B9	MS09Mission02	65	(Optional) Ask around the Third Rail about Emogene
+FormID: 000503B9	MS09Mission02	70	Return to Cabot House
+FormID: 000503B9	MS09Mission02	80	Talk to Jack
+FormID: 000537FC	BoS201B	10	Meet Proctor Ingram
+FormID: 000537FC	BoS201B	20	Meet Proctor Teagan
+FormID: 000537FC	BoS201B	30	Meet Proctor Quinlan
+FormID: 000537FC	BoS201B	40	Meet Knight-Captain Cade
+FormID: 000537FF	BoS202	10	Meet with Elder Maxson
+FormID: 000537FF	BoS202	20	Board the Vertibird Gunship
+FormID: 000537FF	BoS202	30	Kill the Super Mutant Behemoth
+FormID: 000537FF	BoS202	40	Secure Fort Strong
+FormID: 000537FF	BoS202	50	Secure Fort Strong Armory
+FormID: 000537FF	BoS202	60	Speak to Paladin Danse
+FormID: 000537FF	BoS202	70	Speak to Elder Maxson
+FormID: 00055BE4	MinVsInst	10	Speak to Father
+FormID: 00055BE4	MinVsInst	20	Reach the House
+FormID: 00055BE4	MinVsInst	30	Speak to Minutemen Contact
+FormID: 00055BE4	MinVsInst	40	Eliminate the Opposition
+FormID: 00055BE4	MinVsInst	50	Speak to Enrico Thompson
+FormID: 00055BE4	MinVsInst	60	Speak to Wallace
+FormID: 00055BE4	MinVsInst	80	Eliminate the Institute Forces
+FormID: 0005691C	VFT	10	Board the vertibird
+FormID: 0005DDAB	BoS100	5	Listen to Military Frequency AF95
+FormID: 0005DDAB	BoS100	10	Proceed to Cambridge Police Station
+FormID: 0005DDAB	BoS100	20	Assist the Soldiers
+FormID: 0005DDAB	BoS100	30	Speak to Paladin Danse
+FormID: 0005DEE4	Min01	10	Join Preston Garvey in Sanctuary
+FormID: 0005DEE4	Min01	50	Talk to Sturges
+FormID: 0005DEE4	Min01	1000	Build sheltered beds for Sanctuary settlers (<Global=Min01BedPercent>%)
+FormID: 0005DEE4	Min01	1050	Talk to Sturges
+FormID: 0005DEE4	Min01	1100	Provide power for Sanctuary settlers
+FormID: 0005DEE4	Min01	1150	Talk to Sturges
+FormID: 0005DEE4	Min01	1200	Provide clean water for Sanctuary settlers (<Global=Min01WaterPercent>%)
+FormID: 0005DEE4	Min01	1250	Talk to Sturges
+FormID: 0005DEE4	Min01	1300	Provide food for Sanctuary settlers (<Global=Min01FoodPercent>%)
+FormID: 0005DEE4	Min01	1350	Talk to Sturges
+FormID: 0005DEE4	Min01	1400	Build defenses for Sanctuary (<Global=Min01SafetyPercent>%)
+FormID: 0005DEE4	Min01	1450	Talk to Sturges
+FormID: 0005E51F	MinRadiantOwned09ChangeLocOnly	10	Travel to <Alias=ActualLocation>
+FormID: 0005E51F	MinRadiantOwned09ChangeLocOnly	20	Build defenses (<Global=MinRadiantOwned01SafetyPercent>%)
+FormID: 0005E51F	MinRadiantOwned09ChangeLocOnly	30	Help defend <Alias=ActualLocation>
+FormID: 0005E51F	MinRadiantOwned09ChangeLocOnly	35	Talk to people of <Alias=ActualLocation>
+FormID: 0005E51F	MinRadiantOwned09ChangeLocOnly	40	Talk to Preston Garvey
+FormID: 0005FD90	RRM01	50	Give Carrington his prototype
+FormID: 0005FD90	RRM01	100	Retrieve the dead drop
+FormID: 0005FD90	RRM01	200	Meet Old Man Stockton
+FormID: 0005FD90	RRM01	300	Secure the rendezvous point
+FormID: 0005FD90	RRM01	400	Wait until night time for Old Man Stockton
+FormID: 0005FD90	RRM01	450	Wait for Railroad contact
+FormID: 0005FD90	RRM01	500	Follow High Rise
+FormID: 0005FD90	RRM01	600	Talk with High Rise
+FormID: 0005FD90	RRM01	700	Report back to Doctor Carrington
+FormID: 00064EC7	BoSR01	10	Clear out <Alias=Dungeon>
+FormID: 00064EC7	BoSR01	20	Report to Knight Rhys
+FormID: 000684D0	DN123	20	Investigate the Crash Site
+FormID: 000684D0	DN123	30	Meet Ness at the Crash Site
+FormID: 000684D0	DN123	40	Secure the Crash Site
+FormID: 000684D0	DN123	50	Collect your Pay
+FormID: 0006B500	MQ204	15	Find Virgil in the Glowing Sea
+FormID: 0006B500	MQ204	20	Find Virgil in the Glowing Sea
+FormID: 0006DFAF	DogmeatQuest	0	Dogmeat
+FormID: 0006DFAF	DogmeatQuest	50	Greet the dog
+FormID: 0006F5C1	BoS101	10	Speak to Paladin Danse
+FormID: 0006F5C1	BoS101	20	Follow Paladin Danse
+FormID: 0006F5C1	BoS101	30	Speak to Paladin Danse
+FormID: 0006F5C1	BoS101	40	Follow Paladin Danse
+FormID: 0006F5C1	BoS101	50	Speak to Paladin Danse
+FormID: 0006F5C1	BoS101	60	Follow Paladin Danse
+FormID: 0006F5C1	BoS101	70	Find a way to open the door
+FormID: 0006F5C1	BoS101	80	Provide fire support for Paladin Danse
+FormID: 0006F5C1	BoS101	90	Follow Paladin Danse
+FormID: 0006F5C1	BoS101	100	Restore auxiliary power to Engine Core
+FormID: 0006F5C1	BoS101	120	Proceed to the Control Room
+FormID: 0006F5C1	BoS101	125	(Optional) Activate the Engine Core's rocket
+FormID: 0006F5C1	BoS101	130	(Optional) Assess Paladin Danse's condition
+FormID: 0006F5C1	BoS101	140	Clear the Control Room
+FormID: 0006F5C1	BoS101	150	Retrieve the Deep Range Transmitter
+FormID: 0006F5C1	BoS101	160	Exit ArcJet Systems
+FormID: 0006F5C1	BoS101	170	Speak to Paladin Danse
+FormID: 0006FA37	RR102	50	Talk with Deacon
+FormID: 0006FA37	RR102	150	Meet Deacon at the old highway
+FormID: 0006FA37	RR102	250	Follow Deacon and find the [QUOTE]tourist[QUOTE]
+FormID: 0006FA37	RR102	300	Talk to Deacon
+FormID: 0006FA37	RR102	400	Get inside the escape tunnel
+FormID: 0006FA37	RR102	410	(Optional) Enter base through front entrance
+FormID: 0006FA37	RR102	600	Get Carrington's Prototype
+FormID: 0006FA37	RR102	700	Leave The Switchboard
+FormID: 0006FA37	RR102	750	Meet Deacon at the Old North Church
+FormID: 0006FA37	RR102	810	Talk to Desdemona
+FormID: 0006FA37	RR102	900	Follow Desdemona
+FormID: 000704F4	MS01MiscObjSold	10	Take Billy Home
+FormID: 000747C9	MS16MiscObj	10	Talk to Bobbi
+FormID: 0007CC61	RR301	100	Go to Ticonderoga Safehouse
+FormID: 0007CC61	RR301	200	Kill all Coursers
+FormID: 0007CC61	RR301	300	Report back to Desdemona
+FormID: 00082579	MS13NelsonDies	100	Kill Marowski
+FormID: 00082579	MS13NelsonDies	110	Collect reward from Malcolm Latimer
+FormID: 00082579	MS13NelsonDies	300	Find Nelson Latimer
+FormID: 00082579	MS13NelsonDies	310	Report Nelson's death to Malcolm Latimer
+FormID: 00082579	MS13NelsonDies	400	Kill Paul Pembroke
+FormID: 00084E40	MS13MarowskiRevenge	10	Talk to Marowski about his missing chems
+FormID: 00084E40	MS13MarowskiRevenge	20	Pay Marowski 2000 caps
+FormID: 00084E40	MS13MarowskiRevenge	30	Pay Marowski 1000 caps
+FormID: 00087304	BoSM01Pointer	10	Report to Paladin Danse
+FormID: 0008C106	MS13CookeDies	10	Kill Colette
+FormID: 0008FCED	DN036	10	Confront Phyllis about Samuel's death
+FormID: 00097CC6	WorkshopSuperMutantAttack01	10	Help defend <Alias=myLocation>
+FormID: 00097CC7	WorkshopFeralGhoulAttack01	10	Help defend <Alias=myLocation>
+FormID: 00098136	MinRecruit01	10	Talk to the settlers at <Alias=ActualLocation>
+FormID: 00098136	MinRecruit01	20	Kill the raiders in <Alias=RaiderDungeon>
+FormID: 00098136	MinRecruit01	30	Report your success to settlers at <Alias=ActualLocation>
+FormID: 00098136	MinRecruit01	40	Talk to Preston Garvey
+FormID: 000986C7	InstM01	10	Talk to Isaac Karlin
+FormID: 000986C7	InstM01	20	Deliver the Seeds to Roger Warwick
+FormID: 000986C7	InstM01	25	Follow Roger Warwick
+FormID: 000986C7	InstM01	26	Talk to Roger Warwick
+FormID: 000986C7	InstM01	27	Discover Bill's Plans
+FormID: 000986C7	InstM01	30	Talk to Cedric Hopton
+FormID: 000986C7	InstM01	40	Talk to Roger Warwick
+FormID: 000986C7	InstM01	50	Confront Bill Sutton
+FormID: 000986C7	InstM01	55	Talk to Roger Warwick
+FormID: 000986C7	InstM01	60	Talk to Isaac Karlin
+FormID: 00099848	MinRecruit02	10	Talk to the settlers at <Alias=ActualLocation>
+FormID: 00099848	MinRecruit02	15	(Optional) Pay the ransom (<Global=MinRecruit02Ransom> Caps)
+FormID: 00099848	MinRecruit02	20	Rescue <Alias=KidnappedActor> from <Alias=KidnapperDungeon>
+FormID: 00099848	MinRecruit02	30	Report back to settlers at <Alias=ActualLocation>
+FormID: 00099848	MinRecruit02	40	Talk to Preston Garvey
+FormID: 00099E5D	Vault81Tour	100	Follow Austin
+FormID: 0009AC24	MS19MiscSeeForsythe	5	Talk to Dr. Forsythe
+FormID: 0009AC24	MS19MiscSeeForsythe	10	Donate medical samples to Dr. Forsythe
+FormID: 0009AC24	MS19MiscSeeForsythe	12	Sit to donate blood
+FormID: 0009AC24	MS19MiscSeeForsythe	15	Visit Austin in the Clinic
+FormID: 0009F09F	FFDiamondCity07FIN	10	Get the Latest Issue of Publick Occurrences
+FormID: 0009FF4E	BoS203	10	Locate Doctor Li
+FormID: 0009FF4E	BoS203	20	Speak to Doctor Li in Advanced Systems
+FormID: 0009FF4E	BoS203	30	Retrieve evidence to convince Doctor Li
+FormID: 0009FF4E	BoS203	40	Bring the holotape to Doctor Li
+FormID: 0009FF4E	BoS203	50	Report to Elder Maxson
+FormID: 000A07F3	ReconScopeQuest	0	Recon Scope Targets
+FormID: 000A07F3	ReconScopeQuest	10	
+FormID: 000A1412	MinRadiantOwned01	10	Travel to <Alias=ActualLocation>
+FormID: 000A1412	MinRadiantOwned01	20	Build defenses (<Global=MinRadiantOwned01SafetyPercent>%)
+FormID: 000A1412	MinRadiantOwned01	30	Help defend <Alias=ActualLocation>
+FormID: 000A1412	MinRadiantOwned01	35	Talk to people of <Alias=ActualLocation>
+FormID: 000A1412	MinRadiantOwned01	40	Talk to Preston Garvey
+FormID: 000A274B	Inst305	10	Speak to Father
+FormID: 000A274B	Inst305	30	Record the Speech
+FormID: 000A274B	Inst305	40	Speak with Father
+FormID: 000A274B	Inst305	50	Reconfigure the Transmitter
+FormID: 000A274B	Inst305	60	Speak with Father
+FormID: 000A274B	Inst305	70	Activate the Reactor
+FormID: 000A274B	Inst305	80	Speak with Father
+FormID: 000A274B	Inst305	90	Attend Directorate Meeting
+FormID: 000A8257	InstM02	10	Talk to Alan Binet
+FormID: 000A8257	InstM02	20	Investigate the Robotics Terminals
+FormID: 000A8257	InstM02	30	Investigate Binet's Quarters
+FormID: 000A8257	InstM02	33	Investigate the SRB Terminals
+FormID: 000A8257	InstM02	36	Investigate the Maintenance Terminal
+FormID: 000A8257	InstM02	40	Confront Liam Binet
+FormID: 000A8257	InstM02	50	Report Your Findings to Justin Ayo
+FormID: 000A8257	InstM02	60	Disable the Safeguards on Justin Ayo's Terminal
+FormID: 000A8257	InstM02	70	Return to Liam Binet
+FormID: 000A8258	Inst302	10	Speak to Father
+FormID: 000A8258	Inst302	20	(Optional) Inform the Brotherhood
+FormID: 000A8258	Inst302	30	(Optional) Inform the Railroad
+FormID: 000A8258	Inst302	40	Reach Bunker Hill
+FormID: 000A8258	Inst302	50	Find the Escaped Synths
+FormID: 000A8258	Inst302	60	Deal With the Escaped Synths
+FormID: 000A8258	Inst302	70	Kill the Courser
+FormID: 000A8258	Inst302	80	Kill the Synths
+FormID: 000A8258	Inst302	100	Speak with Father in the ruins of CIT
+FormID: 000A8258	Inst302	110	Deal with the Escaped Synths
+FormID: 000A8BAF	RRM02	100	Retreive the dead drop
+FormID: 000A8BAF	RRM02	200	Talk to Doctor Amari
+FormID: 000A8BAF	RRM02	300	Eliminate the Gen 1s
+FormID: 000A8BAF	RRM02	400	Report back to Desdemona
+FormID: 000AA778	Min03	10	Return to the Castle
+FormID: 000AA778	Min03	20	Speak to Ronnie Shaw at the Castle
+FormID: 000AA778	Min03	30	Gain access to the Castle's armory
+FormID: 000AA778	Min03	60	Collect the Artillery Schematic
+FormID: 000AA778	Min03	65	Collect the Smoke Flares
+FormID: 000AA778	Min03	70	Talk to Ronnie Shaw
+FormID: 000AA778	Min03	80	Build and assign artillery at the Castle
+FormID: 000AA778	Min03	90	Talk to Ronnie Shaw
+FormID: 000AA778	Min03	95	Follow Ronnie Shaw
+FormID: 000AA778	Min03	100	Head to the target area
+FormID: 000AA778	Min03	101	(Optional) Keep your radio on and tuned to Radio Freedom
+FormID: 000AA778	Min03	105	Power up radio transmitter
+FormID: 000AA778	Min03	110	Throw a smoke flare into the target area
+FormID: 000AA778	Min03	200	Talk to Preston Garvey
+FormID: 000AC4D4	RECheckpoint01_BoSAttackers	200	Help defend the checkpoint
+FormID: 000AC506	RECheckpoint02_SynthAttackers	200	Help defend the checkpoint
+FormID: 000AC7B3	Inst306	10	Speak with Father
+FormID: 000AC7B3	Inst306	20	Kill Desdemona
+FormID: 000AC7B3	Inst306	25	Eliminate the Railroad leaders
+FormID: 000AC7B3	Inst306	30	Speak with Father
+FormID: 000AD463	Min01Misc	10	Talk to Sturges
+FormID: 000ADCE5	BoSM04	15	Speak to Captain Kells
+FormID: 000ADCE5	BoSM04	30	Kill Virgil
+FormID: 000ADCE5	BoSM04	80	(Optional) Kill Virgil
+FormID: 000ADCE5	BoSM04	90	Report to Captain Kells
+FormID: 000ADCE7	DN053	31	Find Virgil's Serum
+FormID: 000ADCE7	DN053	32	Bring the Serum to Virgil
+FormID: 000ADCE7	DN053	60	Check on Virgil
+FormID: 000AE51C	BoS301	10	Speak to Proctor Ingram
+FormID: 000AE51C	BoS301	20	Follow Proctor Ingram
+FormID: 000AE51C	BoS301	30	Speak to Proctor Ingram
+FormID: 000AE51C	BoS301	40	Speak to Professor Scara
+FormID: 000AE51C	BoS301	50	Search for Professor Scara
+FormID: 000AE51C	BoS301	60	Speak to Professor Scara
+FormID: 000AE51C	BoS301	70	Speak to Doctor Li
+FormID: 000AE51C	BoS301	90	Speak to Proctor Ingram
+FormID: 000AE51C	BoS301	95	Locate a High-Powered Magnet
+FormID: 000AE51C	BoS301	100	Construct Electromagnetic Actuators (<Global=BoS301ActuatorsBuilt>/<Global=BoS301ActuatorsTotal>)
+FormID: 000AE51C	BoS301	120	Speak to Proctor Ingram
+FormID: 000AE51C	BoS301	140	Speak to Scribe Haylen
+FormID: 000AE51C	BoS301	150	Locate the Bomb Storage Facility
+FormID: 000AE51C	BoS301	170	Locate the Mark 28 Nuke Stockpile
+FormID: 000AE51C	BoS301	180	Activate the Distress Pulser
+FormID: 000AE51C	BoS301	190	Speak to Paladin Danse
+FormID: 000AE51C	BoS301	195	Return to Proctor Ingram
+FormID: 000AE51C	BoS301	200	Activate Liberty Prime
+FormID: 000AE51C	BoS301	210	Speak to Proctor Ingram
+FormID: 000AEA9B	RECheckpoint06_SuperMutants	200	Help defend the checkpoint
+FormID: 000AEA9C	RECheckpoint03_Gunners	200	Help defend the checkpoint
+FormID: 000AEA9D	RECheckpoint04_Deathclaws	200	Help defend the checkpoint
+FormID: 000AEA9E	RECheckpoint05_Vertibird	200	Help defend the checkpoint
+FormID: 000AF884	RECheckpoint09_Raiders	200	Help defend the checkpoint
+FormID: 000AF885	RECheckpoint08_RRAttackers	200	Help defend the checkpoint
+FormID: 000AF886	RECheckpoint07_VertibirdBoS	200	Help defend the checkpoint
+FormID: 000AF887	RECheckpoint10_RaidersPowerArmor	200	Help defend the checkpoint
+FormID: 000AF888	RECheckpoint11_FeralGhouls	200	Help defend the checkpoint
+FormID: 000AF889	RECheckpoint12_Deathclaw	200	Help defend the checkpoint
+FormID: 000AF88A	RECheckpoint13_YaoGuai	200	Help defend the checkpoint
+FormID: 000AF88B	RECheckpoint14_SynthAttackers	200	Help defend the checkpoint
+FormID: 000AF88C	RECheckpoint15_Gunners	200	Help defend the checkpoint
+FormID: 000AF88D	RECheckpoint16_Radscorpions	200	Help defend the checkpoint
+FormID: 000B1752	MQ206	10	Have the Courser Chip Analyzed
+FormID: 000B1752	MQ206	12	Find the Railroad
+FormID: 000B1752	MQ206	15	Search the Railroad HQ
+FormID: 000B1752	MQ206	20	Analyze the Courser Chip
+FormID: 000B1752	MQ206	30	Return to Virgil
+FormID: 000B1752	MQ206	40	Get Help to Build the Signal Interceptor
+FormID: 000B1752	MQ206	45	Get the Signal Interceptor Plans
+FormID: 000B1752	MQ206	50	(Optional) Talk to the Brotherhood
+FormID: 000B1752	MQ206	60	(Optional) Talk to the Minutemen
+FormID: 000B1752	MQ206	70	(Optional) Talk to the Railroad
+FormID: 000B1752	MQ206	90	Talk to <Alias=FactionScientist>
+FormID: 000B1752	MQ206	100	Build the Reflector Platform
+FormID: 000B1752	MQ206	105	(Optional) Talk to PAM about Mercer Station
+FormID: 000B1752	MQ206	110	Talk to <Alias=FactionScientist>
+FormID: 000B1752	MQ206	120	Build the Beam Emitter
+FormID: 000B1752	MQ206	121	(Optional) Search military sites for a Circuit Board
+FormID: 000B1752	MQ206	130	Build the Relay Dish
+FormID: 000B1752	MQ206	131	(Optional) Search telecom sites for a Sensor Module
+FormID: 000B1752	MQ206	140	Build the Console
+FormID: 000B1752	MQ206	141	(Optional) Search hospitals for a Biometric Scanner
+FormID: 000B1752	MQ206	150	Power up the Signal Interceptor
+FormID: 000B1752	MQ206	200	Talk to <Alias=FactionNPCEnd>
+FormID: 000B1752	MQ206	250	Use the Signal Interceptor
+FormID: 000B1D79	BoSM01	20	Report your discovery to the Brotherhood
+FormID: 000B1D79	BoSM01	29	Search for other distress signals
+FormID: 000B1D79	BoSM01	30	Search for the Recon Team
+FormID: 000B1D79	BoSM01	60	Follow the radio distress signal
+FormID: 000B1D79	BoSM01	62	Investigate the battle site
+FormID: 000B1D79	BoSM01	64	Listen to the Battlefield Holotape
+FormID: 000B1D79	BoSM01	65	(Optional) Report back to Paladin Danse
+FormID: 000B1D79	BoSM01	66	Investigate the National Guard Training Yard
+FormID: 000B1D79	BoSM01	70	Follow the radio distress signal
+FormID: 000B1D79	BoSM01	72	Investigate the battle site
+FormID: 000B1D79	BoSM01	74	Listen to Knight Astlin's Holotape
+FormID: 000B1D79	BoSM01	76	Investigate the Satellite Array
+FormID: 000B1D79	BoSM01	80	Follow the radio distress signal
+FormID: 000B1D79	BoSM01	82	Investigate the battle site
+FormID: 000B1D79	BoSM01	84	Listen to Scribe Faris' Holotape
+FormID: 000B1D79	BoSM01	90	Investigate the Bunker
+FormID: 000B1D79	BoSM01	103	Speak to Paladin Brandis
+FormID: 000B1D79	BoSM01	140	Kill Paladin Brandis
+FormID: 000B1D79	BoSM01	148	Meet Paladin Danse outside
+FormID: 000B1D79	BoSM01	150	Report to Paladin Danse
+FormID: 000B1D79	BoSM01	151	Speak to Paladin Danse
+FormID: 000B1D79	BoSM01	152	Report to Captain Kells
+FormID: 000B1F1C	RRR01b	100	Go to the Dead Drop for <Alias=QuestGiver>
+FormID: 000B1F1C	RRR01b	200	Find Agent Blackbird
+FormID: 000B1F1C	RRR01b	300	Report back to Doctor Carrington
+FormID: 000B1F1D	RRR01a	100	Go to the dead drop
+FormID: 000B1F1D	RRR01a	200	Determine status of Augusta Safehouse
+FormID: 000B1F1D	RRR01a	300	Report back to Doctor Carrington
+FormID: 000B26C2	RRR04	100	Secure <alias=ChosenWorkshopLocation> and then use workshop
+FormID: 000B26C2	RRR04	200	Build defenses (<Global=RRR04SafetyPercent>%) at <alias=ChosenWorkshopLocation>
+FormID: 000B26C2	RRR04	300	Report back to PAM
+FormID: 000B2D47	InstM03	10	Talk to Newton Oberly
+FormID: 000B2D47	InstM03	20	Follow Newton Oberly
+FormID: 000B2D47	InstM03	30	Go to the BioScience Observation Room
+FormID: 000B2D47	InstM03	40	Talk to Lawrence Higgs
+FormID: 000B2D47	InstM03	50	Talk to Lawrence Higgs
+FormID: 000B2D47	InstM03	60	Resolve the Standoff in Hydroponics
+FormID: 000B2D47	InstM03	70	Talk to Newton Oberly
+FormID: 000B2D47	InstM03	80	Open the BioScience Main Door
+FormID: 000B2D48	RR201	50	Talk with Tinker Tom
+FormID: 000B2D48	RR201	75	Get new holotape from Tinker Tom
+FormID: 000B2D48	RR201	100	Upload encrypted message on any Institute terminal
+FormID: 000B2D48	RR201	150	Read Patriot's reply
+FormID: 000B2D48	RR201	200	Meet Patriot
+FormID: 000B2D48	RR201	300	Follow Liam
+FormID: 000B2D48	RR201	325	Talk to Liam
+FormID: 000B2D48	RR201	350	Talk with Liam
+FormID: 000B2D48	RR201	375	Talk to Desdemona
+FormID: 000B2D48	RR201	400	Enter report on terminal
+FormID: 000B2D48	RR201	425	Talk with PAM
+FormID: 000B2D48	RR201	450	Get password for Code Defender
+FormID: 000B2D48	RR201	500	Return to Desdemona
+FormID: 000B2D48	RR201	550	Give password to Liam Binet
+FormID: 000B2D48	RR201	600	Meet with Z1-14
+FormID: 000B2D48	RR201	700	Give Z1-14 a day
+FormID: 000B2D48	RR201	725	Meet with Z1-14
+FormID: 000B2D48	RR201	750	Kill the tunnel guards
+FormID: 000B2D48	RR201	775	(Optional) Deposit weapons for rebels
+FormID: 000B2D48	RR201	800	Return to Z1-14
+FormID: 000B2D48	RR201	900	Continue working with Father
+FormID: 000B2D48	RR201	910	Give Z1-14 a day
+FormID: 000B2D48	RR201	915	Wait for Z1-14 to contact you
+FormID: 000B2D48	RR201	1000	Meet with Z1-14
+FormID: 000B2D48	RR201	1100	Warn Desdemona
+FormID: 000B3E82	RRR02a	100	Go to Mercer Safehouse
+FormID: 000B3E82	RRR02a	200	Eliminate the threat at <alias=QuestLocation>
+FormID: 000B3E82	RRR02a	300	Report back to Caretaker
+FormID: 000B8464	V81_00_Intro	10	Find Fusion Cores (<Global=V81FusionCoreCount>/<Global=V81FusionCoreTotal>)
+FormID: 000B8464	V81_00_Intro	20	Use the Vault 81 Intercom to Report Progress
+FormID: 000B8464	V81_00_Intro	30	Deliver Fusion Cores to Overseer McNamara
+FormID: 000B8464	V81_00_Intro	31	Talk to Overseer McNamara
+FormID: 000B926A	RRR05	100	Set up MILA
+FormID: 000B926A	RRR05	200	Report back to Tinker Tom
+FormID: 000B926B	RRR03	100	Secure the DIA cache
+FormID: 000B926B	RRR03	200	Report back to PAM
+FormID: 000B9F9D	BoS302	10	Speak to Elder Maxson
+FormID: 000B9F9D	BoS302	20	Speak to Proctor Quinlan
+FormID: 000B9F9D	BoS302	30	Follow Scribe Haylen
+FormID: 000B9F9D	BoS302	40	Speak to Scribe Haylen
+FormID: 000B9F9D	BoS302	50	Travel to Listening Post Bravo
+FormID: 000B9F9D	BoS302	55	Locate Paladin Danse
+FormID: 000B9F9D	BoS302	60	Speak to Paladin Danse
+FormID: 000B9F9D	BoS302	70	Execute Paladin Danse
+FormID: 000B9F9D	BoS302	80	Retrieve Paladin Danse's Holotags
+FormID: 000B9F9D	BoS302	90	Report to Elder Maxson
+FormID: 000B9F9D	BoS302	100	Leave Listening Post Bravo
+FormID: 000B9F9D	BoS302	110	Speak to Elder Maxson
+FormID: 000B9F9D	BoS302	120	Execute Paladin Danse
+FormID: 000B9F9D	BoS302	130	Watch Danse's Execution
+FormID: 000B9F9D	BoS302	140	Speak to Paladin Danse
+FormID: 000B9F9D	BoS302	150	Speak to Elder Maxson
+FormID: 000B9F9D	BoS302	160	Return to the Prydwen
+FormID: 000B9F9D	BoS302	170	Speak to Elder Maxson
+FormID: 000BACFF	Inst307	10	Speak to Doctor Li
+FormID: 000BACFF	Inst307	15	Speak to Doctor Watson
+FormID: 000BACFF	Inst307	30	Use the Relay to reach the Airport
+FormID: 000BACFF	Inst307	33	Infiltrate the Terminal
+FormID: 000BACFF	Inst307	35	Destroy Brotherhood Generators (<Global=Inst307GeneratorCurrent>/<Global=Inst307GeneratorTotal>)
+FormID: 000BACFF	Inst307	40	(Optional) Place Teleport Beacons
+FormID: 000BACFF	Inst307	50	Reach Liberty Prime
+FormID: 000BACFF	Inst307	60	Defend the Synth hacking Liberty Prime (<Global=Inst307VirusPercent>% Complete)
+FormID: 000BACFF	Inst307	70	Evacuate the Airport
+FormID: 000BAD00	Inst308	10	Speak to Father
+FormID: 000BDB04	MinDefendCastle	10	Travel to the Castle
+FormID: 000BDB04	MinDefendCastle	20	Build defenses (<Global=MinCastleSafetyPercent>%)
+FormID: 000BDB04	MinDefendCastle	30	Defend the Castle (<Global=MinCastleAttackersDeadPercent>%)
+FormID: 000BDB04	MinDefendCastle	35	Speak to Ronnie Shaw
+FormID: 000BDB04	MinDefendCastle	40	Talk to Preston Garvey
+FormID: 000C30DC	BosR02	10	Recover the <Alias=TechItem01> at <Alias=Dungeon>
+FormID: 000C30DC	BosR02	20	Report to Scribe Haylen
+FormID: 000C44D7	FFDiamondCity11	10	See Doc Crocker about Facial Reconstruction
+FormID: 000C5093	DN019JoinCult	10	Talk to <Alias=Leader>
+FormID: 000C8675	BoSR03	10	Speak to the Brotherhood Squire
+FormID: 000C8675	BoSR03	30	Clear <Alias=Dungeon> of all hostiles with Squire
+FormID: 000C8675	BoSR03	40	Speak to the Brotherhood Squire
+FormID: 000C8675	BoSR03	50	Return to Lancer Captain Kells
+FormID: 000C97A8	WorkshopGunnerAttack01	10	Help defend <Alias=myLocation>
+FormID: 000CF3E2	BoSR04	10	Speak to the Brotherhood Scribe
+FormID: 000CF3E2	BoSR04	25	Escort the Scribe to the data at <Alias=Dungeon>
+FormID: 000CF3E2	BoSR04	30	Protect the Brotherhood Scribe
+FormID: 000CF3E2	BoSR04	40	Return to <Alias=BoSR04Quinlan>
+FormID: 000CFF72	WorkshopGunnerAttack02	10	Help defend <Alias=myLocation>
+FormID: 000D1EB2	BoSR05	10	Secure Settlement Crops at <Alias=Settlement>
+FormID: 000D1EB2	BoSR05	20	Return to <Alias=BoSR05Teagan>
+FormID: 000DDFDB	Min301	10	Talk to Preston Garvey about the Institute
+FormID: 000DDFDB	Min301	20	Recruit more settlements for the Minutemen
+FormID: 000DFB3C	MinDestBoS	100	Talk to Preston Garvey
+FormID: 000DFB3C	MinDestBoS	200	Build artillery in <Global=MinDestBOSArtilleryTotal> locations (<Global=MinDestBOSArtilleryPercent>%)
+FormID: 000DFB3C	MinDestBoS	300	Launch artillery strike on Prydwen
+FormID: 000DFB3C	MinDestBoS	400	Destroy Prydwen
+FormID: 000DFB3C	MinDestBoS	450	Defeat Brotherhood attack on the Castle
+FormID: 000DFB3C	MinDestBoS	500	Talk to Preston Garvey
+FormID: 000E2058	Inst301	5	Talk to Father
+FormID: 000E2058	Inst301	10	OLD_Talk to Justin Ayo
+FormID: 000E2058	Inst301	20	Meet up with the Courser
+FormID: 000E2058	Inst301	30	Reclaim the Rogue Synth
+FormID: 000E2058	Inst301	40	Return to Father
+FormID: 000E2058	Inst301	50	Visit Your Quarters
+FormID: 000E477F	MinRadiantOwned04_BOS	10	Travel to <Alias=ActualLocation>
+FormID: 000E477F	MinRadiantOwned04_BOS	20	Build defenses
+FormID: 000E477F	MinRadiantOwned04_BOS	30	Help defend <Alias=ActualLocation>
+FormID: 000E477F	MinRadiantOwned04_BOS	35	Talk to people of <Alias=ActualLocation>
+FormID: 000E477F	MinRadiantOwned04_BOS	40	Talk to Preston Garvey
+FormID: 000E8D19	InstR01_OLD	10	Check on the Synths
+FormID: 000E8D19	InstR01_OLD	20	Take the Status Report to Max Loken
+FormID: 000E9914	DN070	20	Find the Treasures of Jamaica Plain
+FormID: 000EB268	InstR02	10	Collect a Flesh Sample
+FormID: 000EB268	InstR02	20	Take the Flesh Sample to Clayton Holdren
+FormID: 000EBE71	MQ00MamaMurphy	10	Bring Jet to Mama Murphy
+FormID: 000EBE71	MQ00MamaMurphy	20	Build Mama Murphy's Chair in Sanctuary
+FormID: 000EBE71	MQ00MamaMurphy	30	Bring Mentats to Mama Murphy
+FormID: 000EBE71	MQ00MamaMurphy	40	Bring Med-X to Mama Murphy
+FormID: 000EBE71	MQ00MamaMurphy	50	Bring Buffout to Mama Murphy
+FormID: 000EBE71	MQ00MamaMurphy	60	Bring Psycho to Mama Murphy
+FormID: 000EC1E9	InstR03_OLD	10	Retrieve a Design Schematic
+FormID: 000EC1E9	InstR03_OLD	20	Take the Design Schematic to Evan Watson
+FormID: 000EC4D9	MS09MiscParsons	10	Investigate <Alias=ParsonsLocation>
+FormID: 000EDCEF	InstR03NEW	100	Retrieve the Blueprints
+FormID: 000EDCEF	InstR03NEW	200	Take the Blueprints to Evan Watson
+FormID: 000EDE28	InstR04	10	Take the Transmitter to the Captured Synth
+FormID: 000EDE28	InstR04	20	Return to Alana Secord
+FormID: 000F0D8C	InstR05	10	Talk to Mayor McDonough
+FormID: 000F0D8C	InstR05	20	Take the Mayor's Report to Justin Ayo
+FormID: 000F491A	MS09MiscJackReward	10	Talk to Jack Cabot about the artifact
+FormID: 000F7933	InstR01	10	Eliminate the Feral Ghouls
+FormID: 000F7933	InstR01	20	Return to Alan Binet
+FormID: 000FAC86	MQ202NickPostSurgery	10	Talk to Nick
+FormID: 000FCB15	DN143	100	Explore Vault 75
+FormID: 000FCB15	DN143	200	Find Lab Access Card
+FormID: 000FCB15	DN143	300	Access Laboratory Area
+FormID: 000FCB15	DN143	400	Explore Laboratory
+FormID: 000FCB15	DN143	500	Find Admin Access Card
+FormID: 000FCB15	DN143	600	Access Admin Area
+FormID: 000FCB15	DN143	700	Explore Admin Area
+FormID: 000FDC8C	BoS303	10	Speak to Proctor Ingram
+FormID: 000FDC8C	BoS303	20	Fly to Mass Fusion
+FormID: 000FDC8C	BoS303	30	Inform the Institute 
+FormID: 000FDC8C	BoS303	40	Jump to Mass Fusion's Roof
+FormID: 000FDC8C	BoS303	50	Locate the Beryllium Agitator
+FormID: 000FDC8C	BoS303	70	Retrieve the Executive KeyCard
+FormID: 000FDC8C	BoS303	80	Proceed to the Reactor Level
+FormID: 000FDC8C	BoS303	90	(Optional) Restore Power to the Elevator
+FormID: 000FDC8C	BoS303	100	Enter the Reactor Chamber
+FormID: 000FDC8C	BoS303	110	Unlock the Reactor
+FormID: 000FDC8C	BoS303	120	Take the Beryllium Agitator
+FormID: 000FDC8C	BoS303	130	Eliminate Reactor Level Security
+FormID: 000FDC8C	BoS303	140	Exit Mass Fusion
+FormID: 000FDC8C	BoS303	150	(Optional) Assist Brotherhood Forces in the Lobby
+FormID: 000FDC8C	BoS303	160	Return to Boston Airport
+FormID: 000FDC8C	BoS303	170	Speak to Proctor Ingram
+FormID: 001069A9	DialogueDrumlinDiner	10	Talk to Trudy
+FormID: 001069A9	DialogueDrumlinDiner	20	Kill Trudy
+FormID: 001069A9	DialogueDrumlinDiner	25	Kill Patrick
+FormID: 001069A9	DialogueDrumlinDiner	30	Kill Wolfgang
+FormID: 001069A9	DialogueDrumlinDiner	35	Kill Simone
+FormID: 001069A9	DialogueDrumlinDiner	100	Talk to Wolfgang
+FormID: 001069A9	DialogueDrumlinDiner	200	Talk to Trudy
+FormID: 00106F05	MinRecruit03	10	Travel to Abernathy Farm
+FormID: 00106F05	MinRecruit03	20	Retrieve Mary's Locket in USAF Satellite Station Olivia
+FormID: 00106F05	MinRecruit03	30	Report your success to Blake Abernathy
+FormID: 00106F05	MinRecruit03	40	Talk to Preston Garvey
+FormID: 001073CE	DN138	0	Repair Pipes <Global=DN138LeakCount>/<Global=DN138LeakCountMax>
+FormID: 001073CE	DN138	10	Talk to Sully Mathis
+FormID: 001073CE	DN138	20	Start the Pump
+FormID: 001073CE	DN138	30	Talk to Sully Mathis
+FormID: 00107A1C	BoS302B	10	Speak to Lancer-Captain Kells
+FormID: 00107A1C	BoS302B	20	Enter Old North Church
+FormID: 00107A1C	BoS302B	30	Kill Doctor Carrington
+FormID: 00107A1C	BoS302B	40	Breach the door to the lower levels
+FormID: 00107A1C	BoS302B	50	Kill Glory
+FormID: 00107A1C	BoS302B	60	Kill Tinker Tom
+FormID: 00107A1C	BoS302B	70	Kill Deacon
+FormID: 00107A1C	BoS302B	80	Kill Desdemona
+FormID: 00107A1C	BoS302B	90	Reprogram P.A.M.
+FormID: 00107A1C	BoS302B	100	Destroy P.A.M.
+FormID: 00107A1C	BoS302B	110	Report to Lancer-Captain Kells
+FormID: 00108EC0	FFGoodneighbor01	10	Sit in the Memory Lounger
+FormID: 00108EC0	FFGoodneighbor01	20	Relive Your Memories
+FormID: 00108EC0	FFGoodneighbor01	30	Talk to Irma
+FormID: 00109D73	MinRadiantOwned10ChangeLocOnly	20	Decide what to do about suspected synth
+FormID: 00109D73	MinRadiantOwned10ChangeLocOnly	40	Talk to Preston Garvey
+FormID: 0010B654	FFGoodneighbor02	10	Go to Boston Public Library
+FormID: 0010B654	FFGoodneighbor02	20	Return the Overdue Book
+FormID: 0010B654	FFGoodneighbor02	25	Explore the Library
+FormID: 0010B654	FFGoodneighbor02	30	Clear the Library of Super Mutants
+FormID: 0010B654	FFGoodneighbor02	40	Return to Daisy
+FormID: 0010C64A	MQ302Min	100	Talk to Preston Garvey
+FormID: 0010C64A	MQ302Min	200	Talk to Sturges
+FormID: 0010C64A	MQ302Min	250	Gain access to the Institute
+FormID: 0010C64A	MQ302Min	300	Activate Institute Relay
+FormID: 0010C64A	MQ302Min	350	Talk to Preston Garvey
+FormID: 0010C64A	MQ302Min	400	Reach Institute Reactor
+FormID: 0010C64A	MQ302Min	430	Use Terminal to Override Institute Lockdown
+FormID: 0010C64A	MQ302Min	450	(Optional) Issue Evacuation Order
+FormID: 0010C64A	MQ302Min	475	Reach the Reactor
+FormID: 0010C64A	MQ302Min	500	Plant Fusion Pulse Charge Inside Reactor
+FormID: 0010C64A	MQ302Min	600	Talk to Preston Garvey
+FormID: 0010C64A	MQ302Min	700	Talk to Sturges
+FormID: 0010C64A	MQ302Min	710	Talk to Shaun
+FormID: 0010C64A	MQ302Min	740	Step Into the Relay
+FormID: 0010C64A	MQ302Min	800	Use the Detonator
+FormID: 0010C64A	MQ302Min	900	Talk to Preston Garvey
+FormID: 0010C64B	MQ302BoS	300	Talk to Elder Maxson
+FormID: 0010C64B	MQ302BoS	400	Reach Institute Reactor
+FormID: 0010C64B	MQ302BoS	430	Use Terminal to Override Institute Lockdown
+FormID: 0010C64B	MQ302BoS	450	(Optional) Issue Evacuation Order
+FormID: 0010C64B	MQ302BoS	475	Reach the Reactor
+FormID: 0010C64B	MQ302BoS	500	Plant Fusion Pulse Charge Inside Reactor
+FormID: 0010C64B	MQ302BoS	600	Talk to Elder Maxson
+FormID: 0010C64B	MQ302BoS	700	Talk to Proctor Ingram
+FormID: 0010C64B	MQ302BoS	710	Talk to Shaun
+FormID: 0010C64B	MQ302BoS	740	Step Into the Relay
+FormID: 0010C64B	MQ302BoS	800	Activate Detonator
+FormID: 0010C64B	MQ302BoS	900	Talk to Elder Maxson
+FormID: 0010C64C	MQ302RR	100	Talk to Desdemona
+FormID: 0010C64C	MQ302RR	320	Talk to Z1-14
+FormID: 0010C64C	MQ302RR	325	Kill everyone in the Relay Control Room
+FormID: 0010C64C	MQ302RR	350	Talk to Desdemona
+FormID: 0010C64C	MQ302RR	400	Reach the Reactor
+FormID: 0010C64C	MQ302RR	430	Use Terminal to Override Institute Lockdown
+FormID: 0010C64C	MQ302RR	450	(Optional) Issue Evacuation Order
+FormID: 0010C64C	MQ302RR	475	Reach the Reactor
+FormID: 0010C64C	MQ302RR	500	Plant Fusion Pulse Charge Inside Reactor
+FormID: 0010C64C	MQ302RR	600	Talk to Desdemona
+FormID: 0010C64C	MQ302RR	700	Speak to Tinker Tom
+FormID: 0010C64C	MQ302RR	710	Speak to Shaun
+FormID: 0010C64C	MQ302RR	740	Step Into the Relay
+FormID: 0010C64C	MQ302RR	800	Use the Detonator
+FormID: 0010C64C	MQ302RR	900	Talk to Desdemona
+FormID: 0010CB94	FFGoodneighbor03	10	Bring a HalluciGen Canister to Fred Allen
+FormID: 0010D5A7	FFGoodneighbor04	10	Clear out the Goodneighbor Warehouses
+FormID: 0010D5A7	FFGoodneighbor04	20	Return to Whitechapel Charlie
+FormID: 0010E695	DN036_Post	10	Report Phyllis Daily to the SRB
+FormID: 0010E695	DN036_Post	20	Tell Desdemona about Phyllis Daily
+FormID: 0011132D	RETreasureHuntSC06_DN070	40	Look for the gun in <Alias=Dungeon>
+FormID: 001120DE	FFGoodneighbor05	10	Investigate Pickman Gallery
+FormID: 001120DE	FFGoodneighbor05	20	Return to Hancock
+FormID: 001125A6	WorkshopRaiderAttack03	10	Help defend <Alias=myLocation>
+FormID: 001125E2	WorkshopRaiderAttack01	10	Help defend <Alias=myLocation>
+FormID: 001125E3	WorkshopRaiderAttack02	10	Help defend <Alias=myLocation>
+FormID: 001160B3	FFGoodneighbor06	10	Talk to MacCready
+FormID: 0011B36E	MinRecruit00	10	Talk to the settlers at <Alias=ActualLocation>
+FormID: 0011B36E	MinRecruit00	20	Kill the raiders in <Alias=RaiderDungeon>
+FormID: 0011B36E	MinRecruit00	30	Report your success to settlers at <Alias=ActualLocation>
+FormID: 0011B36E	MinRecruit00	40	Talk to Preston Garvey
+FormID: 0012221F	FFBunkerHill03	200	Rescue any caravan survivors
+FormID: 0012221F	FFBunkerHill03	300	Kill Zeller
+FormID: 0012221F	FFBunkerHill03	400	Report back to Kessler
+FormID: 00122220	FFBunkerHill01	100	Find any trace of Brent Savoldi
+FormID: 00122220	FFBunkerHill01	200	Return hat to Joe Savoldi
+FormID: 00122221	FFBunkerHill02	100	Clear the Training Yard
+FormID: 00122221	FFBunkerHill02	200	Report back to Deb
+FormID: 001243D6	DN083_Barney	5	Kill the Mirelurks (<Global=DN083_MirelurkX>/<Global=DN083_MirelurkY>)
+FormID: 001243D6	DN083_Barney	6	Talk to Barney
+FormID: 001243D6	DN083_Barney	15	Meet Barney in his Bunker
+FormID: 001243D6	DN083_Barney	30	Activate Barney's Turrets (<Global=DN083_TurretX>/<Global=DN083_TurretY>)
+FormID: 001243D6	DN083_Barney	40	Report back to Barney
+FormID: 001323AB	FFGoodneighbor07	10	Talk to Hancock
+FormID: 001323AB	FFGoodneighbor07	20	Confront Bobbi
+FormID: 001323AB	FFGoodneighbor07	55	Report back to Hancock
+FormID: 001323AB	FFGoodneighbor07	80	Talk to Hancock
+FormID: 001338B9	V81_04	100	Talk to Katy
+FormID: 001338B9	V81_04	200	Talk to kids when they are in class
+FormID: 001357DA	WorkshopSynthInfiltrator01	10	Help defend <Alias=myLocation>
+FormID: 001357DB	WorkshopSynthInfiltrator02	10	Help defend <Alias=myLocation>
+FormID: 00136329	Min207	10	Insert Network Scanner holotape into Institute terminal
+FormID: 00136329	Min207	20	Retrieve the Network Scanner holotape
+FormID: 00136329	Min207	100	Give holotape to Sturges
+FormID: 0013A33D	RRR08	101	Kill <Alias=Boss01>
+FormID: 0013A33D	RRR08	102	Kill <Alias=Boss02>
+FormID: 0013A33D	RRR08	103	Kill <Alias=Boss03>
+FormID: 0013A33D	RRR08	104	Kill <Alias=Boss04>
+FormID: 0013A33D	RRR08	105	Kill <Alias=Boss05>
+FormID: 0013A33D	RRR08	106	Kill <Alias=Boss06>
+FormID: 0013A33D	RRR08	200	Return to Desdemona
+FormID: 0013C640	BoS204	10	Insert Network Scanner holotape into Institute terminal
+FormID: 0013C640	BoS204	20	Retrieve the Network Scanner holotape
+FormID: 0013C640	BoS204	100	Give holotape to Proctor Ingram
+FormID: 0014182C	FFDiamondCityWanted01	10	Clear the Raiders from <Alias=Dungeon>
+FormID: 0014191C	FFDiamondCity02	10	Visit your Home in Diamond City
+FormID: 00142434	FFDiamondCity04	10	Clean the Water Supply  (<Global=FFDiamondCity04Count>/<Global=FFDiamondCity04Total>)
+FormID: 00142434	FFDiamondCity04	20	Return to Sheng
+FormID: 001437DB	FFDiamondCityWantedPosterMisc	10	Check Out the Wanted Poster
+FormID: 00143A15	MS17MiscCovenant	10	Investigate <Alias=MyLocation>
+FormID: 00144F6E	BoS100MiscCambridge	10	Investigate the Brotherhood of Steel outpost
+FormID: 00145722	BoSM04Postquest	15	Tell Dr. Li about Virgil
+FormID: 00145722	BoSM04Postquest	16	Give Virgil's Letter to Dr. Li
+FormID: 00145F1A	RRR09	100	Rescue the synth
+FormID: 00145F1A	RRR09	200	Report back to Carrington
+FormID: 00146C84	MS10b	15	(optional) Get the key
+FormID: 00146C84	MS10b	100	Investigate radio broadcast
+FormID: 00146C84	MS10b	150	Free Rex
+FormID: 00146C84	MS10b	200	Unlock cage
+FormID: 00146C84	MS10b	320	Follow Strong
+FormID: 00146C84	MS10b	410	Get Rex to Safety
+FormID: 00146C84	MS10b	1000	Talk to Rex Goodman
+FormID: 001488F7	MS19MiscVault81	10	Investigate <Alias=MyLocation>
+FormID: 00148BAC	MS10MiscTrinityTower	10	Investigate <Alias=MyLocation>
+FormID: 0014A34A	RRR10	100	Eliminate the Brotherhood Patrol
+FormID: 0014A34A	RRR10	200	Report back to PAM
+FormID: 0014B02C	Inst300	10	Meet Doctor Filmore
+FormID: 0014B02C	Inst300	20	Meet Doctor Ayo
+FormID: 0014B02C	Inst300	30	Meet Doctor Holdren
+FormID: 0014B02C	Inst300	40	Meet Doctor Li
+FormID: 0014B717	MS05B	25	Listen to Private Hart's holotape
+FormID: 0014B717	MS05B	50	Explore the museum
+FormID: 0014B717	MS05B	150	Take the egg
+FormID: 0014B717	MS05B	155	Find the egg's destination
+FormID: 0014B717	MS05B	157	Listen to Sergeant Lee's holotape
+FormID: 0014B717	MS05B	250	Complete delivery of the egg
+FormID: 0014B717	MS05B	251	Return the egg to its nest
+FormID: 0014B717	MS05B	252	Return the egg to its nest
+FormID: 0014B718	MS05MiscSalem	10	Investigate the Museum of Witchcraft
+FormID: 0014B718	MS05MiscSalem	50	Investigate the butchered body
+FormID: 0014CE61	MS11MiscCharleston	10	Investigate the sailing ship
+FormID: 0014CE64	DN079MiscObj	10	Investigate  <Alias=MyLocation>
+FormID: 00150577	RRR11	100	Eliminate the Vertibird
+FormID: 00150577	RRR11	200	Report back to PAM
+FormID: 001533A9	MinRadiantOwned11	10	Travel to <Alias=ActualLocation>
+FormID: 001533A9	MinRadiantOwned11	20	Build defenses (<Global=MinRadiantOwned08SafetyPercent>%)
+FormID: 001533A9	MinRadiantOwned11	30	Help defend <Alias=ActualLocation>
+FormID: 001533A9	MinRadiantOwned11	35	Talk to people of <Alias=ActualLocation>
+FormID: 001533A9	MinRadiantOwned11	40	Talk to Preston Garvey
+FormID: 00157577	MinRecruit08	20	Kill the Courser
+FormID: 00157577	MinRecruit08	40	Talk to Preston Garvey
+FormID: 00157CA5	MinRecruit04	10	Talk to the settlers at <Alias=ActualLocation>
+FormID: 00157CA5	MinRecruit04	20	Kill the Super Mutants in <Alias=Dungeon>
+FormID: 00157CA5	MinRecruit04	30	Report your success to settlers at <Alias=ActualLocation>
+FormID: 00157CA5	MinRecruit04	40	Talk to Preston Garvey
+FormID: 0015BD39	InstMassFusion	5	Talk to Justin Ayo
+FormID: 0015BD39	InstMassFusion	10	Speak with Allie Filmore
+FormID: 0015BD39	InstMassFusion	20	Relay to Mass Fusion
+FormID: 0015BD39	InstMassFusion	30	Inform the Brotherhood
+FormID: 0015BD39	InstMassFusion	60	Locate the Beryllium Agitator
+FormID: 0015BD39	InstMassFusion	70	Retrieve the Executive Keycard
+FormID: 0015BD39	InstMassFusion	80	Proceed to the Reactor Level
+FormID: 0015BD39	InstMassFusion	90	(Optional) Restore Power to the Elevator
+FormID: 0015BD39	InstMassFusion	100	Retrieve the Beryllium Agitator
+FormID: 0015BD39	InstMassFusion	110	Unlock the Reactor
+FormID: 0015BD39	InstMassFusion	120	Take the Beryllium Agitator
+FormID: 0015BD39	InstMassFusion	130	Eliminate Reactor Level Security
+FormID: 0015BD39	InstMassFusion	140	Exit Mass Fusion
+FormID: 0015BD39	InstMassFusion	150	(Optional) Assist Institute Forces in the Lobby
+FormID: 0015BD39	InstMassFusion	160	Speak with Allie Filmore
+FormID: 0015F03F	MinRecruit05	10	Talk to the settlers at <Alias=ActualLocation>
+FormID: 0015F03F	MinRecruit05	20	Secure the workshop at <Alias=HostileWorkshopLocation>
+FormID: 0015F03F	MinRecruit05	30	Report your success to settlers at <Alias=ActualLocation>
+FormID: 0015F03F	MinRecruit05	40	Talk to Preston Garvey
+FormID: 0015F040	MinRecruit06	20	Clear <Alias=HostileWorkshopLocation>
+FormID: 0015F040	MinRecruit06	30	Build and activate Recruitment Radio Beacon
+FormID: 0015F040	MinRecruit06	40	Talk to Preston Garvey
+FormID: 00160409	MinRadiantOwned05	10	Travel to <Alias=ActualLocation>
+FormID: 00160409	MinRadiantOwned05	20	Build defenses (<Global=MinRadiantOwned05SafetyPercent>%)
+FormID: 00160409	MinRadiantOwned05	30	Help defend <Alias=ActualLocation>
+FormID: 00160409	MinRadiantOwned05	35	Talk to people of <Alias=ActualLocation>
+FormID: 00160409	MinRadiantOwned05	40	Talk to Preston Garvey
+FormID: 00161D1D	MinRadiantOwned06ChangeLocOnly	10	Travel to <Alias=ActualLocation>
+FormID: 00161D1D	MinRadiantOwned06ChangeLocOnly	20	Build <Alias=TroubleName> in <Alias=ActualLocation> (<Global=MinRadiantOwned06Percent>%)
+FormID: 00161D1D	MinRadiantOwned06ChangeLocOnly	30	Report your success
+FormID: 00161D1D	MinRadiantOwned06ChangeLocOnly	40	Talk to Preston Garvey
+FormID: 00162F44	MinRadiantOwned07ChangeLocOnly	10	Travel to <Alias=ActualLocation>
+FormID: 00162F44	MinRadiantOwned07ChangeLocOnly	20	Build/Repair a generator (<Global=MinRadiantOwned07Percent>%)
+FormID: 00162F44	MinRadiantOwned07ChangeLocOnly	25	(Optional) Locate 2 Gears in <Alias=Dungeon>
+FormID: 00162F44	MinRadiantOwned07ChangeLocOnly	30	Report your success
+FormID: 00162F44	MinRadiantOwned07ChangeLocOnly	40	Talk to Preston Garvey
+FormID: 00164167	MinRecruit09	10	Talk to the settlers at <Alias=CheckpointLocation>
+FormID: 00164167	MinRecruit09	20	Secure the workshop at <Alias=HostileWorkshopLocation>
+FormID: 00164167	MinRecruit09	30	Report your success to settlers at <Alias=CheckpointLocation>
+FormID: 00164167	MinRecruit09	40	Talk to Preston Garvey
+FormID: 0016454E	COMCurieQuest	100	Find someone to help Curie
+FormID: 0016454E	COMCurieQuest	150	Bring Curie to Doctor Amari
+FormID: 0016454E	COMCurieQuest	200	Wait for Doctor Amari
+FormID: 0016454E	COMCurieQuest	300	Talk to the caretaker
+FormID: 0016454E	COMCurieQuest	400	Watch the download procedure
+FormID: 0016454E	COMCurieQuest	500	Talk to Curie
+FormID: 001666C5	COMCaitQuest	5	Bring Cait to Vault 95
+FormID: 001666C5	COMCaitQuest	10	Locate the Clean Room
+FormID: 001666C5	COMCaitQuest	20	Speak to Cait
+FormID: 001666C5	COMCaitQuest	30	Wait for Cait to get into the Clean Room Chair
+FormID: 001666C5	COMCaitQuest	40	Cure Cait's Addiction
+FormID: 001666C5	COMCaitQuest	50	Speak to Cait
+FormID: 0016D036	InstKickOut	10	Return to the Institute
+FormID: 0016D036	InstKickOut	20	Escape the Institute
+FormID: 00173ED9	BoS304	20	Speak to Proctor Ingram
+FormID: 00173ED9	BoS304	30	Plug In Beryllium Agitator
+FormID: 00173ED9	BoS304	40	Activate Power Transfer Switch
+FormID: 00173ED9	BoS304	50	Follow Liberty Prime
+FormID: 00173ED9	BoS304	60	Defend Liberty Prime
+FormID: 00173ED9	BoS304	70	Enter the Institute
+FormID: 001764DF	FFDiamondCity10	10	Confront Mayor McDonough
+FormID: 001764DF	FFDiamondCity10	20	(Optional) Save Danny Sullivan
+FormID: 0017D18C	DialogueGoodneighborRufus	10	Find the Brewing Machine
+FormID: 0017D18C	DialogueGoodneighborRufus	20	Send the Drinkin' Buddy to the Hotel Rexford
+FormID: 0017D18C	DialogueGoodneighborRufus	21	(Optional) Keep Drinkin' Buddy for yourself
+FormID: 0017D18C	DialogueGoodneighborRufus	22	(Optional) Send the Drinkin' Buddy to the Hotel Rexford
+FormID: 0017D18C	DialogueGoodneighborRufus	30	Follow Drinkin' Buddy to the Hotel Rexford
+FormID: 0017D18C	DialogueGoodneighborRufus	31	Talk to the staff of the Hotel Rexford
+FormID: 0017D18C	DialogueGoodneighborRufus	32	Talk to Rufus
+FormID: 0017D18C	DialogueGoodneighborRufus	33	(Optional) Sell Drinkin' Buddy to Rufus
+FormID: 0017D18C	DialogueGoodneighborRufus	40	Bring Drinkin' Buddy inside the Hotel Rexford
+FormID: 0017D18C	DialogueGoodneighborRufus	50	Collect your reward from Rufus
+FormID: 0018127D	FFDiamondCityWanted04	10	Clear the Super Mutants from <Alias=Dungeon>
+FormID: 00181280	FFDiamondCityWanted07	10	Clear the Feral Ghouls from <Alias=Dungeon>
+FormID: 001826BF	BoS000	10	Investigate the Brotherhood of Steel airship
+FormID: 001826BF	BoS000	20	Proceed to Cambridge Police Station
+FormID: 00182EAE	BoS305	10	Return to the Prydwen
+FormID: 00182EAE	BoS305	20	Speak to Elder Maxson
+FormID: 001845F7	RRR06	100	Pick up the dead drop
+FormID: 001845F7	RRR06	200	Clear hostiles at <Alias=EnemyLocation>
+FormID: 001845F7	RRR06	300	Report back to Desdemona
+FormID: 00186642	MinRecruit07	10	Talk to the settlers at <Alias=ActualLocation>
+FormID: 00186642	MinRecruit07	20	Kill the ghouls in <Alias=GhoulDungeon>
+FormID: 00186642	MinRecruit07	30	Report your success to settlers at <Alias=ActualLocation>
+FormID: 00186642	MinRecruit07	40	Talk to Preston Garvey
+FormID: 00186A08	MinRadiantOwned08	10	Travel to <Alias=ActualLocation>
+FormID: 00186A08	MinRadiantOwned08	20	Build defenses (<Global=MinRadiantOwned08SafetyPercent>%)
+FormID: 00186A08	MinRadiantOwned08	30	Help defend <Alias=ActualLocation>
+FormID: 00186A08	MinRadiantOwned08	35	Talk to people of <Alias=ActualLocation>
+FormID: 00186A08	MinRadiantOwned08	40	Talk to Preston Garvey
+FormID: 00186C79	RRR07	100	Eliminate the Courser
+FormID: 00186C79	RRR07	200	Report back to PAM
+FormID: 0018817F	MS07cPostQuest	5	Talk to Nick
+FormID: 0018F961	MS02MiscObjective	100	Investigate sea monster rumor
+FormID: 0019E746	RRAct3Lost	100	Report to Desdemona
+FormID: 0019E746	RRAct3Lost	200	Find the Minutemen
+FormID: 0019E746	RRAct3Lost	210	Talk to Preston
+FormID: 001A001C	Min00	10	Find the Last Minutemen
+FormID: 001A001C	Min00	60	Enter the Museum
+FormID: 001A001C	Min00	70	(Optional) Take the Laser Musket
+FormID: 001A001C	Min00	80	Locate the Trapped Settlers
+FormID: 001A001C	Min00	85	Kill the Raiders (<Global=MQ102FirstRaiderCount>/<Global=MQ102FirstRaiderTotal>)
+FormID: 001A001C	Min00	86	Talk to Preston Garvey
+FormID: 001A001C	Min00	87	Unlock the Security Gate
+FormID: 001A001C	Min00	90	Get a Fusion Core
+FormID: 001A001C	Min00	105	Put the Fusion Core in the Power Armor
+FormID: 001A001C	Min00	110	Enter the Power Armor
+FormID: 001A001C	Min00	115	Grab the Minigun
+FormID: 001A001C	Min00	120	Clear Concord of Hostiles
+FormID: 001A001C	Min00	140	Report back to Preston
+FormID: 001A001C	Min00	150	Join Preston Garvey in Sanctuary
+FormID: 001B2B08	BoSFFMaster	10	Collect Technical Documents for Proctor Quinlan
+FormID: 001B2B08	BoSFFMaster	20	Secure Viable Blood Samples for Scribe Neriah
+FormID: 001B2B08	BoSFFMaster	30	Collect Reactor Coolant for Proctor Ingram
+FormID: 001DA041	DNMessageInABottleQuest	1	Message In a Bottle - Trapped For Days
+FormID: 001DA041	DNMessageInABottleQuest	2	Message In a Bottle - Predator Becomes Prey
+FormID: 001DA041	DNMessageInABottleQuest	3	Message in a Bottle - Not Going Well
+FormID: 001DA041	DNMessageInABottleQuest	4	Message in a Bottle - Need a Hand
+FormID: 001DA041	DNMessageInABottleQuest	5	Message in a Bottle - Difficult to Kill
+FormID: 001DA041	DNMessageInABottleQuest	6	Message in a Bottle - X Marks the Spot
+FormID: 00219B92	DN120Misc	10	Retrieve the Key from the Front Desk Attendant
+FormID: 00224D29	MS14Misc	10	Talk to the Bobrov Brothers
+FormID: 002269A9	BoSStoragePointer	10	Open your personal storage container
+FormID: 002407D0	WorkshopMirelurkAttack_SI	10	Help defend <Alias=myLocation>
+FormID: 0024918C	WorkshopSuperMutantAttack02	10	Help defend <Alias=myLocation>
+FormID: 0000080E	HC_Manager	10	Heal your Companion
+FormID: 0000080E	HC_Manager	20	Repair your Companion
+FormID: 0024A38D	VRWorkshopShared_AttackQuest	0	Eliminate the hostiles

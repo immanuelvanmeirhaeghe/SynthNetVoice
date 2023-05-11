@@ -1,0 +1,1824 @@
+The package arrives at midnight.
+
+<font face='$HandwrittenFont'>
+Pickman was here.
+
+Find me if you dare.
+</font>
+
+<font size='18'>Manifest said it was a Type-V Laser Defense Grid. Practically military grade. Whatever's down there, the security's the real deal.
+
+Should be easy enough to let the others in, then reactivate the system. Let the turrets deal with them. No need to get my hands dirty.</font>
+
+<font face='$HandwrittenFont'>
+Blueprints
+</font>
+
+
+<font size='18'>Red! It's Lily!
+
+I don't know how much longer they're going to let me live if you keep sending these lousy supplies. Deviled eggs? Come on!
+
+My life is on the line here, Red.
+
+I heard them talking about what they're gonna do to me if the next shipment doesn't have better stuff. It ain't good.
+
+No more eggs,
+Lily
+</font>
+
+<font face='$MAIN_Font' size='30'><p align='center'>Lake Quannapowitt
+Bass Fishing Tournament</p></font><font face='$MAIN_Font' size='22'><p align='center'>July 4th, 2077
+7am-4pm</p></font>
+<font face='$MAIN_Font' size='18'><p align='center'> Sponsored by:
+General Atomics International
+The City of Boston</p></font>
+<font face='$MAIN_Font' size='18'>
+Celebrate Independence Day at beautiful Lake Quannapowitt! Join us for fun, friendly competition and BIG CASH PRIZES. Or take in the sights from the nearby General Atomics Galleria. A great getaway for the entire family!
+</font>
+
+<p align="left">Case: Eddie Winter
+Self-inflicted Ghoul, criminal kingpin
+Age: 200+
+Offenses: Too many to count
+
+Location
+- Underground bunker, Andrew Station, sealed with a ten digit code
+
+The holotapes
+- Holotapes hold the key to Winter's bunker
+
+- Each tape has one piece of the entry code
+
+- Ten tapes total (nine left)
+
+- Cambridge Police evidence terminal, best lead for finding other tapes
+
+- Possible remaining holotape locations: Commonwealth Police departments, BADTFL HQ
+</p>
+
+<font face='$MAIN_Font' size='35'>22</font>
+
+Hey kid,
+
+If you're reading this, I just wanted to say thanks. I don't know what I'm going to do next, but I need to move on.
+
+Sorry about the gun, and thanks for helping me through a hard time.
+
+- Phyllis Daily
+
+<font size='18'>Have you been in my locker?
+
+Clarke, what's going on? After all we've been through, I can't believe you'd do something like this.
+
+Look, this is too much, even from you. Touch my things again, and I'm reporting you to the Captain.</font>
+
+Campbell,
+
+I heard from Mitchell that there's a load of Mentats at that school near West Roxbury. Some story about closets full of Mentats or something. I know there's a bunch of Super Mutants in the area, but I have a plan. See, we sneak into that school at night, get our hands on some of those chems, and then we'll be so smart we can figure out how to get out no problem! Trust me!
+
+Purchase Order
+
+This Power Armor is certified pre-owned by Commonwealth Weaponry. It is sold as-is. Commonwealth Weaponry is not liable for any deficiencies, defects, or after-sale damage.
+
+<p align="left">
+<font face='$HandwrittenFont'>
+Thursday, 8th February, 1894. Off Cape Cod, aboard SS Wakeful.
+
+I'm finally away. Emogene and Wilhelmina came to see me off, Emogene begging me not to go, as usual - poor girl, she takes these partings hard. Jack wasn't there, of course. He thinks I'm making a laughing-stock of the whole family with these expeditions - has no time for what he calls "ancient superstitions." No matter. This time I'll return with proof that even Jack will not be able to deny.
+
+
+Saturday, 10th February, 1894. In the Atlantic, aboard SS Wakeful. 
+
+The weather is fine and the captain promises a quick crossing to Lisbon. The red tape involved in organizing this expedition tried my patience almost to the breaking point, but I'm sure it was better to obtain the necessary permits from the Omani authorities through the State Department. I can only hope that my sheaf of documents (and ready cash) will be enough to placate the local governor when I arrive.
+
+
+Wednesday, 21st February, 1894. In the western Mediterranean, aboard SS Wakeful. 
+
+So far so good. Uneventful crossing. Metternich was waiting for us in Lisbon - with the welcome news that he had perfected his electrical sensing apparatus, which is now safely on board in its crates. If it works as well as he claims, this may save us weeks or even months of excavation work.
+
+
+Monday, 5th March, 1894. Suez, Egypt.
+
+Still waiting to finish hiring our team of diggers. I am beside myself with impatience to be on my way - we are so close now - but I know from long experience that we will have better luck with an experienced Egyptian team than relying on the locals.
+
+
+Wednesday, 14th March, 1894. Salalah, Oman.
+
+At last! We docked yesterday and have been unloading at a feverish pace. Any more delays and we will be in danger of having to postpone until the summer heat has passed.
+
+
+Friday, 16th March, 1894. Near Wadi Aydam, Oman.
+
+We are on our way. Nothing more stands in my way but the impenetrable desert and the secrets of the ages. Ha! I welcome those challenges - they seem like child's play after the endless delays and paper-shuffling bureaucrats I've had to overcome to get here.
+
+
+Thursday, 29th March, 1894. Empty Quarter, Arabia.
+
+We have reached the spot without incident. Some superstitious grumbling from our local guide which I take to be a good sign. Tomorrow we see if Metternich's apparatus works. If not, we begin digging in the traditional way.
+
+
+Saturday, 30th March, 1894. Empty Quarter, Arabia.
+
+Metternich's apparatus has been balky - sand in its delicate workings, no doubt - but he has obtained a favorable reading in a depression to the south. Heat during the day is tremendous. We'll set to work tomorrow and see what we see.
+
+
+Monday, 2nd April, 1894. Empty Quarter, Arabia.
+
+Nothing yet at the southern depression. Metternich swears that it wasn't a false reading. 2 more days and then I'll have to begin a search grid across the whole site, as disappointing as that will be.
+
+
+Tuesday, 3rd April, 1894. Empty Quarter, Arabia.
+
+Success! Late this afternoon, the diggers struck worked stone. Apparently the edge of a large circular structure. More trouble from the guide - the wisdom of not hiring the diggers locally now even more apparent, as they pay little attention to him.
+
+Friday, 6th April, 1894. Ubar, Empty Quarter, Arabia.
+
+I'm now convinced we have found Ubar itself! We've uncovered several fragmentary inscriptions, with runes that match the ancient texts. We've made excellent progress clearing part of what appears to be a monumental plaza. 
+
+
+Wednesday, 18th April, 1894. Ubar, Empty Quarter, Arabia.
+
+All work has stopped - sandstorm, one of the worst I've ever experienced. We are huddled in our tents in the lee of one of the large outcroppings and must hope to ride it out. The darkness is complete although it is mid-morning.
+
+
+Friday, 20th April, 1894. Ubar, Empty Quarter, Arabia.
+
+Sandstorm continues for a 3rd day. Like nothing anyone has ever seen. The guide is becoming very troublesome - some of the diggers are beginning to listen to his wild tales of ancient curses and forbidden secrets. Even the normally phlegmatic Metternich is beginning to show signs of cracking under the strain.
+
+
+Saturday, 21st April, 1894. Ubar, Empty Quarter, Arabia.
+
+The sandstorm is over, but two weeks of work has been undone - the area we had cleared is now buried under several feet of new sand. The guide disappeared in the night - I won't miss him, but the diggers are even more unsettled.
+
+
+Thursday, May 3rd, 1894. Ubar, Empty Quarter, Arabia.
+
+We've located what must be the foundations of the Great Temple! So far nothing but stone and rubble, but something must have survived. Weather getting worse by the day. Metternich talking again of resuming work in the winter, but I won't hear of it. Not when we're this close.
+
+
+Sunday, May 13th, 1894. Ubar, Empty Quarter, Arabia.
+
+I must record everything, while it's fresh in my mind. Although it's hard to concentrate with the crown right here in front of me. It's almost unbelievable, even to me, that I hold in my hands an artifact so clearly not made by any human civilization. But let me set down how it happened as clearly as I can.
+
+We had worked for at least a week to clear the shaft beneath the Great Temple - even the diggers had caught the excitement. Then we hit solid stone - a cyclopean block (series of blocks, as it turned out) obstructing the tunnel, clearly deliberately sealed by the builders. We almost despaired of getting through - 3 days of laborious pick-work - I wouldn't risk explosives here of all places! - then, breakthrough into darkness.
+
+I was first in - the dust of ages covered everything - clearly a burial crypt - sarcophagus at one end of the chamber. We lifted the lid, and inside - even I fell to my knees in shock. The diggers that were helping us fled; Metternich white-faced, I feared he was having a heart attack (luckily no).
+
+We'll make a full catalogue of the tomb in the morning. I ordered it sealed up overnight - not that I really believe any of the diggers would dare to enter it again, but better safe than sorry. I removed only the crown, reverently, without disturbing the body or any of the other artifacts.
+
+And so - vindication! The crown waits, gleaming as if new-made although I know it is older than any human artifact ever uncovered.
+
+Later:
+
+I now know that this city's name was not Ubar, and that this building was not a temple, and what was beneath it was not a crypt. I have so much to learn, and so much to teach Wilhelmina, and Jack, and Emogene. When we return, we will return together.
+
+
+Monday, May 14th.
+
+Metternich was extremely surprised to see me wearing the crown this morning, and tried to argue with me when I ordered the men to bury everything we've uncovered. It doesn't matter now. The sandstorms will erase all evidence that we were ever here long before anyone can stumble across this site again. And the city's location is now safe with me, until I can return and uncover more of her secrets - when I am ready.
+
+<font face='$MAIN_Font' size='35'>77</font>
+
+Bradlee,
+
+Look, I know you've doubted me since we killed that guy who came into our camp, but this is how we do things. I don't have time to try and figure out if a newcomer is trustworthy or if he's gonna slit all our throats the first night.  I don't see it as a choice. I see a stranger, I kill them. It's for the good of the group.
+
+Skrap Rat
+
+<p align="center">
+
+
+October, 2287
+The Synthetic Truth
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+Noodles. We all eat them. We all love them. And Diamond City's Power Noodles has supplied this sustenance for the past fifteen years. From the stilted mechanical cadence of Takahashi's programmed Japanese, to the fragrant steam that wafts from each bowl, to the scalding tang of each delicious mouthful - the ordering and eating of noodles is but one of many shared human experiences. Or is it?
+
+I was struck by this very question as I sat at the counter of Power Noodles last Wednesday night, just after 5:00 pm, enjoying a dinner I had so many times before. That's when I noticed our very own Mayor McDonough sidle up to a stool, and engage in the very same ritual. Right hand extending. Mouth opening. Teeth chewing. Yes, eating noodles. The shared experience of almost every Diamond City resident.
+
+So it must have also seemed to the residents of Diamond City nearly sixty years ago, on an uncharacteristically warm May evening in 2229, as they sat around this very same counter. But that was before the days of Takahashi and his noodles, when the bar served not noodles, but ice cold Nuka-Colas, frothy beers, and stiff shots of whiskey. The barman's name was Henry, and that night, he facilitated the shared human experiences of drinking, smoking, talking and laughing. That is, until tragedy struck.
+
+There aren't many among us who are even old enough to remember that evening - although some of the city's Ghoul residents certainly could have, had they not been forcibly removed, thanks to Mayor McDonough's anti-Ghoul decree of 2282. But there is one person among us who does remember, distinctly, the events of that evening: respected matriarch Eustace Hawthorne, who recounted her story in a Publick Occurrences exclusive interview.
+
+"Oh, I was there all right. Sitting right at the bar, sure as you're sitting in front of me now. Twenty-two years old or so, and just looking to have a good time. I was safe behind the Wall - we all were - so what was the harm? And let me tell you, that Mr. Carter made it easy. He came into town earlier that day, said he was from out west somewhere. It didn't really matter. What did matter was his smile, and his laugh, and the way he'd make everyone feel at ease. That night, at the bar, we all just sort of crowded around him. Everyone wanted to exchange a word, or hear about the state of the Commonwealth. And Mr. Carter, he was all too happy to oblige. It was just so wonderful. Until it wasn't."
+
+Eustace continued her account of that evening, and the moment when things turned sinister, and the truth about Mr. Carter was revealed.
+
+"We'd been drinking, and carrying on, must have been three hours. Mr. Carter had four or five drinks in that time. He seemed a bit drunk, I guess, like the rest of us. Then something just sort of happened. He was smiling, but the smile sort of went from his face, all in an instant. And then his cheek started twitching, kind of funny. And I remember watching him, clear as if it happened just yesterday. He reached inside his coat, took out a revolver, and then 'Blam!' - He shot Henry, the barman, right in the head. Didn't hesitate, didn't show any emotion - Mr. Carter killed Henry as casually as if he were paying him for a drink. But his cheek never did stop twitching. Let me tell you, all Hell broke loose after that."
+
+What Eustace is describing is, of course, is the infamous event known as the "Broken Mask," when the people of the Commonwealth learned for the first time that the Institute, the shadowy scientific organization responsible for the creation of combat androids, had actually succeeded in creating a model so advanced, it could effortlessly infiltrate human society. Unbeknownst to the people of Diamond City, the Institute had somehow evolved their androids into true synthetic humans. Synths. 
+
+"After he shot Henry, that Mr. Carter shot three or four other people, too. Like I said, all Hell broke loose. The guards came running, they opened fire, and Mr. Carter he kept shooting, and throwing people around left and right. Finally, those guards put him down. Seemed like they had killed a man who had flipped his lid. Gone crazy. And he lay there like a dead crazy man, sure enough. God, it was horrible. But then we saw the plastic and the metal - this was one of them early synths, you see - and we realized it wasn't a man at all. It was then we all knew. The Institute wasn't just 'out there.' The Institute was everywhere now. Among us."
+
+It was never determined precisely why the synth known as Mr. Carter went on his killing spree. Some suggested he had somehow been remotely controlled by the Institute, who wanted to test his combat effectiveness. Still others felt he had simply malfunctioned (a hypothesis supported by the twitching cheek), and was never meant to kill anyone. But at that time, the "why" hardly seemed important. What mattered was that the humans of the Commonwealth had been truly infiltrated by an organization whose intentions and motives were, and still are, a complete mystery - using a model of synth even less advanced than the ones the Institute has in service today.
+
+Which brings us to noodles. Specifically, the noodles consumed by Mayor McDonough last Wednesday night, in the same spot that Mr. Carter the synth went haywire, and mercilessly killed several people - after spending hours sharing an experience the people of Diamond City assumed was reserved for members of the human race. They were wrong.
+
+Are we?
+</p>
+
+<font face='$Terminal_Font'>
+WATTZ ELECTRONICS
+<br>
+BIG FALL BLOWOUT SALE!!!
+<br>
+EVERYTHING MUST GO!!!
+<br>
+Stop by your local store for more details
+</font>
+
+<font face='$HandwrittenFont'>
+Dear Diary,
+
+I finally told them tonight, and it was bad. Real bad. Dad was shouting, telling me I should be ashamed, that I had to get out of the house. Mom just cried, and somehow that hurt worse than anything else. She didn't say a word, not even when I packed my things. I can't go to John - he doesn't even know yet. Maybe he'll never know.
+
+If it weren't for the cabin I wouldn't have a place to sleep. Just need some time to think. Last I was here, I was just a little girl playing clubhouse in this old cabin. Now I'm really scared. Will anything ever be right again?
+</font>
+
+
+<font size='16'>
+In - Crates 411S, 413S - Salvage, Patrol Team Scimitar. Unsorted.
+
+Out - Crates 411S, 413S - Transfer to Prydwen for inventory and sort.
+
+Out - Crate 291M - Munitions, Patrol Team Falchion.
+
+In - Crates 391A-418A - Remainder of Recon Squad Gladius salvage from Cambridge PD. Presorted.
+
+Inventory Report - 21 crates (food) unaccounted for. Two crates noted as missing in yesterday's report (vacuum tubes) located and re-filed.
+</font>
+
+<font face='$HandwrittenFont'>
+There are three specific things that we're going to need. I hope they're not too hard to find.
+
+~ Military-Grade Circuit Board - try old military bases
+~ Biometric Scanner - hospitals and clinics are your best bet
+~ Sensor Module - look in radio stations, radar sites, etc.
+
+Let me know if you have any trouble finding any of these. Good luck!
+
+- Sturges
+
+
+Code A01 Priority
+Confirmation: Kells KL-100LC
+Termination Orders
+
+-- Desdemona
+-- Tinker Tom
+-- Deacon
+-- Doctor Carrington
+-- Glory
+
+Ad Victoriam!
+
+
+
+It's no joke, Kath. He's out there - I seen him. Tore Davies' head clean off. Boy never even got his gun out.
+
+Give it up. Girl like you's got a future with us. Don't throw it all away on some fool dare.
+
+<font face='$HandwrittenFont'>
+KILL
+
+LOOT
+
+RETURN
+</font>
+
+<font face='$MAIN_Font' size='22'>
+Mr. Benson,
+
+On behalf of the Boston Regional Office, I would like to congratulate you and your team on winning the 2076 "Trashbusters" award for the greatest year-to-year waste reduction by a single store. Respect for the environment is an integral part of our corporate image, and we appreciate your innovative efforts in this regard.
+
+Sincerely,
+Gerard Philips
+Vice President, Boston Region
+</font>
+
+<p align="center">
+
+
+View from the Vault
+Part 3
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+<i>Continued from Part 2.</i>
+
+It's easy for us to be cynical about the missing. We have spent so long knowing the Institute is out there, but knowing so little about them. They are not the only ones responsible for kidnappings, but the fact that they sometimes are, and the fact that we have been so powerless to stop them when they do, causes us to treat all victims of kidnappings as if they are a lost cause.
+
+But the people left behind, those loved ones, friends, and neighbors who may never see the faces of those taken from them again, they do not have the luxury of being able to just look away. They have to carry that lost with them, even if everyone else tells them to move on and forget.
+
+I asked <alias=Player> to make a statement to Diamond City. To give us an outsider's perspective on what it means to lose a loved one, and how he feels. Maybe, in some way, it's how we all should feel. Maybe we've forgotten what the right, human response to these tragedies are. 
+
+"You can only take it one day at a time." <Alias.PronounCap=Player> said. "Just keep going. That's all anyone can do."
+
+END</p>
+
+You stupid maggots!
+
+First your sergeant tells me you were caught drinking on base, then I find out a tank has gone missing!? If that tank isn't back by 0600 tomorrow morning, spit shined so I can see my face in it, I will kick your asses up between your ears before I throw you in the brig for the duration!
+
+- Col. Kemp
+
+<font face='$HandwrittenFont'>
+Status
+</font>
+
+
+<font face='$HandwrittenFont'>
+My name is Bill Sutton and I'm the foreman at Warwick Homestead. We got a little synth problem here and I'm looking for a hired gun to take care of it.
+
+The man you're after is called Roger Warwick, except he ain't actually a man at all, he's a damn synth spy. Those institute bastards grabbed the real Roger and they put this faker in his place. Well, they might of fooled Roger's wife and kids, but they ain't fooled me.
+
+Take these caps as half your fee. I'll give you another 500 when the deed is done, but I don't want any of this to connect back to me. I plan to take over the farm when Roger's gone and I need it to look legitamit.
+
+Don't take your time, either. I want this done soon, or I'm going to take matters in to my own hand and then you missed your chance at a even bigger haul then what you already got.
+</font>
+
+
+<font size='16'>Edgar Swann
+Day 21
+
+Seizures continue. After the second one this morning, I was ordered back to the observation lab for further study.
+
+My prognosis is poor. I made the discovery myself. The viral strain I was infected with is fundamentally unstable. My mental capacity peaked two days ago, and has begun rapidly deteriorating. The seizures are just the beginning.
+
+Will they reject me like all the others?</font>
+
+
+With all authority of the Atom Cats, this highly official certificate grants ownership of one Power Armor frame from the Atom Cat's Garage. Whoever gets their mitts on this certificate has rights to the suit. So don't lose it, knucklehead. 
+
+<font face='$MAIN_Font' size='35'>58</font>
+
+<p align='center'> VIGILANCE
+
+<font face='$HandwrittenFont'>
+Cathy,
+
+Move your bed downstairs. Your sleepwalking is gonna be the death of you.
+
+- Monty
+</font>
+
+<font size='18'>Look, Cole, I know you're sick of working for Bobbi, but don't leave Goodneighbor. You don't know how good you got it, hon. Steady jobs. Decent place to live. And you got Hancock to bash some heads in if people get outta line.
+
+Ricca's taken over the gang here in College Square. She raised the tolls - traders are all taking the west road now. If things don't turn around soon, there's gonna be a mutiny. If things start to go down, I'm taking my caps and getting the Hell outta here.
+
+Love,
+Erris</font>
+
+<p align="center">
+
+
+Fear the Future?
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+We've all succumbed to it, at one point or another. No matter how brave, or how strong we actually are, the people of the Commonwealth have known fear. 
+
+Ever since the "Broken Mask" incident of 2229, right here in Diamond City, when the first human-looking synth infiltrated and attacked a group of innocent settlers, we have lain awake in bed at night, terrified of the Institute and everything it represents.
+
+Long have we dreaded the possibilities: Will someone I know be taken, snatched in the night for who knows what reason? Will one of my loved ones suddenly turn on me, because they are, in fact, a synth replacement? Or will the boogeyman finally step out of the closet and devour all who stand in its way?
+
+We, the people of the Commonwealth, remember the past. We live in terror in the present. But must we also fear the future?
+
+In an almost unthinkable series of recent events, the Institute has destroyed anyone in the Commonwealth who could conceivably stop them, including longterm player the Railroad, as well as the newly arrived Brotherhood of Steel. What's more, the shadowy, sinister organization has completed work on an advanced nuclear reactor that will provide them with nearly unlimited power for the foreseeable future. This surely means greater underground expansion, as well increased range of their teleporter technology (which, until recently, had been a closely-guarded Institute secret).
+
+So what exactly does this mean for the Commonwealth, going forward?
+
+"Nothing good" seems to be the consensus. In fact, most people assume the worst.
+
+But isn't it possible these fears are unfounded? The Railroad may have opposed the Institute, but they also defended all synths - even those who would potentially infiltrate human society. And the Brotherhood's mighty airship may now lie a smoldering wreck - but was the neo-knightly order really interested in the Commonwealth's best interests anyway?
+
+But perhaps the most compelling reason not to give up hope just yet is the fact that, if my sources are correct - and I know they are - the Institute is now under the direct influence of someone many of us have already met - the Vault Dweller. That lonely figure who came into our settlement searching for a missing child, and clearly found something else entirely. And maybe, just maybe, the Institute is all the better for it.
+
+So be wary as we go into a new tomorrow, my friends. But stay strong. And always, always remember that humanity lives and dies on the surface. Humanity IS the Commonwealth. And maybe, just maybe, the Institute can be a part of that now.
+</p>
+
+<font face='$HandwrittenFont'>
+username: TWilliams
+password: Vernon!Is!An!Idiot!
+</font>
+
+[Hiss]
+Male: ...wait, got something.
+Female: Guy from Saugus?
+Male: Yeah.
+Female: Readings are off the charts.
+Male: Looks like... fifty barrels, maybe more. Heading for the dock.
+Female: God. [pause] Native Pride to shore team. Move in. Repeat, move in.
+Male: They'd better hurry, or there won't be much of a lake left to save.
+
+<font size='18' face='$HandwrittenFont'>
+Look, Bosco, I ain't going back. I'm over sixty, for God's sake. Let me alone.
+
+I've done well enough over the years. Saved my caps. I found a little place in the woods, south of the city. I'm gonna settle in and enjoy my retirement. Not many that can say that, these days.
+</font>
+
+Well, this is it. I can't believe I'm gonna die in a fucking snack bar. I know I should have propped the door open. Two steps in and I heard the click behind me. All because Brian said there might be a snow cone machine in here. Goodbye, cruel world.
+
+One of the caravan guards said they passed by <Alias=Dungeon> a while back. Thought it might have some good scrap left to salvage. Might be worth a look.
+
+<font face='$HandwrittenFont'>
+Science
+</font>
+
+<p align="left">
+Open notice to anyone with a gun and some ambition. 
+
+Raider activity is on the rise near <Alias=Dungeon>. They have money, gear, supplies. Everything stolen from honest, hard-working people.
+
+Keep what you kill. No other reward given.
+</p>
+
+<font face='$HandwrittenFont'>
+Cooke - 
+
+We'll use the spot near Back Street Apparel, since I'm bringing a double shipment of chems like you wanted.
+
+Make sure Nelson Latimer brings enough money this time, plus what you owe from last time. Marowski's not going to put up with that bullshit again.
+
+- Trish
+
+<font face='$Terminal_Font'>
+Hello Government Employee!
+<br>
+With the threat of Communist Chinese invasion increasing daily, you may find yourself thinking of what to do in case of Total Atomic Annihilation. Fear not! As a federal government worker, you have the privilege of being locked away, safe and sound, in the very place you work every day! Just follow these simple instructions if and when the bombs fall and you'll find yourself surrounded by your fellow employees, waiting out the nuclear winter!
+<br><br>
+1) When you hear the alarms, drop everything. Do not bother packing anything, even personal belongings. Everything you need should be waiting for you in your designated safety location/workplace.
+<br>
+2) Head to your designated workplace [K-21B].
+<br><br>
+3) Once inside, should radiation reach problem levels, an alarm will sound. Promptly close the doors and lock them.  Do not open again until a second warning bell sounds.
+
+Godspeed, good luck, and enjoy YOUR better future underground!
+[SUPERVISOR'S SIGNATURE]
+</font>
+
+<font color='#FF0000'>With my blood I do swear my life to the Judge and his Jury until the end, upon pain of torture and death.</font>
+
+<font size='18' face='$HandwrittenFont'>
+Lee,
+
+If you're reading this, I missed you on the road and you need to get out of here. I couldn't get that army truck on the bottom unlocked, and swimming around down there drew out the lurks. Between that and the stingwings up at that cabin, I can't hold out here any more.
+
+Brenda
+
+</font>
+
+<font size='18'>
+Client: -Classified-
+Target: HalluciGen
+Mission: Tech Salvage
+Objectives:
+- Make contact with your recon team.
+- Frontal assault. Take out opposition or automated defenses. Fortify position.
+- Secure pre-war military tech. Client especially interested in the "InvisiWave" and "Irradicator" weapons. Details sketchy.
+- Access mainframe. Download schematics.
+- Assess targets of opportunity.
+- Rapid withdrawal.
+</font>
+
+<font face='$HandwrittenFont'>
+SAFE v11.3 Report
+
+28% failure rate, delta -1% (need more data samples)
+
+Unnamed Travelers (2): 1 failure, logged
+Slog Ghouls (5): 1 failure, definite false positive
+Stockton Caravan (5): 2 failures, resolved (RR or Inst?)
+Mr. Tims (1): 0 failures
+Finch Farms (3): 0 failures, working long term deal
+Boyd (1): 1 failure, logged
+"Honest" Dan (1): 0 failures
+
+
+<font size='18'>
+Tweez,
+
+If you're reading this, then you're an idiot. This is the last time I tell you, we're locking this door. Use the entrance in the sewer pipe. Next time you forget, I'm locking your ass out permanently
+
+Walter
+
+</font>
+
+Check out Hubris Comics, up Newbury Street. Store on the ground floor. Oughta be easy pickings.
+
+-VB
+
+<font face='$HandwrittenFont'>
+Billy,
+
+I've got the <Alias=Item>! Now we just have to figure out a way to sell it without anyone getting wise to what we're up to.
+
+I've stashed it in <Alias=Dungeon>. I'll meet you there tonight.
+
+- Sue
+
+P.S. Make sure you're not followed!! I think John is starting to get suspicious.
+
+
+I swear that treasure is real! They mentioned it on the television. I must paddle faster.
+
+
+<font face='$HandwrittenFont'>
+Malcolm, empty the latrine when it's full! 
+
+- Eugene
+</font>
+
+<p align="center">
+
+
+View from the Vault
+Part 1
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+Whenever I take a walk through Diamond City, there are so many things people tell me to be grateful for. Purified water, working lights, electricity, security. True, what we have would have been unthinkable even a few decades ago. But it's easy to forget that, even after all the progress we have made, we are still living in the shadow of the world that was. A world before the threat of radiation. Before the Super Mutant and the Feral Ghoul and the synth.
+
+So, as fortune often has it, I crossed paths with <Alias=Player>. Vault Dweller. A person who is experiencing the Commonwealth for the first time. What would <Alias.PronounPos=Player> fresh set of eyes say about how far we've come? Is Diamond City the "Great, Green Jewel" we have always claimed it to be?
+
+Before we begin to answer that question, we have to know who <Alias=Player> is. Where <Alias.Pronoun=Player> comes from. <Alias.Pronoun=Player> began our interview joking about <Alias.PronounPos=Player> time in the Vault. "It was just me and a thousand guinea pigs. They turned... carnivorous." Of course, this reporter knows that life behind the sealed gear doors of a Vault-Tec facility is actually supposed to be a bastion of the old world. A preservation of life before the bombs.
+
+<i>Continued in Part 2.</i></p>
+
+<font face='$HandwrittenFont'>
+People of the Commonwealth.
+
+For years now, you have suspected that the Institute still exists, that we are among you. It is true, but it is not the whole truth.
+
+We are the future.
+
+Our superior technology represents the future of the Commonwealth. Today, we activate our nuclear reactor, ensuring that we will persevere long after the world above ground has ceased to exist. Ensuring that mankind has a future.
+
+We have no desire to interfere in the unimportant details of your daily lives. We simply ask that you do not interfere with Institute operations. To do so would result in dire consequences.
+
+You may rest easy. Know that the future is in safe hands, that mankind will thrive under our guidance.
+</font>
+
+<font face='$MAIN_Font' size='20'>
+#K51-0212
+10/23/77
+Skylanes 1665
+
+Supplier: A.H. - Washington
+Destination: J.M. - Boston
+
+Cargo:
+<Token.ValueInt=Count0> <Token.Title=Dash0> <Token.Title=Item0>
+<Token.ValueInt=Count1> <Token.Title=Dash1> <Token.Title=Item1>
+<Token.ValueInt=Count2> <Token.Title=Dash2> <Token.Title=Item2>
+<Token.ValueInt=Count3> <Token.Title=Dash3> <Token.Title=Item3>
+<Token.ValueInt=Count4> <Token.Title=Dash4> <Token.Title=Item4>
+<Token.ValueInt=Count5> <Token.Title=Dash5> <Token.Title=Item5>
+<Token.ValueInt=Count6> <Token.Title=Dash6> <Token.Title=Item6>
+<Token.ValueInt=Count7> <Token.Title=Dash7> <Token.Title=Item7>
+<Token.ValueInt=Count8> <Token.Title=Dash8> <Token.Title=Item8>
+<Token.ValueInt=Count9> <Token.Title=Dash9> <Token.Title=Item9>
+</font>
+
+<font size='18'>Damn it. I'm sorry, sis.
+
+I don't know what happened. I was covering the entrance like you told me. We had Tower Tom's little maggots on the run, then "Blam"! I remember a face full of plaster then nothing. When I woke up I was here in Beantown Brewery with Tower Tom's ugly mug grinning at me. They've been good to me so far, but I only think it's because they want our food.
+
+Don't give them a thing, sis. I'll find a way out of here.
+
+ - Lil
+</font>
+
+Amy,
+
+I know it's been a while since I last wrote you. Things are going well here in Goodneighbor and I have been busier than normal with work.  So busy, in fact, that I have some great news. I've saved up enough money to rent out a place here big enough for you and the kids to finally come join me! So start packing your bags! I think I can take a week off to come get you guys moved out here. We can finally be a family again!
+
+I love you all so much.
+
+<font face='$HandwrittenFont'>
+Synth Recall Codes:
+
+B2-57 - Theta 9 3 Stratus
+
+Y9-15 - Beta 7 7 Tempest
+
+Z3-22 - Gamma 4-9 Typhoon
+
+F6-33 - Delta 6 2 Arcus
+</font>
+
+Hey kid,
+
+If you're reading this, I just wanted to say thanks. I don't think the Minutemen would be the best thing for me for now, but the fact that you would still have me after everything means a lot. I think I need to find my own way, but I'll try to do some good in this world with the time I have.
+
+Sorry about the gun, and thanks for helping me through a hard time.
+
+- Phyllis Daily
+
+Bombers incoming. Get to shelter. See you on the other side.
+
+- Tom
+
+<font size='18'>Edgar Swann
+Day 6
+
+Should have known something was wrong when they came back for more tests. Every bone in my body aches. I'm on edge all the time. Jittery. Can barely write. But my mind's just racing. Dammit, what's going on? What'd they do to me?</font>
+
+<font face='$MAIN_Font' size='35'>43</font>
+
+Augusta overrun. Two coursers, unknown number of old-models. I'm the only survivor. They came straight at us, knew our location. Package's fate is unknown. If I don't make it out, make them pay.
+
+- BB
+
+<font face='$MAIN_Font' size='20'>
+Dear Slocum's Joe Inc.
+
+We regret to inform you that we will not be approving the distribution of your latest food prototype. Recent focus tests indicated a 90% chance of 3rd degree burns from your hot coffee filled, chemically preserved doughnuts, or "Buzzbites," and as such they can not be deemed safe to the public. 
+
+You are allowed to resubmit your request in a year, assuming you solve the noted issues. We look forward to doing business with you in the future and hope this does not hurt our relations.
+
+- Charles Wenson
+C.H.W.A.
+
+Davis - You see the garbage in today's shipment? Even I can see that steel's no good- couple of beams were already rusted through. Someone's going to get killed.
+
+Damn suits. Always trying to cut corners.
+
+<font face='$MAIN_Font' size='35'>82</font>
+
+<font face='$MAIN_Font' size='26'><p align='center'>- Help Wanted -</p></font>
+<font face='$MAIN_Font' size='20'>HalluciGen, Inc. is seeking research subjects to assist in the ongoing testing of non-lethal police and military technology. Whether you're considering a career in high-tech research or just in need of some extra cash, this exciting opportunity may be for you.
+
+* Great Pay!
+* Flexible Hours!
+* No Long-Term Commitment!
+* No Experience Necessary!
+
+To apply, visit our main office in historic Back Bay.
+</font>
+
+<font size='18' face='$HandwrittenFont'>
+S,
+
+Been too long. Sorry I missed you at Megaton. Looks like history repeats itself. But, as promised, here's the gear I scrounged up.
+
+All the best, and stay safe. The Commonwealth is its own kind of Hell.
+
+E 
+
+</font>
+
+<font face='$HandwrittenFont'>
+Thanks, Killer.
+</font>
+
+
+Frank, this letter is to show you that I know where you live. So, for the last time, WHERE IS MY FUCKING MONEY?!?
+
+You know who this is.
+
+<font face='$HandwrittenFont'>
+Bill,
+
+It's over.
+
+I mean it this time. You aren't the man I married anymore. That Bill wouldn't have sold our brahmin for chems. You're a mean, abusive drunk and we're done. Margie still can't see clearly in her right eye. Just stop and think about that. You may have blinded your own daughter. The kids and I are leaving and if you even think of coming after us, Russell has already said he'll kill you if he ever sees you again, and I've half a mind to let him.
+
+- Mary
+
+
+With all authority of the Atom Cats, this highly official certificate grants the rights to use the Atom Cats patented custom paint job. Whoever gets their mitts on this certificate has rights to use this design. So don't lose it, knucklehead. 
+
+Ricca's dead. Only a couple of us made it inside. We couldn't hold the entrance -  there were just too many. Only way we could go was down. We'll hole up for a few days, wait for the Ghouls to move on, then get outta here.
+ 
+Think I'll head to Goodneighbor. Gangs there always need more muscle. I just want to get away from this mess.
+
+<p align="center">
+
+
+View from the Vault
+Part 3
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+<i>Continued from Part 2.</i>
+
+It's easy for us to be cynical about the missing. We have spent so long knowing the Institute is out there, but knowing so little about them. They are not the only ones responsible for kidnappings, but the fact that they sometimes are, and the fact that we have been so powerless to stop them when they do, causes us to treat all victims of kidnappings as if they are a lost cause.
+
+But the people left behind, those loved ones, friends, and neighbors who may never see the faces of those taken from them again, they do not have the luxury of being able to just look away. They have to carry that lost with them, even if everyone else tells them to move on and forget.
+
+I asked <alias=Player> to make a statement to Diamond City. To give us an outsider's perspective on what it means to lose a loved one, and how <Alias.Pronoun=Player> feels. Maybe, in some way, it's how we all should feel. Maybe we've forgotten what the right, human response to these tragedies are. 
+
+"No matter how much you want to give up, don't." <Alias.PronounCap=Player> said. "You have to have hope. That you'll see them again. Or at least, that you'll know the truth."
+
+END</p>
+
+<font face='$HandwrittenFont'>
+Day     I                   CoG  CR     R.T.
+----------------------------------------------
+Mon     3 Stm           305   281   832
+            1 RX
+            3 cl .9mm
+Tues    4 H2O          203   188   817
+           12 Stm
+            2 cl 9mm
+            2 cl energ
+Wed     10 r.scorp    109    87   795   
+            8 H2O
+
+~13 days until empty.
+Ask C about changing price. Burn rate is over 500c a week. Unsustainable.
+
+<font face='$HandwrittenFont'>
+
+Amelia Stockton - daughter
+Fred O'Connell - caravan leader
+Jay Mayfield - security
+2 mercs (names unknown, hired by Jay Mayfield)
+
+Steph, they know! Don't ask me how, but they found out what you did. I don't think they know where you're hiding, and I hope to God this finds you first, but you have to pack up and get the hell out of there, ok? Don't tell anyone where you're going this time! I'll try and delay them as much as I can, but you'd better hurry.
+
+<p align="left">CASE: Earl Sterling's Disappearance
+
+Client: Vadim Bobrov
+
+Another disappearing act to unravel. Earl Sterling. Twenty-five year-old bartender at the Dugout Inn. One of the owners, Vadim Bobrov, noticed that Earl hadn't been into work for a few days.
+
+Security was called in. No investigation, of course. "The Institute took him" is the unofficial word about town. Like always.
+
+Vadim came into my office, half-drunk with a sob story about how he and Earl went way back, and that he just can't believe that Earl would get snatched up by the boogeyman. My gut says he's right.
+
+Earl didn't have any enemies, at least none with motive enough to kill the guy. Not living with anyone, either, so I'll have to see if Vadim or someone else at the Dugout has his keys. I'd rather not have to explain to security why I was picking the lock on Earl's door, if I slip up and get caught in the act.
+</p>
+
+<font face='$HandwrittenFont'>
+Hopefully these parts aren't too hard to come by. Best guess of where to find them enclosed.
+
+~ Military-Grade Circuit Board - try old military bases
+~ Biometric Scanner - hospitals and clinics are your best bet
+~ Sensor Module - look in radio stations, radar sites, etc.
+
+You get me the goods and I'll whip up a miracle.
+
+- Tinker Tom
+
+<font size='17'>
+Doctor,
+
+Our mutual friend informed me of your concern for my health. With the aid of  <Alias.PronounPosObj=Player>, I was able to secure an antidote for my condition, and am pleased to report that I have made a full recovery.
+
+Although our circumstances have changed, I hope we might someday be able to collaborate on our research once again. Until then, my regards.
+
+Sincerely,
+V.
+</font>
+
+<font face='$MAIN_Font' size='35'>84</font>
+
+<p align="center">
+
+
+View from the Vault
+Part 1
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+Whenever I take a walk through Diamond City, there are so many things people tell me to be grateful for. Purified water, working lights, electricity, security. True, what we have would have been unthinkable even a few decades ago. But it's easy to forget that, even after all the progress we have made, we are still living in the shadow of the world that was. A world before the threat of radiation. Before the Super Mutant and the Feral Ghoul and the synth.
+
+So, as fortune often has it, I crossed paths with <Alias=Player>. Vault Dweller. A person who is experiencing the Commonwealth for the first time. What would <Alias.PronounPos=Player> fresh set of eyes say about how far we've come? Is Diamond City the "Great, Green Jewel" we have always claimed it to be?
+
+Before we begin to answer that question, we have to know who <Alias=Player> is. Where <Alias.Pronoun=Player> comes from. To my surprise, <Alias.Pronoun=Player> did not have much to say about <Alias.PronounPos=Player> life in the Vault at all. Because <Alias.Pronoun=Player> spent all that time staring at a piece of frozen glass. Every day. For over two centuries. That's right, <alias=player> isn't just a Vault Dweller, <Alias.Pronoun=Player>'s an original Vault Dweller. <Alias.Pronoun=Player> spent <Alias.PronounPos=Player> entire time on the inside cryogenically suspended.
+
+<i>Continued in Part 2.</i></p>
+
+I thought I ate a fish today. It didn't taste right. I then realized while writing this that I ate my own hand. I think I'm losing it.
+
+
+<font face='$HandwrittenFont'>
+Mom,
+
+Russell has been gone over a day now and I'm getting worried. We were going to wait to tell you, but we found an old holotape from before the war in the boat shed. It sounded like someone had stashed some chems in the drainage at the end of the canal. Russell thought we might be able to sell them to one of the traders. Maybe use the caps to buy another Brahmin.
+
+I'm sorry we didn't tell you, we just wanted it to be a surprise. But that's the second one of those bugs we've seen today and I think something went wrong, so I'm going to have a look for him. Don't worry - I'm just going to take a quick peek and I'll be back soon.
+
+- Margie
+
+<p align="center">
+
+
+View from the Vault
+Part 2
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+<i>Continued from Part 1.</i>
+
+So what does <Alias=Player> have to say about seeing Diamond City for the first time?
+
+"I've been having too much fun blowing things up to think about it."
+
+It's important to note that <Alias=Player> was not actually blowing things up at the time, and that perhaps <Alias.Pronoun=Player> was referencing the violence that is all too common when you're traveling outside the Wall to the more dangerous parts of the Commonwealth. How curious, though, that <Alias.PronounPos=Player> first reaction to the horrors and tragedies out there would be humor?
+
+You see, <Alias=Player> has a son. Shaun. And even though they were in the relative safety of a Vault, someone broke in, and took Shaun from his parent, and that parent is now risking everything - wandering through this strange and unfriendly world of ours - in order to save Shaun from his kidnappers.
+
+We all know the rumors and whispers that surround every missing person in Diamond City. The guilty looks we pass to mourning family members as we "thank the Wall that, this time, it wasn't us." You can end up dead in the Commonwealth for a million reasons. Why spend our time worrying about kidnappings? 
+
+Why, indeed.
+
+<i>Continued in Part 3.</i></p>
+
+<font face='$HandwrittenFont'>
+List of needed supplies:
+
+- Stimpaks - as many as you can get
+- Antibiotics
+- Working thermometer - if you can find one
+- Test tubes
+
+Use the intercom to notify Officer Edwards when you arrive.
+
+Sincerely,
+
+Dr. Forsythe
+
+
+Gunners are moving into Back Bay. Word is they're after something in the old HalluciGen building. Keep your distance until they clear out. 
+
+- M
+
+Nobody can get into Overseer Olivette's terminal.  The password might be corrupted.  I can't make sense of this thing, and I've finally convinced the Overseer to let it go and allow me to set up a new terminal.  Olivette probably was hardly even using the thing anymore.  I doubt there's anything important on it.
+
+<p align="center">
+
+
+Moving Forward
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+There is no disputing it now. Former Mayor McDonough was a synth - an agent in the pocket of the Institute, who used his power and influence to do untold damage to Diamond City and the lives within it. Abandoned by his masters, there's no telling how many more people he would have hurt or killed had he not been stopped.
+
+We have the truth, bitter as it is. We cannot predict how long it will take us to unravel all of McDonough's lies, to even begin to repair years of carefully orchestrated sabotage. Is the Wall truly secure? Will we ever know the fates of Diamond City's missing? Will the position of Mayor ever be entrusted to someone else?
+
+Everyone in Diamond City, whether they would acknowledge it or not, lived in fear of the Institute striking at them. Now they have. The city is still standing. Our daily routines keep grinding away. We still work, and eat, and sleep, and hope for a better tomorrow.
+
+Are you still afraid, Diamond City?
+</p>
+
+<p align="center">
+
+
+View from the Vault
+Part 2
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+<i>Continued from Part 1.</i>
+
+So what does <Alias=Player> have to say about seeing Diamond City for the first time?
+
+"You're all living in rusty shacks, killing each other, and my God, the smell..."
+
+Painful words. So much of civilization was lost when the bombs fell, and we have rebuilt without the comfort and security of the old Vaults. However arrogant and privileged <Alias=Player>'s statement seems, we have to remember where <Alias.Pronoun=Player> came from, and what we must look like to <Alias.PronounObj=Player>.
+
+Perhaps all this anger is really just to cover up what <Alias.Pronoun=Player>'s lost. You see, <Alias=Player> has a son. Shaun. And even though they were in the relative safety of a Vault, someone broke in, and took Shaun from his parent, and that parent is now risking everything - wandering through this strange and unfriendly world of ours - in order to save Shaun from his kidnappers.
+
+We all know the rumors and whispers that surround every missing person in Diamond City. The guilty looks we pass to mourning family members as we "thank the Wall that, this time, it wasn't us." You can end up dead in the Commonwealth for a million reasons. Why spend our time worrying about kidnappings? 
+
+Why, indeed.
+
+<i>Continued in Part 3.</i></p>
+
+Mother Isolde -
+
+We have found the cave where this "Virgil" resides, southwest of the crater. It is defended, as you suspected.
+
+We will not act against him until we have word from you, or a sign from Atom himself.
+
+Brother Hoberman
+
+NEPONSET PARK VISITOR LOG
+
+Recent Visitors
+<font size='18' face='$HandwrittenFont'>
+1: C. Dieter
+2:
+3:
+4:
+5:
+
+
+</font>
+
+<font face='$HandwrittenFont'>
+Here's what we'll need for the Stabilized Reflector Platform:
+
+~ Aluminum x10
+~ Circuitry x3
+~ Steel x5
+
+- Proctor Ingram
+
+
+<Alias=LibertaliaBoss.Name> raised the tribute again - we're paying almost half our take to Libertalia now. I've got Tommy working over the books. I need you to find a better way to rig these races. Take a couple bots offline and see what you can do.
+
+Look, boss, I've done all I can do. That old tin can - can't - run. Hell, with the shape it was in, we're lucky it even walks. You need another racer, find me another bot.
+
+<font size='18' face='$HandwrittenFont'>
+Ma passed this morning.
+
+There's nothing left for us here, Natalie, not anymore. Mayor Jackson can't protect us. The Minutemen can't protect us. We gotta fend for ourselves.
+
+It's time to go. Meet me by the warehouse north of town around sunset. I've stashed some caps in the dumpster there. Got a boat down by the shore. We'll head up the coast, make for the old waterfront. With any luck, we can be in Goodneighbor before dawn.
+</font>
+
+<font face='$HandwrittenFont'>
+
+Fear not. 
+
+Though Devil's iron makes this Blade, only he who Wields can make it Wicked.
+
+ - Drowne
+</font>
+
+<font face='$MAIN_Font' size='17'>
+July 19th, 2077
+To: All Employees
+From: J. Richard Thorndike, City Attorney
+Re: Legal Directive to Preserve Documents
+
+Pursuant to the litigation filed on 7/16 by the survivors and families of the Lake Quannapowitt boating incident (the ACCIDENT), all records and communications pertaining to the July 4th Bass Fishing Tournament (the EVENT) are to be retained until further notice.
+
+While we believe this suit to be baseless and without merit, the City Attorney's office is committed to a fair and impartial legal process. We extend our condolences to the victims of this terrible tragedy.
+</font>
+Wipe the terminal. -J.T.
+
+<font face='$HandwrittenFont'>
+Spaghetti 
+</font>
+
+<font size='16'>
+Got to focus. Writing might help.
+
+Some kind of gas in the lab. We broke in, it got out. Hit the vents, went everywhere. Everyone just snapped. Locke and Harrald drew on me. Shot them dead. I think. Hurts to think.
+
+Sealed the door again. Can't let any more get out. Wait long enough, maybe I can adjust. Have to tough it out. Have to.
+
+Hurts so much. Can hear them. Voices. They're coming. They're coming.
+
+Stop it stop it stop it stop it stop
+</font>
+
+I got the intel. The gang at <Alias=Dungeon> looks tough, but their leader has the gun - a <Alias=Weapon>, just like the contact said. The right squad of men could take it.
+
+Best stay away from <Alias=Dungeon> - word is that synths have been seen around there. Don't know what they're after, but it can't be good.
+
+
+
+
+<p align="center">
+
+
+View from the Vault
+Part 2
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+<i>Continued from Part 1.</i>
+
+So what does <Alias=Player> have to say about seeing Diamond City for the first time?
+
+"Can you even compare the two? The world out here? It's not even close to the one I left."
+
+While we like to think of our city as a shining jewel, it's worth remembering that not everyone comes here by choice. Sometimes people are forced from the comforts of their homes, and as the largest settlement in the Commonwealth, this is where they end up. Most are just looking for refuge, but sometimes they come here desperately looking for something. Or someone.
+
+You see, <Alias=Player> has a son. Shaun. And even though they were in the relative safety of a Vault, someone broke in, and took Shaun from his parent, and that parent is now risking everything - wandering through this strange and unfriendly world of ours - in order to save Shaun from his kidnappers.
+
+We all know the rumors and whispers that surround every missing person in Diamond City. The guilty looks we pass to mourning family members as we "thank the Wall that, this time, it wasn't us." You can end up dead in the Commonwealth for a million reasons. Why spend our time worrying about kidnappings? 
+
+Why, indeed.
+
+<i>Continued in Part 3.</i></p>
+
+<font size='19'>
+Look, Paul, it's all I can do to keep the feds from weaseling out of their contracts. Damien and his boys in R&D put on a good show, but they can't find their asses with both hands. The last thing I need right now is for you to spook the investors.
+
+Don't give me any more of this crap. You know every trick in the book. Make our financials for this quarter shine. I don't care how. Just do it.
+
+-Eric
+</font>
+
+<p align="center">
+
+
+The Boogeyman Banished?
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+We've all succumbed to it, at one point or another. No matter how brave, or how strong we actually are, the people of the Commonwealth have known fear. 
+
+Ever since the "Broken Mask" incident of 2229, right here in Diamond City, when the first human-looking synth infiltrated and attacked a group of innocent settlers, we have lain awake in bed at night, terrified of the Institute and everything it represents.
+
+Long have we dreaded the possibilities: Will someone I know be taken, snatched in the night for who knows what reason? Will one of my loved ones suddenly turn on me, because they are, in fact, a synth replacement? Or will the boogeyman finally step out of the closet and devour all who stand in its way?
+
+We, the people of the Commonwealth, remember the past. We lived in terror in the present. But with the catastrophic explosion at the C.I.T. ruins quite obviously signaling the destruction of the Institute (which this reporter learned was actually located deep underground), the question on everyone's minds now is: has the boogeyman really been banished?
+
+It would certainly seem that way.
+
+As long as there's been an Institute, there have been those opposed to the shadowy, sinister organization. While most ordinary folk wouldn't dream of defying their merciless masters, the Railroad has waged a secret war against them for over thirty years. And the Brotherhood of Steel's arrival in the Commonwealth signaled the most overt opposition the Institute has ever faced. All empires must eventually fall. That said, perhaps it was never a matter of "if" but rather "when."
+
+So what exactly does this mean for the Commonwealth, going forward?
+
+That, dear readers, is the question. For the boogeyman may indeed have been banished, but isn't it possible other monsters may step out of the closet to terrorize us in the night? There are other players in the Commonwealth. None had been as strong as the Institute - but that's sure to change. Will they work with the Commonwealth, or against it? Are they for the people, or against us? 
+
+This reporter hold onto hope, for one very specific reason. If my sources are correct - and I know they are - the Institute's destruction was actually orchestrated by someone many of us have already met - the Vault Dweller. it would seem that lonely figure who came into our settlement searching for a missing child actually found the monster that had taken so many children. And killed it.
+
+So be wary as we go into a new tomorrow, my friends. But stay strong. And always, always remember that humanity lives and dies on the surface. Humanity IS the Commonwealth. And maybe, just maybe, with the Institute finally gone, we can have the future we all deserve.
+</p>
+
+<p align="center">
+
+
+View from the Vault
+Part 2
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+<i>Continued from Part 1.</i>
+
+So what does <Alias=Player> have to say about seeing Diamond City for the first time?
+
+"Honestly, seeing everyone surviving out here? Rebuilding the world? It gives me hope."
+
+Hope. When was the last time someone in our city talked about hope who wasn't some politician fishing for points in the next election, making empty promises at the Wall? But our outsider hasn't let the cynicism of our strange world get the better of <Alias.PronounObj=Player>.
+
+This is all the more remarkable because of the reason <Alias.Pronoun=Player> came to the Commonwealth. You see, <Alias=Player> has a son. Shaun. And even though they were in the relative safety of a Vault, someone broke in, and took Shaun from his parent, and that parent is now risking everything - wandering through this strange and unfriendly world of ours - in order to save Shaun from his kidnappers.
+
+We all know the rumors and whispers that surround every missing person in Diamond City. The guilty looks we pass to mourning family members as we "thank the Wall that, this time, it wasn't us." You can end up dead in the Commonwealth for a million reasons. Why spend our time worrying about kidnappings? 
+
+Why, indeed.
+
+<i>Continued in Part 3.</i></p>
+
+<font face='$HandwrittenFont'>
+<font size='30'>MEGA SURGERY CENTER</font>
+Dr. Crocker - Resident Surgeon
+
+1x Reconstruction Surgery - Facial
+
+Procedure to be performed upon clearance of final installment payment.
+
+Patient: Sterling, Earl
+</font>
+
+For a child who needs it.
+
+- Arlen Glass
+
+<font size='18'>
+Client: -Classified-
+Target: HalluciGen
+Mission: Reconnaissance
+Objectives:
+- Secure a forward operating base for the HalluciGen raid.
+- Perform initial recon of facility exterior.
+- Identify and neutralize potential threats.
+- Await contact from the raid team.
+</font>
+
+Brother Henri,
+
+I have prayed to Atom, and in his wisdom he has chosen you to guard the site of his relics.
+
+Serve him well. Protect the relics until such time as you are called for, or Atom himself returns to claim them.
+
+<font face='$HandwrittenFont'>
+What makes you think people will buy copies of the newspaper from you when they could just get one in Diamond City? 
+
+Okay, maybe some of the traders or farmers north of the river might buy some, but that area of the city is full of Raiders. It's not worth it.
+</font>
+
+Come out to the coast, we'll get together, have a few laughs.
+
+
+<font face='$HandwrittenFont'>
+Applejack
+</font>
+
+<font face='$HandwrittenFont'>
+Oh God, the Institute is here. I can hear them fighting outside. Dad, I figured out where the data is, but I think I'm too late.
+
+I'm sorry
+- Jacq
+</font>
+
+<font face='$HandwrittenFont'>
+Gentlewoman: Lo you, here she comes.<br>
+These is her very guise;<br>
+and, upon my life, fast asleep.<br>
+Observe her; stand close.<br>
+<br>
+Doctor: What is it she does now?<br>
+Look, how she rubs her hands.<br>
+<br>
+Gentlewoman: It is an accustomed action with her,<br>
+to seem thus washing her hands:<br>
+<br>
+Doctor: You see, her eyes are open.<br>
+<br>
+Gentlewoman: Ay, but their sense is shut.<br>
+<br>
+Lady Macbeth: Yet here's a spot.<br>
+Out, damned spot! Out, I say!<br>
+Who would have thought the old man<br>
+to have so much blood in him.<br>
+<br>
+Doctor: Did you mark that?<br>
+<br>
+Lady Macbeth: The thane of Fife had a wife:<br>
+where is she now?<br>
+What, will these hands ne'er be clean?<br>
+<br>
+Gentlewoman: She has spoke what she should not,<br>
+I am sure of that.<br>
+<br>
+Lady Macbeth: To bed, to bed! There's a knocking at the gate:<br>
+What's done cannot be undone.<br>
+<br>
+Doctor: I shall give her a draught to soothe her dreams.<br>
+</font>
+
+
+<font face='$HandwrittenFont'>
+There are three components you need to find. They're fairly rare, but I'm betting you'll be able to find them.
+
+~ Military-Grade Circuit Board - try old military bases
+~ Biometric Scanner - hospitals and clinics are your best bet
+~ Sensor Module - look in radio stations, radar sites, etc.
+
+Just stay the course and keep doing what you do best, Knight.
+Good luck.
+
+- Ingram
+
+
+<font face='$HandwrittenFont'>
+Malcolm, 
+
+Would you mind not slurping your coffee? I can literally hear you on the other side of the hangar. If I didn't know any better, I'd think you were doing it on purpose. 
+
+- Eugene
+</font>
+
+<font face='$HandwrittenFont'>
+Hank,
+You've been eating a lot of that food paste that we got from that Suffolk school. It's affecting you. Like, in a real bad way, man. You've been flying off the handle at every little thing, always have this crazy look in your eyes. Heck, during that last farm raid you even shot up a couple of runners! We don't kill 'em when they're fleeing, man. We're better than that. I know the stuff tastes great, but is it really worth all this? I mean, I had to write this down because I'm scared you would shoot me in the face if I said anything in person. 
+We're your friends. We just don't want to see you go down the wrong path. Just drop the paste, man. 
+</font>
+
+
+<font face='$HandwrittenFont'>
+Turrets repelled another two Raider attacks. 
+
+Second attack was an organized probing attack. No massive threats (yet) but worried we'll be targeted soon. 
+
+Need: 16 batteries, 2 cases of turret ammo (at least 4 batteries or we'll be out of juice after next big attack).
+
+Recommend: Once Compound team recovers from Stockton retrieval, take out the "Fog Hill" Raiders. Need a permanent Raider solution, though. With a greater volume of subjects passing through we become a bigger target. Investigate Bunker Hill deal?
+
+-BF
+
+<font size='18'>To My Big Sister Red,
+
+You've got to send more of those snack cakes. Otherwise Tom said he's gonna chop me to bits. I'm scared. He's a real intimidating guy. Please. Send more cakes!
+
+Think of your sister. Me!
+
+Please help,
+Lily
+</font>
+
+<font face='$MAIN_Font' size='35'>47</font>
+
+<font size='16'>Edgar Swann
+Day 14
+
+My physiological evolution seems to have stabilized. The medical team says my muscle mass has more than tripled since the experiment began, and my neural efficiency has improved markedly. This particular strain of modified FEV has been a remarkable success - I appear to have received all of the anticipated benefits without the typical adverse effects.
+
+My application to join the research team is awaiting the Director's approval. Although further tests may be in order, I hope to be able to assist with my own experiment in the coming days.</font>
+
+<font size='19'>
+If you're reading this message then I'm probably dead and my plan didn't work.
+
+I've been taken by a group of raiders to the Massachusetts State House. Forced to help them uncover the "valuables" of this building. Who would have thought knowing how to read would be what finally gets me? 
+
+I think I can stay alive as long as I keep feeding them what they want to hear..
+
+<font face='$HandwrittenFont'>
+Mrs. Hart
+
+Since I won't be here for tonight's service I've hidden the key to the safe underneath the pew behind you, if you happen to need access to it for whatever reason. Thank you for handling the office duties tonight. Keep the key with you and I'll get it from you next Wednesday.
+
+Thanks again,
+Mrs. Kline
+
+Hey kid,
+
+If you're reading this, I just wanted to say thanks. I think I needed the wake up call. Whether or not I'm a synth, I was still responsible, even if it was an accident. I don't know what I'm going to do next, but I need to move on.
+
+Sorry about the gun, and thanks for helping me through a hard time.
+
+- Phyllis Daily
+
+<font size='18' face='$HandwrittenFont'>
+We did everything together, Cathy and I. Without her, I just feel empty. I can't go on like this. I can't.
+
+Take good care of the boys for me.
+</font>
+
+<p align="center">Deathclaw Egg, a la Wellingham
+
+A masterwork by Wellingham (of the Diamond City Wellinghams)</p>
+<p align="left">- Yields two servings
+
+INGREDIENTS
+- 1 tato, peeled, diced, sauteed
+- 1 Deathclaw egg, beaten
+- 1 vessel water, unpurified (for flavor)</p>
+
+<font size='18'>I'll show them. Who needs a fancy degree these days? You can learn everything you need to know from the science mags. I'd like to see one of those big-bucks engineers make this.
+
+I can't wait to see the looks on their faces when I walk into the staff meeting on Monday.</font>
+
+<font face='$MAIN_Font' size='20'>
+This is a Holotape.
+
+Holotapes are laser-readable media storage devices. In 2077, we used Holotapes to record audio and data files, like music, journals, even games. While this may seem primitive to you, two hundred years in the future, this was a common and popular technology in our time.
+
+You can play holotapes with the Terminal on this table. Press the 'Load' button, insert the Holotape into the slot, and close it. It should play automatically.</font>
+
+<font size='18' face='$HandwrittenFont'>
+Lee,
+
+If you're reading this, I missed you on the road and you need to get out of here. I couldn't get that army truck on the bottom unlocked, and swimming around down there drew the out the lurks. 
+
+Between that and the stingwings up at that cabin, I can't hold out here any more.
+
+Brenda
+
+</font>
+
+Hey kid,
+
+If you're reading this, I just wanted to say thanks. You were kind to me when I gave you every reason not to be. Whether or not I'm a synth, I think it's time that I move on. I hope you've been able to find your son.
+
+Sorry about the gun, and thanks for helping me through a hard time.
+
+- Phyllis Daily
+
+<font face='$MAIN_Font' size='35'>83</font>
+
+New tolls:
+10 Caps - Farmers, Children
+30 Caps - Mercs
+50 Caps - Traders
+80 Caps - Wagons
+200 Caps - Minutemen
+
+Don't tangle with Gunners or the freaks in Power Armor. Let them through, but keep an eye on them.
+
+Shoot synths on sight.
+
+Cory, I'm telling you, man, this gig is top notch. This place is right near a road and we just grab caravans as they go by, and we live like kings. It's a brewery, for Christ's sake! It's packed with beer! How could you say no? I put in a good word for you, buddy, so just come out here and tell them I sent you. Oh, and I'm going by Crank Shaft now - they won't know who Melvin is.
+
+<font face='$MAIN_Font' size='38'><p align='center'>The October Classic</p></font><font face='$MAIN_Font' size='26'><p align='center'>Sunday, October 31st, 2077</p></font><font face='$MAIN_Font' size='16'><p align='center'>at</p></font><font face='$MAIN_Font' size='32'><p align='center'>Easy City Downs</p></font>
+<font face='$MAIN_Font' size='16'><p align='center'>presented by</p></font><font face='$MAIN_Font' size='28'><p align='center'>Fallon's Department Stores</p></font><font face='$MAIN_Font' size='16'><p align='center'>in association with</p></font><font face='$MAIN_Font' size='24'><p align='center'>The Boston Jockey Club</p></font>
+<font face='$MAIN_Font' size='36'><p align='center'>3 World-Class Races</p></font><font face='$MAIN_Font' size='16'><p align='center'>With a total purse of</p></font><font face='$MAIN_Font' size='34'><p align='center'>$450,000.00</p></font>
+
+<font size='18'>You know how much I miss you. But it's too dangerous. If you stay in Diamond City, at least I know you're safe.
+
+If your mind's really made up, then be careful. Travel at night. Stick to the river. And whatever you do, don't go into the Common.</font>
+
+<font size='16'>Still think you boys are out of your mind.
+
+You want to know how I'd do it? Head around the north side and rush the bandstand. Be quick, and you might be able to get some defenses up before he notices you. If you can hole up in there, you might just have enough cover to outlast him.
+
+Whatever you do, DON'T GO IN THE POND.</font>
+
+
+To: Arlen Greene
+From: Marc Wilson
+Subject: RE: 
+
+
+
+Janet,
+
+I have a meeting with a student tonight, so I'll be late to our "meeting." Wait in the storage closet, and I'll be there shortly. The password is "Walrus22"
+
+Yours always,
+Ronald
+
+Joel,
+
+When the hell are you getting back? I can't believe you left this stupid thing with me. A mole rat is not a goddamned pet! It chews on everything and then craps all over the floor. This is not worth it, I don't care how much you're paying me. Get back here in 10 days or I swear I will butcher the thing and eat it. I'm not kidding.
+
+<font face='$MAIN_Font' size='16'>
+I know I wasn't the best of fathers. Atomatoys took too much of my time, and I couldn't be there for you when you needed me. Your birthdays. Your graduation. Your mother's funeral. But everything I did has always been for you.
+
+These past few years have been difficult - the toy business didn't come naturally to you. But you've grown into it. You deserve to be the next president of Wilson Atomatoys.
+
+Congratulations, son. You've earned it.
+
+Sincerely,</font>
+<font size='22'>George Wilson</font>
+<font face='$MAIN_Font' size='16'>Founder & President, Wilson Atomatoys
+</font>
+
+Oct. 23 2077
+
+Might as well finish the journal, huh? Certainly couldn't finish the book, not with all this goddamned racket. Hammering all day and night. Let's see how well you all hammer with bullets in your head, huh???
+
+Rot in hell, you bastards. And you can join them, Carol.
+
+<font size='20'>You heard about Ernie's gang out at the Downs? Some of his boys patch up robots, even race them around the old track there. Sounds like my kind of gig.
+
+I'm gonna take Tin Man out there and tool him into a racing bot. Give me a week, then come on out. Fifty caps says he'll be the top robot on the track.
+
+-Tony</font>
+
+<font face='$HandwrittenFont'>
+Margie,
+
+I snuck out last night and had a look at the drainage pipe at the end of the canal. It's cracked and it looks like if I clear away some of the garbage, I should be able to get in. I think it's the opening they mentioned in that holotape. If we can get those chems, we might be able to buy a new brahmin.
+
+I'm gonna check it out, but I told mom I was going over to the Slog to trade for some tools, so cover for me. I should be back by evening.
+
+- Russell
+
+DO YOU FEEL YOUR LIFE ISN'T WHAT YOU WANTED?
+
+ARE YOU LOOKING FOR A CHANGE?
+
+Come hear Brother Thomas explain the TRUTH behind our troubled world at the Charles View Amphitheater in the Back Bay.
+
+Revival meetings every night. All those seeking to change their lives for the better are WELCOME!
+
+
+<font face='$HandwrittenFont'>
+1. Make sure the wires to the generator are all connected properly.  Last thing we need is another short blowing out the generator - Randy!
+
+2. The generator MUST be on before turning on the signal tower.
+(I suggest you stay out of the water when flipping the generator switch, just sayin'.)
+
+3. You'll know the signal is playing when - well, you'll just know.  Once the feedback goes away it will sound like there's nothing coming out of the speakers.  There is, but only the mirelurks can hear it.
+
+I sent Sturges to talk to Mayor Jackson about what I saw with The Sight. I mixed up another cocktail and I can feel it starting to take hold. Wanna see if getting the Mayor to call for help changes the vision. Sturges and Jackson have been tryin to get me to stop using, but they haven't seen the things I have so I've hidden my stash out on the balcony in case they come over while I'm still under. I have a feeling we're going to need The Sight again if we are gonna make it through this.
+
+I'm screwed!
+
+<font size='21'>
+Stuff worth coming back for:
+ - Axe. Boss said it was too heavy to bother with, but someone will buy it.
+ - Comic books. Have to be one or two that are still legible. Always good for a few caps.
+ - Storeroom. Just need someone who can pick that lock. Have to check with Carl; maybe he could get Ken Standish for the job.
+
+Damn monkey creeps me out.
+</font>
+
+<font face='$HandwrittenFont'> 
+Everyone else left tried to get into Bergman's lab to get the password for the Isotope Containment, but he rigged up some kind of gun. Ericka was killed. Most of my hair is gone from the radiation and I can barely see. There's no way I can finish the research on my own now, so I've chosen to make it a quicker end.
+
+Jon Elwood, I'll see you in hell.
+
+       - Tom Franklin
+</font>
+
+<font face='$HandwrittenFont'>
+Dear Eugene, eat shit. 
+
+Sincerely, Malcolm
+</font>
+
+<font face='$HandwrittenFont'>
+The Stabilized Reflector Platform is mainly all about the metal. What we need specifically is:
+
+~ Aluminum x10
+~ Circuitry x3
+~ Steel x5
+
+- Tinker Tom
+
+
+This should tide you over. Get word to HQ if we need to make another drop.
+
+<font face='$MAIN_Font' size='24'><p align='center'><b>The Treasures of Jamaica Plain</b></p></font><font face='$MAIN_Font' size='18'><p align='center'>October 17-23nd, 2077
+8am-5pm Daily</p></font>
+<font face='$MAIN_Font' size='18'>Come and see the fabulous Treasures of Jamaica Plain! This stunning exhibit will be on display for one week only before these priceless items are sealed away, never to be seen again! Bring the entire family to this once-in-a-lifetime event!</font>
+
+<font size='18'>Tash - I've been thinking about going after the Treasure. Jesse's game. You in?</font>
+<p align='right'><img src='img://Textures/Interface/Note/JamaicaPlain_Seal_d.DDS' height='100' width='100'></p>
+
+<font face='$HandwrittenFont'>
+Eugene, 
+
+Everything on this counter is mine. Touch anything and you're a dead man. 
+
+- Malcolm
+</font>
+
+Can't believe I signed on for this. Who wants this crap? 'Collectors', the boss says. So who's the fool here-- them or us?
+
+<font face='$HandwrittenFont'>
+Fist
+
+we fiNd gud plase. caLLed wesT eveRTT. haz gud wall and waTeR ToweR. some man maek bunkR in shed. many gud Thengz insied.
+
+send us moor peple. haf much meeT foR yu
+
+-hammR
+
+</font>
+
+<font face='$HandwrittenFont'>
+Here's what you need for one of Prime's Electromagnetic Actuators:
+
+~ High-Powered Magnet x1
+~ Screws x1
+~ Fiber Optics x3
+~ Circuitry x5
+~ Rubber x5
+~ Steel x10
+
+I realize the High-Powered Magnet might be difficult to find, but Elder Maxson and I have confidence in your abilities. Good luck!
+
+-- Proctor Ingram
+
+
+<font face='$HandwrittenFont'>
+Here's what you need to make Reactor Coolant:
+
+~ Gas Canister
+~ Nuclear Material x2
+~ Antifreeze x3
+~ Dirty Water x5
+
+Just take the ingredients and mix them up at any of the chemistry stations to make the coolant. Good luck.
+
+-- Proctor Ingram
+
+
+<font face='$HandwrittenFont'>
+Mr. Henderson,
+
+I hate to have to remind you again, but you failed to meet your quota last month. We still have spots to fill in <Alias=VaultDungeon>, and you have not been pulling your weight.
+
+Going forward, please just smile and stick to the script. Save the evangelizing for your own time. You are making people uncomfortable. 
+
+This is your last warning. If you don't reach your target this month, you're out. 
+
+-Ralph Jones
+Regional Manager, Vault-Tec Industries
+
+
+
+<font face='$HandwrittenFont'>
+Pickman was here.
+
+Find me if you dare.
+</font>
+
+Dealer said there was a big stash of chems up at <Alias=Dungeon>. Get them, and we'd be set for months. Or we could sell 'em and buy something stronger.
+
+<font face='$HandwrittenFont'>
+You betrayed me. ME! After all I did for you. I trusted you. I risked everything to help synths. To help you. And this? This is how you repay me?
+
+My father is dead. Everyone I loved and cared about was vaporized or lost in this barren irradiated shithole. Because of you.
+
+I used to feel sorry for you. You lost your son. You missed out on every moment of his life. Now, I see it's only what you deserved.
+
+I cannot live with myself. Due to my stupid trust in you I've destroyed humanity's best hope for the future. If there's any fairness in the world you'll never get a good night's sleep in what remains of your hopefully short, miserable life.
+
+- Liam
+</font>
+
+Paula - 
+
+Marc wants the Q4 sales forecasts revised down again. You still have access to those records? See what you can do. Doesn't seem to matter what the number is, so long as it makes his new project look good.
+
+We still on for Friday?
+
+- Nate
+
+<p align="center">
+
+
+View from the Vault
+Part 1
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+Whenever I take a walk through Diamond City, there are so many things people tell me to be grateful for. Purified water, working lights, electricity, security. True, what we have would have been unthinkable even a few decades ago. But it's easy to forget that, even after all the progress we have made, we are still living in the shadow of the world that was. A world before the threat of radiation. Before the Super Mutant and the Feral Ghoul and the synth.
+
+So, as fortune often has it, I crossed paths with <Alias=Player>. Vault Dweller. A person who is experiencing the Commonwealth for the first time. What would <Alias.PronounPos=Player> fresh set of eyes say about how far we've come? Is Diamond City the "Great, Green Jewel" we have always claimed it to be?
+
+Before we begin to answer that question, we have to know who <Alias=Player> is. Where <Alias.Pronoun=Player> comes from. In speaking to <Alias.PronounObj=Player>, <Alias.Pronoun=Player> stressed that <Alias.PronounPos=Player> time inside the Vault was normal. But what is normal for a Vault? This reporter knows that life behind the sealed gear doors of a Vault-Tec facility is supposed to be a bastion of the old world. A preservation of life before the bombs.
+
+<i>Continued in Part 2.</i></p>
+
+<font face='$HandwrittenFont'>
+You can't trust everyone.
+</font>
+
+Ness,
+
+Found another one for you. Trader said he saw it in the hills up north, near the highway. Big commercial jet, Skylanes markings, just like you wanted.
+
+Keep the caps coming, and I'll see what else I can turn up.
+
+-VB
+
+Requisition Form PRF-098700
+
+This form authorizes the release of a Power Armor frame from the Prydwen's repair bay. Unauthorized use of this form is prohibited and subject to severe penalties.
+
+<p align="left">
+Open notice to anyone with a gun and some ambition. 
+
+Super Mutants have been spotted in <Alias=Dungeon>. These greenskinned monsters threaten us all. They may be frightening, but that just means the supplies you can take off their disgusting bodies will be all the sweeter.
+
+And if that isn't enough, think of all the poor people they've butchered that you'll be avenging.
+
+Keep what you kill. No other reward given.
+</p>
+
+<font face='$HandwrittenFont'>
+Item 1: Piper
+Piper continues to be a serious concern. The girl has demonstrated a knack for digging up secrets, and could expose our relationship. What's needed here is an outside agent who can't be connected back to me.
+
+Item 2: The Railroad
+Still nothing substantive to report  on this subject. If, as rumor suggests, they are keeping a secret headquarters in the region, then we must assume they have spies and recruiters in Diamond City. They can't stay hidden forever.
+
+Item 3: Hancock
+That damn Ghoul who fancies himself leader of the rabble in Goodneighbor seems bent on destroying my reputation and credibility. Travelers who come back from there are starting to get more and more suspicious. Something had better be done quickly, or the tide of public opinion could turn against me.
+
+Item 4: The Ghoul Farm
+Those Ghoul farmers at the Slog are trying to improve their lot in life, and it's only a matter of time before they try to get back into Diamond City. If I can't enforce my policies, I won't be mayor for long. Perhaps you can send someone to discourage their efforts.
+
+Item 5: The Minutemen
+Frankly I don't much believe it, but the rumor is that the Minutemen are re-organizing. I doubt anyone could rally a bunch of paranoid farmers and settlers after what happened the last time. I mention it only to keep you informed in case preventative measures are needed.
+</font>
+
+Deliver your package to the old switching station. The runner arrives at midnight. If you need gear, look for the blue barrel.
+
+Purchase Order
+
+You are authorized to use this Power Armor frame for MAXIMUM CARNAGE!
+
+Remember, Marlene will be coming to your office after school on Thursday, around 3:30. I'll stop by at 5:00 to pick her up.
+
+- Cheryl
+
+<p align="left">CASE: The Mysterious Stranger
+
+Sightings of a man dubbed "The Mysterious Stranger" have been popping up sporadically across the old U.S. for years now. 
+
+Best case, the man's an amoral lunatic. 
+
+Worst case, a prolific serial killer.
+
+All anyone knows is his MO: appearing suddenly, killing without remorse, disappearing without a word. "The Stranger" has no known accomplices, no clear method for selecting his targets, no calling cards left behind. 
+
+Sightings range from the NCR all the way to the East Coast, stretching back decades. Now he's come to the Commonwealth.
+
+Last thing this place needs is another psychopath running amok. Time to start putting together the pieces to put this one away.
+
+DESCRIPTION
+Human male. Outfits vary, but most recent sightings describe a large overcoat and fedora (guy has taste, I'll give him that much).
+
+One man? Multiple men? A Ghoul with minimal scarring? Might explain the long passages of time between sightings. 
+
+Appears and disappears suddenly, suggesting preternatural infiltration abilities/access to advanced cloaking tech. 
+
+All but earliest descriptions suggest "The Stranger" uses only conventional arms, making infiltration training more likely. 
+
+(Perps like this make me wish the Institute had sprung for thermal detection before giving me the boot.)
+
+SIGHTING LOCATIONS
+- Commonwealth (confirmed)
+- Capital Wasteland (confirmed)
+- NCR (old rumors)
+- Shady Sands (really old rumors)</p>
+
+<font size='18'>They're getting real mad, Red. The last batch of stuff you sent to the brewery wasn't enough. And it smelled like urine. 
+
+Tom says the next letter's going to have a finger in it if you don't send better stuff.
+
+Please do it! I'm so scared!
+
+Send food,
+Lily
+</font>
+
+10/6
+It's almost over. As soon as we get the treasure, I can finally do away with that damn woman and her leering looks at my Ken. Can't wait to wipe the smirk off that stupid bitch's face.
+
+Hey kid,
+
+If you're reading this, I just wanted to say thanks. You were kind to me when I gave you every reason not to be. Whether or not I'm a synth, I think it's time that I move on.
+
+Sorry about the gun, and thanks for helping me through a hard time.
+
+- Phyllis Daily
+
+<font face='$MAIN_Font' size='35'>65</font>
+
+<font face='$MAIN_Font' size='20'>
+#K53-0901
+10/23/77
+Skylanes 1981
+
+Source: T.D. - Chicago
+Destination: J.M. - Boston
+
+Cargo Contents:
+<Token.ValueInt=Count0> <Token.Title=Dash0> <Token.Title=Item0>
+<Token.ValueInt=Count1> <Token.Title=Dash1> <Token.Title=Item1>
+<Token.ValueInt=Count2> <Token.Title=Dash2> <Token.Title=Item2>
+<Token.ValueInt=Count3> <Token.Title=Dash3> <Token.Title=Item3>
+<Token.ValueInt=Count4> <Token.Title=Dash4> <Token.Title=Item4>
+<Token.ValueInt=Count5> <Token.Title=Dash5> <Token.Title=Item5>
+<Token.ValueInt=Count6> <Token.Title=Dash6> <Token.Title=Item6>
+<Token.ValueInt=Count7> <Token.Title=Dash7> <Token.Title=Item7>
+<Token.ValueInt=Count8> <Token.Title=Dash8> <Token.Title=Item8>
+<Token.ValueInt=Count9> <Token.Title=Dash9> <Token.Title=Item9>
+</font>
+
+<font face='$HandwrittenFont'>
+A reminder...
+
+Covenant is a safe place. Whatever bad happened to you in the past won't happen here. But we've all got a job to do. We need word-of-mouth to spread so eventually dozens of people a week come through here.
+
+So, some guidelines:
+
+* Be welcoming, but don't make visitors uncomfortable
+* Any opportunities to encourage visitors to bring their friends, exploit
+* NEVER talk about synths
+* NEVER talk about the Institute
+
+
+Lars,
+
+I know there's no easy way to do this, so I'm just going to come out and say it.  I'm leaving you. I know doing it by letter makes me a coward, and I'm ok with that. I just couldn't stand being with you anymore. The way you just let everyone push you around and tell you what to do. Grow a backbone! Who wants a man like that? I'm staying with Paulo now. Yes, that Paulo. He may be a Ghoul, but at least he doesn't take crap from everyone. And he doesn't live with his mother like someone I know. 
+
+Don't write me back,
+Sharon
+
+<font face='$HandwrittenFont'>Shem Drowne made it, May 25, 1742. 
+
+To my brethren and fellow grasshoppers, Fell in ye year 1753 (1755) Nov. 13, early in ye morning by a great earthquake by my old Master above. 
+
+Again, like to have met with Utter Ruin by Fire, by hopping Timely from my Public Station, came of the broken bones and much Bruised. Cured and Fixed. 
+
+Old Master's son Thomas Drowne June 28, 1768, and Though I will promise to Discharge my office, yet I shall vary as ye wind.
+
+On the banks of the Charles, where forever rests Master Shem, there one can find a life's worth.</font>
+
+<font face='$HandwrittenFont'>
+Here's what we'll need for the Stabilized Reflector Platform:
+
+~ Aluminum x10
+~ Circuitry x3
+~ Steel x5
+
+Pretty sure we've already got what you'll need at Sanctuary, if you want to build the interceptor there.
+
+- Sturges
+
+
+I've been trapped in this boat for days. There was some kind of tidal wave that came from the west. It flipped us over. Looks like I'm the only one that made it.  If you can consider my current situation "making it."  I somehow still have air to breath - I guess that means the boat must still be on the surface.
+
+Please, if you get this note, I need help!
+
+<font size='19'>
+Dear WRVR members,
+
+It has come to our attention that your station is in close proximity to one of the tower sites in our newly planned Relay Tower network. Your station may experience periodic intereference or disruptions when we deem it necessary to broadcast. 
+
+If you have any questions or concerns beyond that please contact your nearest military branch. 
+
+Thank you and have a great day!
+
+It's a sweet setup, Jamal, it really is. Up so high you don't have to worry about nothing. That drop is the only thing that bothers me. You know how I get at nights, especially after I've been drinking. Up here, if I do go out for a stroll, it'll probably be the last thing I do.
+
+John was pulled out to sea. The fish was huge! I told him not to tether the pole to himself, but he wouldn't listen. If only he hadn't put the keys in his pocket.
+
+I thought they would be able to help me figure out if I'm a synth or not, but all they do is keep asking me about a baseball team. Hours and hours over the same question. Either I am, and this is some form of torture, or they have no idea either.
+
+I can't take it any more.
+Samuel, I'm sorry.
+I'm sorry for everything.
+
+<p align="center">
+
+
+View from the Vault
+Part 3
+By
+Piper Wright
+</p>[pagebreak]<p align="left">
+<i>Continued from Part 2.</i>
+
+It's easy for us to be cynical about the missing. We have spent so long knowing the Institute is out there, but understanding so little about them. They are not the only ones responsible for kidnappings, but the fact that they sometimes are, and the fact that we have been so powerless to stop them when they do, causes us to treat all victims of kidnappings as if they are a lost cause.
+
+But the people left behind, those loved ones, friends, and neighbors who may never see the faces of those taken from them again, they do not have the luxury of being able to just look away. They have to carry that lost with them, even if everyone else tells them to move on and forget.
+
+I asked <alias=Player> to make a statement to Diamond City. To give us an outsider's perspective on what it means to lose a loved one, and how he feels. Maybe, in some way, it's how we all should feel. Maybe we've forgotten what the right, human response to these tragedies are. 
+
+"Find who's responsible, and make them pay." <Alias.PronounCap=Player> said. "Simple as that."
+
+END</p>
+
+<font size='18'>Edgar Swann
+Day 1
+
+So I nipped a few cigs. Big deal. Smartasses may run this place, but they can't just do whatever they want. I got rights. Trial worked out for me in the end.
+
+They agreed to "probation" - I stay inside for a month, write something every day, and they'll bring me all the food and water I want. They think this is punishment? Sure beats scrubbing floors all day.</font>
+
+<font face='$MAIN_Font' size='24'><p align='center'><b>The Treasures of Jamaica Plain</b></p></font><font face='$MAIN_Font' size='18'><p align='center'>October 17-23nd, 2077
+8am-5pm Daily</p></font>
+<font face='$MAIN_Font' size='18'>Come see the fabulous Treasures of Jamaica Plain! This stunning exhibit will be on display for one week only before these priceless items are sealed away, never to be seen again! Bring the entire family to this once-in-a-lifetime event!</font>
+
+
+<p align='right'><img src='img://Textures/Interface/Note/JamaicaPlain_Seal_d.DDS' height='100' width='100'></p>
+
+
+
+<font face='$HandwrittenFont'>
+Our sources tell us that the Railroad has some sort of experimental or prototype robot in their headquarters. They're calling the "Predictive Analytic Machine," or "P.A.M." for short. If you could use this holotape to decrypt the security on P.A.M.'s terminal, it will force the unit to return to the Prydwen. I'm certain we could put P.A.M.'s computing power to good use. Otherwise, destroy it. We wouldn't want it to fall into the Institute's hands.
+
+- Ingram
+
+
+Word is that the gang up at <Alias=Dungeon> had a big score recently. If we can hit them hard enough, we could make off with a nice haul of caps.
+
+<font size='20'>
+Sorry, Jen, I don't know any more than you do. Arlen always was peculiar, but the old man was the heart and soul of this place. I'm going to miss him. And his daughter, too. Marlene was here just the other day - cutest little thing.
+
+I think Nate was just as shocked - he went straight home after the meeting let out. Forgot all about our date. I'll give him a pass. This time.
+
+- Paula
+</font>
+
+Kristen,
+
+You were right! This pen pal thing is a lot of fun! Gives me something to look forward to all week. It can get pretty lonely out here, but now I get excited whenever I see the mail carrier go by!
+
+Anyway, I found some more spare wood planks, so I decided to add a "sun room" to the old shack. I mean, pretty much every room is a sun room when you've got a leaky roof, am I right? But I found some patio chairs and a couple of cinder blocks I'm using as a table. It faces the east, so sunrises are just lovely! Maybe someday you'll make the trek out here and see it with me. 
+
+How are things going with you? Did you talk to that guy you've been eyeing? He sounded really handsome, you should go for it! I mean, what have you got to lose?
+Anyway, hope this finds you well, and I look forward to your next letter!
+
+Your pen pal,
+Alexander
+
+Hey kid,
+
+If you're reading this, I just wanted to say thanks. Your friends in the railroad came and they are helping me get a fresh start.
+
+Sorry about the gun, and thanks for helping me through a hard time.
+
+- Phyllis Daily
+
+<font face='$HandwrittenFont'>
+Gruel's Shopping List
+
+- Few pounds of yao guai meat
+- Half dozen deathclaw eggs
+- Mirelurk meat, softshell only!
+- Beer. Lots.
+-A cuppa Glowing One blood 
+(what they don't know won't hurt 'em)
+</font>
+
+<font size='18'>
+Looking forward to seeing you.
+
+Signed,
+Your Neighbors
+</font>
+
+<p align="left">
+Open notice to anyone with a gun and some ambition. 
+
+Feral Ghoul activity is on the rise near <Alias=Dungeon>. They may not have much in the way of supplies, but they congregate near areas with good salvage. Plus, ridding the world of these monsters will bring a smile to your face.
+
+Keep what you kill. No other reward given.
+</p>
+
+<font face='$MAIN_Font' size='35'>61</font>
+
+<font size='36'>YOU ARE SWANN.</font>
+
