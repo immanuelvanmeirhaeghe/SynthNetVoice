@@ -27,7 +27,11 @@ namespace SynthNetVoice.Controllers.v1
         /// <summary>
         /// Get/set the instructions for the NPC bot..
         /// </summary>
-        public static string LocalNpcInstructions { get; set; } = string.Empty;
+        public static string LocalSystemInstructions { get; set; } = string.Empty;
+        /// <summary>
+        /// Get/set the instructions for the NPC bot..
+        /// </summary>
+        public static string LocalUserInstructions { get; set; } = string.Empty;
         /// <summary>
         /// Inidicates NPC bot state.
         /// </summary>
@@ -36,6 +40,10 @@ namespace SynthNetVoice.Controllers.v1
         /// Name of the NPC.
         /// </summary>
         public static string NpcName { get; set; } = string.Empty;
+        /// <summary>
+        /// Game of the NPC.
+        /// </summary>
+        public static string GameName { get; set; } = string.Empty;
 
         /// <summary>
         /// Required first, if you want an immersive NPC for your game!
@@ -45,31 +53,31 @@ namespace SynthNetVoice.Controllers.v1
         [HttpPost]
         [Route("init")]
         public async Task<bool> InitAsync(
-            string? npcName, 
-            [FromBody] Instruction? instruction)
+            string? gameName,
+            string? npcName
+            )
         {
             try
             {
                 NpcName = npcName ?? string.Empty;
+                GameName = gameName ?? string.Empty;
+                GameName =GameName.Trim().ToLower();
 
-                // Quick hack to test Green Hell
-                if (NpcName.ToLower().Contains("spear"))
+                if ( !string.IsNullOrEmpty(GameName))
                 {
-                    instruction = new Instruction
-                    {
-                        FromSystem = await InstructionsManager.GetSystemInstructionsAsync(NpcName, null, "GreenHellData", null, "SystemInstructions.txt"),
-                        FromUser = await InstructionsManager.GetUserInstructionsAsync(NpcName, null, "GreenHellData", null, "UserInstructions.txt")
-                    };
+                    LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(GameName, NpcName);
+                    LocalConversation.AppendSystemMessage(LocalSystemInstructions);
+                    LocalUserInstructions = await InstructionsManager.GetUserInstructionsAsync(GameName, NpcName);
+                    LocalConversation.AppendUserInput(LocalUserInstructions);
+
+                    IsInitialized = true;
+                    return true;
                 }
-
-                LocalNpcInstructions = instruction != null && instruction.FromSystem != null ? instruction.FromSystem : await InstructionsManager.GetSystemInstructionsAsync(NpcName);
-                LocalConversation.AppendSystemMessage(LocalNpcInstructions);
-
-                LocalNpcInstructions = instruction != null && instruction.FromUser != null ? instruction.FromUser : await InstructionsManager.GetUserInstructionsAsync(NpcName);
-                LocalConversation.AppendSystemMessage(LocalNpcInstructions);
-
-                IsInitialized = true;
-                return true;
+                else 
+                {
+                    IsInitialized = false;
+                    return false; 
+                }
             }
             catch (Exception)
             {
@@ -84,13 +92,21 @@ namespace SynthNetVoice.Controllers.v1
         /// <returns></returns>
         [HttpGet]
         [Route("instruction")]
-        public async Task<Instruction> GetInstruction(string? npcName)
+        public async Task<Instruction> GetInstruction(
+            string? gameName = null, 
+            string? npcName = null)
         {
             Instruction instruction = new();
             try
             {
                 NpcName = npcName ?? string.Empty;
-                instruction = await InstructionsManager.GetInstruction(NpcName);
+                GameName = gameName ?? string.Empty;
+                GameName = GameName.Trim().ToLower();
+
+                if(!string.IsNullOrEmpty(GameName))
+                {
+                    instruction = await InstructionsManager.GetInstruction(GameName, NpcName);
+                }
                 return instruction;
             }
             catch (Exception)
@@ -108,65 +124,82 @@ namespace SynthNetVoice.Controllers.v1
         [HttpGet]
         [Route("prompt")]
         public async Task<string> Prompt(
+            string? gameName = null,
+            string? npcName = null,
             string question = "",
             bool scribe = true,
             bool gpt = false)
         {
-            var task = new TaskFactory().StartNew(async () =>
+
+            NpcName = npcName ?? string.Empty;
+            GameName = gameName ?? string.Empty;
+            GameName = GameName.Trim().ToLower();
+
+            if (!string.IsNullOrEmpty(GameName))
             {
                 var promptBuilder = new StringBuilder();
+                string responseToPrompt = string.Empty;
 
-                if (string.IsNullOrEmpty(question))
+                var task = new TaskFactory().StartNew(async () =>
                 {
-                    promptBuilder.AppendLine($"I have nothing to say!");
-                }
-                else
-                {
-                    if (gpt)
+                    if (string.IsNullOrEmpty(question))
                     {
-                        if (IsInitialized)
-                        {
-
-                            LocalConversation ??= LocalOpenAIAPI.Chat.CreateConversation();
-
-                            LocalNpcInstructions = await InstructionsManager.GetSystemInstructionsAsync(NpcName);
-                            LocalConversation.AppendSystemMessage(LocalNpcInstructions);
-
-                            LocalNpcInstructions = await InstructionsManager.GetUserInstructionsAsync(NpcName);
-                            LocalConversation.AppendUserInput(LocalNpcInstructions);
-
-                            LocalConversation.AppendUserInput("Who are you?");
-                            LocalConversation.AppendExampleChatbotOutput($"I am {NpcName}");
-
-                            LocalConversation.AppendUserInput(question);
-
-                            await LocalConversation.StreamResponseFromChatbotAsync(res =>
-                            {
-                                promptBuilder.Append(res);
-                            });
-
-                        }
-                        else
-                        {
-                            promptBuilder.AppendLine($"I have not yet been instructed who I am! Please give instructions by posting to operation /npc/init.");
-                        }
+                        promptBuilder.AppendLine($"I have nothing to say!");
                     }
                     else
                     {
-                        promptBuilder.AppendLine(question); 
+                        if (gpt)
+                        {
+                            if (IsInitialized)
+                            {
+                                LocalConversation ??= LocalOpenAIAPI.Chat.CreateConversation();
+
+                                LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(GameName, NpcName);
+                                LocalConversation.AppendSystemMessage(LocalSystemInstructions);
+
+                                LocalSystemInstructions = await InstructionsManager.GetUserInstructionsAsync(GameName, NpcName);
+                                LocalConversation.AppendUserInput(LocalSystemInstructions);
+
+                                LocalConversation.AppendUserInput("Who are you?");
+                                LocalConversation.AppendExampleChatbotOutput($"I am {NpcName}");
+
+                                LocalConversation.AppendUserInput(question);
+
+                                await LocalConversation.StreamResponseFromChatbotAsync(res =>
+                                {
+                                    promptBuilder.Append(res);
+                                });
+
+                            }
+                            else
+                            {
+                                promptBuilder.AppendLine($"I have not yet been instructed who I am! Please give instructions by posting to operation /npc/init.");
+                            }
+                        }
+                        else
+                        {
+                            promptBuilder.AppendLine(question);
+                        }
                     }
-                }
-                LocalPrompt.AppendText(promptBuilder.ToString());
-                LocalSynthesizer.Speak(LocalPrompt);
-                if (scribe)
-                {
-                    LocalLogger.Log(LogLevel.Information, nameof(Prompt), promptBuilder.ToString());
-                }
-                return promptBuilder.ToString();
-            });
-            var result = await task;
-            string responseToPrompt = await result;
-            return responseToPrompt;
+                    LocalPrompt.AppendText(promptBuilder.ToString());
+                    LocalSynthesizer.Speak(LocalPrompt);
+                    
+                    if (scribe)
+                    {
+                        LocalLogger.Log(LogLevel.Information, nameof(Prompt), promptBuilder.ToString());
+                    }
+                    
+                    return promptBuilder.ToString();
+
+                });
+                var result = await task;
+                responseToPrompt = await result;
+                return responseToPrompt;
+            }
+            else
+            {
+                return string.Empty;
+            }            
         }
 
     }
