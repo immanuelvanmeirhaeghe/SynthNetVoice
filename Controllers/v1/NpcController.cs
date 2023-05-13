@@ -32,7 +32,9 @@ namespace SynthNetVoice.Controllers.v1
         /// Inidicates NPC bot state.
         /// </summary>
         public static bool IsInitialized { get; set; } = false;
-
+        /// <summary>
+        /// Name of the NPC.
+        /// </summary>
         public static string NpcName { get; set; } = string.Empty;
 
         /// <summary>
@@ -49,6 +51,17 @@ namespace SynthNetVoice.Controllers.v1
             try
             {
                 NpcName = npcName ?? string.Empty;
+
+                // Quick hack to test Green Hell
+                if (NpcName.ToLower().Contains("spear"))
+                {
+                    instruction = new Instruction
+                    {
+                        FromSystem = await InstructionsManager.GetSystemInstructionsAsync(NpcName, null, "GreenHellData", null, "SystemInstructions.txt"),
+                        FromUser = await InstructionsManager.GetUserInstructionsAsync(NpcName, null, "GreenHellData", null, "UserInstructions.txt")
+                    };
+                }
+
                 LocalNpcInstructions = instruction != null && instruction.FromSystem != null ? instruction.FromSystem : await InstructionsManager.GetSystemInstructionsAsync(NpcName);
                 LocalConversation.AppendSystemMessage(LocalNpcInstructions);
 
