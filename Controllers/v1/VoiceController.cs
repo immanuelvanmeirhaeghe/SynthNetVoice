@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Runtime.Versioning;
 using System.Speech.Synthesis;
 
 namespace SynthNetVoice.Controllers.v1
 {
+    /// <summary>
+    /// Manages <see cref="VoiceInfo"/> resources.
+    /// </summary>
     [Route("voice")]
     [SupportedOSPlatform("windows")]
     public class VoiceController : BaseController

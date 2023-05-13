@@ -1,14 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using OpenAI_API;
+﻿using Microsoft.AspNetCore.Mvc;
 using OpenAI_API.Chat;
 using SynthNetVoice.Data.Instructions;
 using SynthNetVoice.Data.Models;
+using System;
 using System.Runtime.Versioning;
 using System.Text;
 
 namespace SynthNetVoice.Controllers.v1
 {
+    /// <summary>
+    /// Manages NPC actions.
+    /// </summary>
     [Route("npc")]
     [SupportedOSPlatform("windows")]
     public class NpcController : BaseController
@@ -16,7 +18,6 @@ namespace SynthNetVoice.Controllers.v1
         public NpcController(ILogger<PlayerController> logger, IConfiguration config) : base(logger, config)
         {
             LocalConversation = LocalOpenAIAPI.Chat.CreateConversation();
-            LocalNpcInstructions = string.Empty;
         }
 
         /// <summary>
@@ -26,30 +27,34 @@ namespace SynthNetVoice.Controllers.v1
         /// <summary>
         /// Get/set the instructions for the NPC bot..
         /// </summary>
-        public string LocalNpcInstructions { get; set; }
+        public static string LocalNpcInstructions { get; set; } = string.Empty;
         /// <summary>
         /// Inidicates NPC bot state.
         /// </summary>
-        public bool IsInitialized { get; set; } = false;
+        public static bool IsInitialized { get; set; } = false;
+
+        public static string NpcName { get; set; } = string.Empty;
 
         /// <summary>
         /// Required first, if you want an immersive NPC for your game!
+        /// When not given, uses Fallout 4 and Codsworth as defaults and default instructions.
         /// </summary>
         /// <param name="npcName">Your NPC's name in the game.</param>
         [HttpPost]
         [Route("init")]
-        public async Task<bool> InititializeNpcBotAsync(string npcName)
+        public async Task<bool> InitAsync(
+            string? npcName, 
+            [FromBody] Instruction? instruction)
         {
             try
             {
-                LocalNpcInstructions = await InstructionsManager.GetSystemInstructionsAsync(npcName);
+                NpcName = npcName ?? string.Empty;
+                LocalNpcInstructions = instruction != null && instruction.FromSystem != null ? instruction.FromSystem : await InstructionsManager.GetSystemInstructionsAsync(NpcName);
                 LocalConversation.AppendSystemMessage(LocalNpcInstructions);
 
-                LocalConversation.AppendUserInput("Who are you?");
-                LocalConversation.AppendExampleChatbotOutput($"I am {npcName}");
-
-                LocalNpcInstructions = await InstructionsManager.GetUserInstructionsAsync(npcName);
+                LocalNpcInstructions = instruction != null && instruction.FromUser != null ? instruction.FromUser : await InstructionsManager.GetUserInstructionsAsync(NpcName);
                 LocalConversation.AppendSystemMessage(LocalNpcInstructions);
+
                 IsInitialized = true;
                 return true;
             }
@@ -60,14 +65,19 @@ namespace SynthNetVoice.Controllers.v1
             }
         }
 
+        /// <summary>
+        /// Get the currently configured instructions (system - and user - instruction) that will be used to train the NPC bot.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("instruction")]
-        public async Task<Instruction> GetInstruction()
+        public async Task<Instruction> GetInstruction(string? npcName)
         {
             Instruction instruction = new();
             try
             {
-                instruction = await InstructionsManager.GetInstruction();
+                NpcName = npcName ?? string.Empty;
+                instruction = await InstructionsManager.GetInstruction(NpcName);
                 return instruction;
             }
             catch (Exception)
@@ -103,16 +113,34 @@ namespace SynthNetVoice.Controllers.v1
                     {
                         if (IsInitialized)
                         {
+
+                            LocalConversation ??= LocalOpenAIAPI.Chat.CreateConversation();
+
+                            LocalNpcInstructions = await InstructionsManager.GetSystemInstructionsAsync(NpcName);
+                            LocalConversation.AppendSystemMessage(LocalNpcInstructions);
+
+                            LocalNpcInstructions = await InstructionsManager.GetUserInstructionsAsync(NpcName);
+                            LocalConversation.AppendUserInput(LocalNpcInstructions);
+
+                            LocalConversation.AppendUserInput("Who are you?");
+                            LocalConversation.AppendExampleChatbotOutput($"I am {NpcName}");
+
                             LocalConversation.AppendUserInput(question);
+
                             await LocalConversation.StreamResponseFromChatbotAsync(res =>
                             {
                                 promptBuilder.Append(res);
                             });
+
                         }
                         else
                         {
                             promptBuilder.AppendLine($"I have not yet been instructed who I am! Please give instructions by posting to operation /npc/init.");
                         }
+                    }
+                    else
+                    {
+                        promptBuilder.AppendLine(question); 
                     }
                 }
                 LocalPrompt.AppendText(promptBuilder.ToString());
@@ -129,4 +157,5 @@ namespace SynthNetVoice.Controllers.v1
         }
 
     }
+
 }

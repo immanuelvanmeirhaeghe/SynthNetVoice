@@ -1,17 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System.Speech.Synthesis;
-using System.Speech.Recognition;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Runtime.Versioning;
-using static System.Net.Mime.MediaTypeNames;
-using System.Speech.AudioFormat;
 using System.Text;
-using OpenAI_API;
-using System.Diagnostics;
-using SynthNetVoice.Data.Instructions;
 
 namespace SynthNetVoice.Controllers.v1
 {
+    /// <summary>
+    /// Manages player actions.
+    /// </summary>
     [Route("player")]
     [SupportedOSPlatform("windows")]
     public class PlayerController : BaseController
