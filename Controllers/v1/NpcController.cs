@@ -1,10 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using OpenAI_API.Chat;
 using SynthNetVoice.Data.Instructions;
 using SynthNetVoice.Data.Models;
 using System;
+using System.Net.Http;
 using System.Runtime.Versioning;
+using System.Speech.AudioFormat;
+using System.Speech.Synthesis;
 using System.Text;
+using System.Text.Json;
 
 namespace SynthNetVoice.Controllers.v1
 {
@@ -152,24 +158,8 @@ namespace SynthNetVoice.Controllers.v1
                         {
                             if (IsInitialized)
                             {
-                                LocalConversation ??= LocalOpenAIAPI.Chat.CreateConversation();
-
-                                LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(GameName, NpcName);
-                                LocalConversation.AppendSystemMessage(LocalSystemInstructions);
-
-                                LocalSystemInstructions = await InstructionsManager.GetUserInstructionsAsync(GameName, NpcName);
-                                LocalConversation.AppendUserInput(LocalSystemInstructions);
-
-                                LocalConversation.AppendUserInput("Who are you?");
-                                LocalConversation.AppendExampleChatbotOutput($"I am {NpcName}");
-
-                                LocalConversation.AppendUserInput(question);
-
-                                await LocalConversation.StreamResponseFromChatbotAsync(res =>
-                                {
-                                    promptBuilder.Append(res);
-                                });
-
+                                string trained = await TrainNpc(question);
+                                promptBuilder.AppendLine(trained);
                             }
                             else
                             {
@@ -182,16 +172,26 @@ namespace SynthNetVoice.Controllers.v1
                         }
                     }
                     LocalPrompt.AppendText(promptBuilder.ToString());
+                  
+                    string audioFile = $"D:\\Workspaces\\VSTS\\SynthNetVoice.Data\\Fallout4Data\\Audio\\{nameof(audioFile)}.wav";
+                    LocalSynthesizer.SetOutputToWaveFile(audioFile, new SpeechAudioFormatInfo(32000, AudioBitsPerSample.Sixteen, AudioChannel.Stereo));
+
+                    System.Media.SoundPlayer m_SoundPlayer = new System.Media.SoundPlayer(audioFile);
+
                     LocalSynthesizer.Speak(LocalPrompt);
-                    
+                    m_SoundPlayer.Play();
+
                     if (scribe)
                     {
+                        LogConversation($"{nameof(Prompt)}_{NpcName}_{GameName}_", promptBuilder.ToString());
                         LocalLogger.Log(LogLevel.Information, nameof(Prompt), promptBuilder.ToString());
                     }
-                    
+
+                    LocalSynthesizer.SetOutputToNull();
                     return promptBuilder.ToString();
 
                 });
+
                 var result = await task;
                 responseToPrompt = await result;
                 return responseToPrompt;
@@ -202,6 +202,26 @@ namespace SynthNetVoice.Controllers.v1
             }            
         }
 
+        private async Task<string> TrainNpc(string question)
+        {
+            var promptBuilder = new StringBuilder();
+
+            LocalConversation ??= LocalOpenAIAPI.Chat.CreateConversation();
+            LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(GameName, NpcName);
+            LocalConversation.AppendSystemMessage(LocalSystemInstructions);
+            LocalSystemInstructions = await InstructionsManager.GetUserInstructionsAsync(GameName, NpcName);
+            LocalConversation.AppendUserInput(LocalSystemInstructions);
+            LocalConversation.AppendUserInput("Who are you?");
+            LocalConversation.AppendExampleChatbotOutput($"I am {NpcName}");
+            LocalConversation.AppendUserInput(question);
+
+            await LocalConversation.StreamResponseFromChatbotAsync(res =>
+            {
+                promptBuilder.Append(res);
+            });
+
+            return promptBuilder.ToString();
+        }
     }
 
 }

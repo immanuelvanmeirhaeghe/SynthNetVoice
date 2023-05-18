@@ -19,4 +19,10 @@
     <ProjectReference Include="..\SynthNetVoice.Data\SynthNetVoice.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="System.Windows.Extensions">
+      <HintPath>..\..\..\Program Files\Microsoft Visual Studio\2022\Community\dotnet\runtime\shared\Microsoft.WindowsDesktop.App\6.0.16\System.Windows.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
