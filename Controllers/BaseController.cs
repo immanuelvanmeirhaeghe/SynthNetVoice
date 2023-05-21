@@ -24,33 +24,33 @@ namespace SynthNetVoice.Controllers
 
         public string AudioToSpeak { get; set; }
         public string LogConversationFile { get; set; }
-        public bool IsCompleted;
+        public string SelectedVoiceId { get; set; }
+        public bool IsCompleted { get; set; }
 
         public BaseController(ILogger<PlayerController> logger, IConfiguration config)
         {
             LocalConfiguration = config;
             LocalLogger = logger;
             AudioToSpeak = string.Empty;
+            SelectedVoiceId = string.Empty;
             LogConversationFile = string.Empty;
             LocalAPIAuthentication = new APIAuthentication(LocalConfiguration.GetValue<string>("OPENAI_API_KEY"), LocalConfiguration.GetValue<string>("OPENAI_ORGANIZATION"));
             LocalPrompt = new PromptBuilder();
             LocalSynthesizer = new SpeechSynthesizer();
             IsCompleted = false;
-            // Create and load a sample grammar.  
             LocalRecognizer ??= new SpeechRecognizer();
             LocalOpenAIAPI = new OpenAIAPI(LocalAPIAuthentication);
-
-#if DEBUG
-
-            LocalLogger.LogDebug($"{nameof(Created)}", nameof(PlayerController));
-            Debug.Write($"{nameof(LocalAPIAuthentication.OpenAIOrganization)}", LocalAPIAuthentication.OpenAIOrganization);
-            Debug.Write($"{nameof(LocalAPIAuthentication.ApiKey)}", LocalAPIAuthentication.ApiKey);
-#endif
-
         }
 
+        /// <summary>
+        /// Log conversation text with an NPC to a given local file.
+        /// </summary>
+        /// <param name="fileName">given local file</param>
+        /// <param name="text">conversation text logged</param>
+        /// <returns>Log conversation</returns>
         [Route("log")]
         [HttpPost]
+        [ApiExplorerSettings(IgnoreApi =true)]
         public string LogConversation(string fileName, string text)
         {
             LogConversationFile = Path.Combine("D:\\Workspaces\\VSTS\\SynthNetVoice.Data\\Fallout4Data\\Logs\\", $"{fileName}_{DateTime.Now:hhmmss}.txt");

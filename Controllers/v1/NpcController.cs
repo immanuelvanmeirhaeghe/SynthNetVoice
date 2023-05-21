@@ -11,6 +11,7 @@ using System.Speech.AudioFormat;
 using System.Speech.Synthesis;
 using System.Text;
 using System.Text.Json;
+using System.Media;
 
 namespace SynthNetVoice.Controllers.v1
 {
@@ -23,13 +24,18 @@ namespace SynthNetVoice.Controllers.v1
     {
         public NpcController(ILogger<PlayerController> logger, IConfiguration config) : base(logger, config)
         {
-            LocalConversation = LocalOpenAIAPI.Chat.CreateConversation();
+            LocalConversation = NewConversation();
+        }
+
+        private Conversation NewConversation()
+        {
+            return LocalOpenAIAPI.Chat.CreateConversation();
         }
 
         /// <summary>
         /// Conversation which encapsulates an AI ongoing chat.
         /// </summary>
-        public Conversation LocalConversation { get; set; }
+        public static Conversation? LocalConversation { get; set; } = default;
         /// <summary>
         /// Get/set the instructions for the NPC bot..
         /// </summary>
@@ -72,10 +78,15 @@ namespace SynthNetVoice.Controllers.v1
                 if ( !string.IsNullOrEmpty(GameName))
                 {
                     LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(GameName, NpcName);
-                    LocalConversation.AppendSystemMessage(LocalSystemInstructions);
-                    LocalUserInstructions = await InstructionsManager.GetUserInstructionsAsync(GameName, NpcName);
-                    LocalConversation.AppendUserInput(LocalUserInstructions);
-
+                    if (LocalConversation == null)
+                    {
+                        LocalConversation = NewConversation();
+                        await AppendMessages();
+                    }
+                    else
+                    {
+                        await AppendMessages();
+                    }
                     IsInitialized = true;
                     return true;
                 }
@@ -90,6 +101,14 @@ namespace SynthNetVoice.Controllers.v1
                 IsInitialized = false;
                 return false;
             }
+        }
+
+        private async Task AppendMessages()
+        {
+            LocalConversation ??= NewConversation();
+            LocalConversation.AppendSystemMessage(LocalSystemInstructions);
+            LocalUserInstructions = await InstructionsManager.GetUserInstructionsAsync(GameName, NpcName);
+            LocalConversation.AppendUserInput(LocalUserInstructions);
         }
 
         /// <summary>
@@ -176,8 +195,11 @@ namespace SynthNetVoice.Controllers.v1
                     string audioFile = $"D:\\Workspaces\\VSTS\\SynthNetVoice.Data\\Fallout4Data\\Audio\\{nameof(audioFile)}.wav";
                     LocalSynthesizer.SetOutputToWaveFile(audioFile, new SpeechAudioFormatInfo(32000, AudioBitsPerSample.Sixteen, AudioChannel.Stereo));
 
-                    System.Media.SoundPlayer m_SoundPlayer = new System.Media.SoundPlayer(audioFile);
-
+                    SoundPlayer m_SoundPlayer = new SoundPlayer(audioFile);
+                    if (!string.IsNullOrEmpty(SelectedVoiceId))
+                    {
+                        LocalSynthesizer.SelectVoice(SelectedVoiceId);
+                    }
                     LocalSynthesizer.Speak(LocalPrompt);
                     m_SoundPlayer.Play();
 
@@ -186,7 +208,6 @@ namespace SynthNetVoice.Controllers.v1
                         LogConversation($"{nameof(Prompt)}_{NpcName}_{GameName}_", promptBuilder.ToString());
                         LocalLogger.Log(LogLevel.Information, nameof(Prompt), promptBuilder.ToString());
                     }
-
                     LocalSynthesizer.SetOutputToNull();
                     return promptBuilder.ToString();
 
@@ -202,7 +223,10 @@ namespace SynthNetVoice.Controllers.v1
             }            
         }
 
-        private async Task<string> TrainNpc(string question)
+        [Route("train")]
+        [HttpGet]
+        [ApiExplorerSettings(IgnoreApi = true)]
+        public async Task<string> TrainNpc(string question)
         {
             var promptBuilder = new StringBuilder();
 
@@ -222,6 +246,7 @@ namespace SynthNetVoice.Controllers.v1
 
             return promptBuilder.ToString();
         }
+
     }
 
 }

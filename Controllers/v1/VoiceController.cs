@@ -6,6 +6,7 @@ using System.Numerics;
 using System.Text;
 using OpenAI_API.Moderation;
 using System;
+using System.Net;
 
 namespace SynthNetVoice.Controllers.v1
 {
@@ -33,29 +34,6 @@ namespace SynthNetVoice.Controllers.v1
         }
 
         /// <summary>
-        /// Get voice info for given id, which can be (part of) an installed voice's display name.
-        /// </summary>
-        /// <param name="id"><see cref="VoiceInfo.Id"/> as a search string</param>
-        /// <returns><see cref="VoiceInfo"/></returns>
-        [HttpGet]
-        [Route("synthesizer/info")]
-        public async Task<InstalledVoice?> GetVoiceAsync(string id)
-        {
-            if (string.IsNullOrEmpty(id))
-            {
-                return default;
-            }
-           string  validated = id.Trim().ToLower();
-            var task = new TaskFactory().StartNew(() =>
-            {
-                return LocalSynthesizer.GetInstalledVoices().ToList();
-            });
-            var result = await task;
-            var voice = result.Find(iv => iv.VoiceInfo.Id.ToLower().Contains(validated));
-            return voice;
-        }
-
-        /// <summary>
         /// Get a list of installed voices.
         /// </summary>
         [HttpGet]
@@ -68,6 +46,60 @@ namespace SynthNetVoice.Controllers.v1
             });
             var list = await task;
             return list;
+        }
+
+        /// <summary>
+        /// Set the voice to use wiith given id, which can be (part of) an installed voice's display name.
+        /// </summary>
+        /// <param name="id"><see cref="VoiceInfo.Id"/> as a search string</param>        
+        [HttpPost]
+        [Route("synthesizer/info")]
+        public async Task<IActionResult?> SetVoiceAsync(
+            [FromQuery]string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                return BadRequest(id);
+            }
+            string validated = id.Trim().ToLower();
+            var task = new TaskFactory().StartNew(() =>
+            {
+                 LocalSynthesizer.SelectVoice(id);
+                SelectedVoiceId = id;
+                return true;
+            });
+            
+            bool ok = await task;
+            if (ok)
+            {
+                return Ok(id);
+            } else
+            {
+                return Problem(id);
+            }
+        }
+
+        /// <summary>
+        /// Get voice info for given id, which can be (part of) an installed voice's display name.
+        /// </summary>
+        /// <param name="id"><see cref="VoiceInfo.Id"/> as a search string</param>
+        /// <returns><see cref="VoiceInfo"/></returns>
+        [HttpGet]
+        [Route("synthesizer/info")]
+        public async Task<InstalledVoice?> GetVoiceAsync(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                return default;
+            }
+            string validated = id.Trim().ToLower();
+            var task = new TaskFactory().StartNew(() =>
+            {
+                return LocalSynthesizer.GetInstalledVoices().ToList();
+            });
+            var result = await task;
+            var voice = result.Find(iv => iv.VoiceInfo.Id.ToLower().Contains(validated));
+            return voice;
         }
 
         /// <summary>
@@ -193,8 +225,8 @@ namespace SynthNetVoice.Controllers.v1
         }
 
         private void SpeakAudioFile(
-     SpeechRecognizedEventArgs e,
-     RecognitionResult result)
+             SpeechRecognizedEventArgs e,
+             RecognitionResult result)
         {
             RecognizedAudio audioFile = result.GetAudioForWordRange(result.Words[0], result.Words[^1]);
             MemoryStream audioStream = new MemoryStream();
