@@ -12,9 +12,11 @@ using System.Speech.Synthesis;
 using System.Text;
 using System.Text.Json;
 using System.Media;
+using SynthNetVoice.Data.Enums;
 
 namespace SynthNetVoice.Controllers.v1
 {
+
     /// <summary>
     /// Manages NPC actions.
     /// </summary>
@@ -27,9 +29,41 @@ namespace SynthNetVoice.Controllers.v1
             LocalConversation = NewConversation();
         }
 
-        private Conversation NewConversation()
+        [Route("conversation")]
+        [HttpGet]
+        [ApiExplorerSettings(IgnoreApi = true)]
+        public Conversation NewConversation()
         {
             return LocalOpenAIAPI.Chat.CreateConversation();
+        }
+
+        [Route("conversation/append")]
+        [HttpGet]
+        [ApiExplorerSettings(IgnoreApi = true)]
+        public async Task AppendInstructions()
+        {
+            LocalConversation ??= NewConversation();
+            LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(LocalGameName.ToString(), LocalNpcName);
+            LocalConversation.AppendSystemMessage(LocalSystemInstructions);
+            LocalUserInstructions = await InstructionsManager.GetUserInstructionsAsync(LocalGameName.ToString(), LocalNpcName);
+            LocalConversation.AppendUserInput(LocalUserInstructions);
+        }
+
+        [Route("train")]
+        [HttpGet]
+        [ApiExplorerSettings(IgnoreApi = true)]
+        public async Task<bool> TrainNpc()
+        {
+            LocalConversation ??= LocalOpenAIAPI.Chat.CreateConversation();
+            LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(LocalGameName.ToString(), LocalNpcName);
+            LocalConversation.AppendSystemMessage(LocalSystemInstructions);
+            LocalSystemInstructions = await InstructionsManager.GetUserInstructionsAsync(LocalGameName.ToString(), LocalNpcName);
+            LocalConversation.AppendUserInput(LocalSystemInstructions);
+            LocalConversation.AppendUserInput("What is your name?");
+            LocalConversation.AppendExampleChatbotOutput($"My name is {LocalNpcName}.");
+            
+            IsTrained = true;
+            return IsTrained;
         }
 
         /// <summary>
@@ -48,95 +82,60 @@ namespace SynthNetVoice.Controllers.v1
         /// Inidicates NPC bot state.
         /// </summary>
         public static bool IsInitialized { get; set; } = false;
-        /// <summary>
-        /// Name of the NPC.
-        /// </summary>
-        public static string NpcName { get; set; } = string.Empty;
-        /// <summary>
-        /// Game of the NPC.
-        /// </summary>
-        public static string GameName { get; set; } = string.Empty;
+        public static bool IsTrained { get; set; } = false;
 
         /// <summary>
         /// Required first, if you want an immersive NPC for your game!
         /// When not given, uses Fallout 4 and Codsworth as defaults and default instructions.
         /// </summary>
         /// <param name="npcName">Your NPC's name in the game.</param>
-        [HttpPost]
         [Route("init")]
-        public async Task<bool> InitAsync(
-            string? gameName,
-            string? npcName
-            )
+        [HttpPost]
+        public async Task<IActionResult> InitAsync(
+            string gameName = "Fallout4",
+            string npcName = "MamaMurphy")
         {
             try
             {
-                NpcName = npcName ?? string.Empty;
-                GameName = gameName ?? string.Empty;
-                GameName =GameName.Trim().ToLower();
+                if (!ValidateDefaultParameters(gameName.ToString(), npcName))
+                {
+                    return BadRequest(new { gameName, npcName });
+                }
 
-                if ( !string.IsNullOrEmpty(GameName))
-                {
-                    LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(GameName, NpcName);
-                    if (LocalConversation == null)
-                    {
-                        LocalConversation = NewConversation();
-                        await AppendMessages();
-                    }
-                    else
-                    {
-                        await AppendMessages();
-                    }
-                    IsInitialized = true;
-                    return true;
-                }
-                else 
-                {
-                    IsInitialized = false;
-                    return false; 
-                }
+                await AppendInstructions();
+
+                IsInitialized = true;
+                return Ok(new Instruction { FromSystem = LocalSystemInstructions, FromUser = LocalUserInstructions });
             }
             catch (Exception)
             {
                 IsInitialized = false;
-                return false;
+                return Problem();
             }
-        }
-
-        private async Task AppendMessages()
-        {
-            LocalConversation ??= NewConversation();
-            LocalConversation.AppendSystemMessage(LocalSystemInstructions);
-            LocalUserInstructions = await InstructionsManager.GetUserInstructionsAsync(GameName, NpcName);
-            LocalConversation.AppendUserInput(LocalUserInstructions);
         }
 
         /// <summary>
         /// Get the currently configured instructions (system - and user - instruction) that will be used to train the NPC bot.
         /// </summary>
         /// <returns></returns>
-        [HttpGet]
         [Route("instruction")]
-        public async Task<Instruction> GetInstruction(
-            string? gameName = null, 
-            string? npcName = null)
+        [HttpGet]
+        public async Task<IActionResult> GetInstruction(
+            string gameName = "Fallout4",
+            string npcName = "MamaMurphy")
         {
-            Instruction instruction = new();
             try
             {
-                NpcName = npcName ?? string.Empty;
-                GameName = gameName ?? string.Empty;
-                GameName = GameName.Trim().ToLower();
-
-                if(!string.IsNullOrEmpty(GameName))
+                if (!ValidateDefaultParameters(gameName.ToString(), npcName))
                 {
-                    instruction = await InstructionsManager.GetInstruction(GameName, NpcName);
+                    return BadRequest(new { gameName, npcName });
                 }
-                return instruction;
+                Instruction instruction = await InstructionsManager.GetInstruction(LocalGameName.ToString(), LocalNpcName);
+                return Ok(instruction);
             }
             catch (Exception)
             {
-                return instruction;
+                return Problem();
             }
         }
 
@@ -146,105 +145,74 @@ namespace SynthNetVoice.Controllers.v1
         /// <param name="question">Your question for this NPC when using gpt, else the text you want to hear spoken.</param>
         /// <param name="scribe">Defaults to true, transcribing answers to text and logging the conversation to local log file. When false, conversation is lost.</param>
         /// <param name="gpt">Defaults to false, using locally installed voice. When true, will use Conversation AI.</param>
-        [HttpGet]
+        /// <param name="gameName"></param>
+        /// <param name="npcName"></param>
         [Route("prompt")]
-        public async Task<string> Prompt(
-            string? gameName = null,
-            string? npcName = null,
+        [HttpGet]
+        public async Task<IActionResult> Prompt(
+            string gameName = "Fallout4",
+            string npcName = "MamaMurphy",
             string question = "",
             bool scribe = true,
             bool gpt = false)
         {
+            if (!ValidateDefaultParameters(gameName.ToString(), npcName))
+            {
+                return BadRequest(new { gameName, npcName });
+            }
 
-            NpcName = npcName ?? string.Empty;
-            GameName = gameName ?? string.Empty;
-            GameName = GameName.Trim().ToLower();
+            string responseToPrompt = string.Empty;
 
-            if (!string.IsNullOrEmpty(GameName))
+            var task = new TaskFactory().StartNew(async () =>
             {
                 var promptBuilder = new StringBuilder();
-                string responseToPrompt = string.Empty;
 
-                var task = new TaskFactory().StartNew(async () =>
+                if (string.IsNullOrEmpty(question))
                 {
-                    if (string.IsNullOrEmpty(question))
+                    promptBuilder.AppendLine($"You have not prepared any question for {npcName}. Set {nameof(npcName)}, {nameof(gameName)} and type in your {nameof(question)}.");
+                }
+                else
+                {
+                    if (gpt)
                     {
-                        promptBuilder.AppendLine($"I have nothing to say!");
-                    }
-                    else
-                    {
-                        if (gpt)
+                        if (IsInitialized)
                         {
-                            if (IsInitialized)
+                            IsTrained = await TrainNpc();
+                            if (IsTrained && LocalConversation != null)
                             {
-                                string trained = await TrainNpc(question);
-                                promptBuilder.AppendLine(trained);
-                            }
-                            else
-                            {
-                                promptBuilder.AppendLine($"I have not yet been instructed who I am! Please give instructions by posting to operation /npc/init.");
+                                LocalConversation.AppendUserInput(question);
+                                await LocalConversation.StreamResponseFromChatbotAsync(res =>
+                                {
+                                    promptBuilder.Append(res);
+                                });
                             }
                         }
                         else
                         {
-                            promptBuilder.AppendLine(question);
+                            promptBuilder.AppendLine($"You have not yet set instructions for the {npcName}! Set instruction through POST npc/init.");
                         }
                     }
-                    LocalPrompt.AppendText(promptBuilder.ToString());
-                  
-                    string audioFile = $"D:\\Workspaces\\VSTS\\SynthNetVoice.Data\\Fallout4Data\\Audio\\{nameof(audioFile)}.wav";
-                    LocalSynthesizer.SetOutputToWaveFile(audioFile, new SpeechAudioFormatInfo(32000, AudioBitsPerSample.Sixteen, AudioChannel.Stereo));
-
-                    SoundPlayer m_SoundPlayer = new SoundPlayer(audioFile);
-                    if (!string.IsNullOrEmpty(SelectedVoiceId))
+                    else
                     {
-                        LocalSynthesizer.SelectVoice(SelectedVoiceId);
+                        promptBuilder.AppendLine($"Your prepared question for {npcName}: {question}");
                     }
-                    LocalSynthesizer.Speak(LocalPrompt);
-                    m_SoundPlayer.Play();
-
-                    if (scribe)
-                    {
-                        LogConversation($"{nameof(Prompt)}_{NpcName}_{GameName}_", promptBuilder.ToString());
-                        LocalLogger.Log(LogLevel.Information, nameof(Prompt), promptBuilder.ToString());
-                    }
-                    LocalSynthesizer.SetOutputToNull();
-                    return promptBuilder.ToString();
-
-                });
-
-                var result = await task;
-                responseToPrompt = await result;
-                return responseToPrompt;
-            }
-            else
-            {
-                return string.Empty;
-            }            
-        }
-
-        [Route("train")]
-        [HttpGet]
-        [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<string> TrainNpc(string question)
-        {
-            var promptBuilder = new StringBuilder();
-
-            LocalConversation ??= LocalOpenAIAPI.Chat.CreateConversation();
-            LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(GameName, NpcName);
-            LocalConversation.AppendSystemMessage(LocalSystemInstructions);
-            LocalSystemInstructions = await InstructionsManager.GetUserInstructionsAsync(GameName, NpcName);
-            LocalConversation.AppendUserInput(LocalSystemInstructions);
-            LocalConversation.AppendUserInput("Who are you?");
-            LocalConversation.AppendExampleChatbotOutput($"I am {NpcName}");
-            LocalConversation.AppendUserInput(question);
-
-            await LocalConversation.StreamResponseFromChatbotAsync(res =>
-            {
-                promptBuilder.Append(res);
+                }
+                return promptBuilder.ToString();
             });
 
-            return promptBuilder.ToString();
+            var result = await task;
+            responseToPrompt = await result;
+
+            Transcription script = await NewScript(gameName, responseToPrompt);
+            SpeechToText(script);
+            TextToSpeech(script);
+            if (scribe)
+            {
+                LogConversation(script);
+                LocalLogger.Log(LogLevel.Information, nameof(Prompt), responseToPrompt);
+            }
+
+            return Ok(script);
         }
 
     }

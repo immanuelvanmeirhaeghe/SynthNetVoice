@@ -10,6 +10,7 @@ using System.Net;
 
 namespace SynthNetVoice.Controllers.v1
 {
+
     /// <summary>
     /// Manages <see cref="VoiceInfo"/> resources.
     /// </summary>
@@ -27,7 +28,7 @@ namespace SynthNetVoice.Controllers.v1
             LocalRecognizer.RecognizerUpdateReached += new EventHandler<RecognizerUpdateReachedEventArgs>(RecognizerUpdateReached);
             if (LocalRecognizer.State != RecognizerState.Listening)
             {
-                LocalRecognizer.EmulateRecognizeAsync("Start listening");
+                LocalRecognizer.EmulateRecognize("Start listening");
             }
             IsCompleted = false;
             LocalRecognizer.RequestRecognizerUpdate();
@@ -49,57 +50,54 @@ namespace SynthNetVoice.Controllers.v1
         }
 
         /// <summary>
-        /// Set the voice to use wiith given id, which can be (part of) an installed voice's display name.
+        /// Set the voice to use with given voice info name.
         /// </summary>
-        /// <param name="id"><see cref="VoiceInfo.Id"/> as a search string</param>        
+        /// <param name="name"><see cref="VoiceInfo.Name"/> as a search string</param>        
         [HttpPost]
         [Route("synthesizer/info")]
         public async Task<IActionResult?> SetVoiceAsync(
-            [FromQuery]string id)
+            [FromQuery] string name)
         {
-            if (string.IsNullOrEmpty(id))
+            if (string.IsNullOrEmpty(name))
             {
-                return BadRequest(id);
+                return BadRequest(name);
             }
-            string validated = id.Trim().ToLower();
-            var task = new TaskFactory().StartNew(() =>
+
+            var voiceFound = await GetInstalledVoiceInfo(name);
+            if (voiceFound != null)
             {
-                 LocalSynthesizer.SelectVoice(id);
-                SelectedVoiceId = id;
-                return true;
-            });
-            
-            bool ok = await task;
-            if (ok)
+                LocalSynthesizer.SelectVoice(voiceFound.VoiceInfo.Name);
+                SelectedVoiceInfoName = voiceFound.VoiceInfo.Name;
+            }
+
+            if (!string.IsNullOrEmpty(SelectedVoiceInfoName))
             {
-                return Ok(id);
-            } else
+               LocalSynthesizer.SpeakAsync($"Ok! You have selected me, {SelectedVoiceInfoName} to be the active voice.");
+                return Ok(name);
+            } 
+            else
             {
-                return Problem(id);
+                LocalSynthesizer.SpeakAsync($"Oh no! I could not set the given voice. There was a problem!");
+                return Problem(name);
             }
         }
 
         /// <summary>
-        /// Get voice info for given id, which can be (part of) an installed voice's display name.
+        /// Get voice info for given voice name.
         /// </summary>
-        /// <param name="id"><see cref="VoiceInfo.Id"/> as a search string</param>
+        /// <param name="name"><see cref="VoiceInfo.Name"/> as a search string</param>
         /// <returns><see cref="VoiceInfo"/></returns>
         [HttpGet]
         [Route("synthesizer/info")]
-        public async Task<InstalledVoice?> GetVoiceAsync(string id)
+        public async Task<InstalledVoice?> GetVoiceAsync(
+             [FromQuery] string name)
         {
-            if (string.IsNullOrEmpty(id))
+            if (string.IsNullOrEmpty(name))
             {
                 return default;
-            }
-            string validated = id.Trim().ToLower();
-            var task = new TaskFactory().StartNew(() =>
-            {
-                return LocalSynthesizer.GetInstalledVoices().ToList();
-            });
-            var result = await task;
-            var voice = result.Find(iv => iv.VoiceInfo.Id.ToLower().Contains(validated));
-            return voice;
+            }           
+            var result = await GetInstalledVoiceInfo(name);
+            return result;
         }
 
         /// <summary>
@@ -136,7 +134,9 @@ namespace SynthNetVoice.Controllers.v1
         /// <returns></returns>
         [HttpPost]
         [Route("recognizer/grammar/create")]
-        public async Task<Grammar?> CreateGrammarFromFileAsync(string filePath, string name)
+        public async Task<Grammar?> CreateGrammarFromFileAsync(
+            [FromQuery] string filePath,
+            [FromQuery] string name)
         {
             var task = new TaskFactory().StartNew(() =>
             {
@@ -168,7 +168,7 @@ namespace SynthNetVoice.Controllers.v1
             {
                 qualifier = (g.Enabled) ? "enabled" : "disabled";
                 RecognitionResultBuilder.AppendLine($"Grammar {g.Name} is loaded and is {qualifier}.");
-                LogConversation(nameof(RecognizerUpdateReached), RecognitionResultBuilder.ToString());
+                
             }
         }
 
@@ -199,7 +199,7 @@ namespace SynthNetVoice.Controllers.v1
             {
                 RecognitionResultBuilder.AppendLine("No recognition result");
             }
-            LogConversation(nameof(SpeechRecognizedHandler), RecognitionResultBuilder.ToString());
+        
         }
 
         /// <summary>
@@ -221,7 +221,7 @@ namespace SynthNetVoice.Controllers.v1
                 IsCompleted = true;
             }
             RecognitionResultBuilder.AppendLine($"{nameof(IsCompleted)}: {IsCompleted}, {nameof(Result)}: {RecognitionResultBuilder}");
-            LogConversation(nameof(SpeechDetectedHandler), RecognitionResultBuilder.ToString());
+         
         }
 
         private void SpeakAudioFile(
@@ -234,21 +234,22 @@ namespace SynthNetVoice.Controllers.v1
 
             if (audioStream != null)
             {
-                AudioToSpeak = CreateAudioFile(audioFile);
-                SpeechUI.SendTextFeedback(e.Result, $"Audio file created:\t{AudioToSpeak}", false);
+                LocalTextFromAudioFile = CreateAudioFile(audioFile);
+                SpeechUI.SendTextFeedback(e.Result, $"Audio file created:\t{LocalTextFromAudioFile}", false);
             }
         }
 
         private string CreateAudioFile(
             RecognizedAudio audioFile)
         {
-            AudioToSpeak = Path.Combine($"D:\\Workspaces\\VSTS\\SynthNetVoice.Data\\Fallout4Data\\Audio\\", $"{nameof(AudioToSpeak)}{(new Random()).Next()}.wav");
-            FileStream waveStream = new FileStream(AudioToSpeak, FileMode.Create);
+            LocalTextFromAudioFile = Path.Combine(LocalAudioFolder, $"{nameof(LocalTextFromAudioFile)}{(new Random()).Next()}.wav");
+            FileStream waveStream = new FileStream(LocalTextFromAudioFile, FileMode.Create);
             audioFile.WriteToWaveStream(waveStream);
             waveStream.Flush();
             waveStream.Close();
-            return AudioToSpeak;
+            return LocalTextFromAudioFile;
         }
 
     }
+
 }

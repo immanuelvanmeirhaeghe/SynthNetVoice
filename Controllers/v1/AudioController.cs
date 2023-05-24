@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OpenAI_API.Moderation;
+using SynthNetVoice.Data.Enums;
 using SynthNetVoice.Data.Models;
+using System.Media;
 using System.Runtime.Versioning;
 using System.Speech.AudioFormat;
 using System.Speech.Recognition;
@@ -9,6 +12,7 @@ using System.Text;
 
 namespace SynthNetVoice.Controllers.v1
 {
+
     [Route("audio")]
     [ApiController]
     [SupportedOSPlatform("windows")]
@@ -25,37 +29,96 @@ namespace SynthNetVoice.Controllers.v1
         /// <param name="model"></param>
         /// <param name="response_format"></param>
         /// <returns></returns>
-        [HttpPost]
         [Route("transcriptions")]
-        public async Task<Transcription> Transcriptions(
+        [HttpPost]
+        public async Task<IActionResult> Transcriptions(
             [FromBody] AudioFileInfo audioFileInfo
             )
         {
+            if (audioFileInfo == null || (audioFileInfo != null && string.IsNullOrEmpty(audioFileInfo.FilePath)))
+            {
+                return BadRequest(new { audioFileInfo });
+            }
+
             var promptBuilder = new StringBuilder();
             string responseToPrompt = string.Empty;
 
             var task = new TaskFactory().StartNew(() =>
             {
-                if (audioFileInfo == null)
+                if (audioFileInfo != null && !string.IsNullOrEmpty(audioFileInfo.FilePath))
                 {
-                    promptBuilder.AppendLine($"I have nothing to say!");
-                }
-                else
-                {
+                    LocalSynthesizer.SetOutputToWaveFile(audioFileInfo.FilePath);
                     LocalPrompt.AppendAudio(audioFileInfo.FilePath);
-                }
-                LocalPrompt.AppendText(AudioToSpeak);
-                LocalSynthesizer.Speak(LocalPrompt);
 
-                return AudioToSpeak;
+                    string[] fileParts = audioFileInfo.FilePath.Split("\\");
+                    LocalAudioFile = fileParts[fileParts.Length - 1];
+                    string[] localParts = LocalAudioFile.Split("_");
+                    LocalNpcName = localParts[1];
+                    LocalGameName = Enum.Parse<GameNames>(localParts[2]);
 
+                    SpeechRecognitionEngine recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US"));
+                    recognizer.SetInputToWaveFile(audioFileInfo.FilePath);
+                    RecognitionResult result = recognizer.Recognize();
+                    RecognizedAudio audioFile = result.GetAudioForWordRange(result.Words[0], result.Words[^1]);
+                    MemoryStream audioStream = new MemoryStream();
+                    audioFile.WriteToWaveStream(audioStream);
+                    if (audioStream != null)
+                    {
+                        FileStream waveStream = new FileStream(LocalTextFromAudioFile, FileMode.Create);
+                        audioFile.WriteToWaveStream(waveStream);
+                        waveStream.Flush();
+                        waveStream.Close();
+                    }                    
+                }               
+                return LocalTextFromAudioFile;
             });
 
             responseToPrompt = await task;
-            //var result = await task;
-            //responseToPrompt = await result;
-            return new Transcription { Text= responseToPrompt };
+            Transcription script = new Transcription
+            {
+                Text = LocalTextFromAudioFile
+            };
+            LocalTextFromAudioFile = LogConversation(script);
+            return Ok(script);
+        }
+
+        /// <summary>
+        /// Creates audio file from given text.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        [Route("create")]
+        [HttpPost]    
+        public async Task<IActionResult> SpeechToText(             
+            [FromBody] Transcription script,
+            [FromQuery] string gameName = "Fallout4",
+            [FromQuery] string npcName = "MamaMurphy")
+        {
+            if (!ValidateDefaultParameters(gameName, npcName))
+            {
+                return BadRequest(new { gameName, npcName });
+            }
+
+            if (script == null || ( script != null && string.IsNullOrEmpty(script.Text) ) )
+            {
+                return BadRequest(script);
+            }
+            
+            var task = new TaskFactory().StartNew(() =>
+            {
+                if (script != null && !string.IsNullOrEmpty(script.AudioFilePath) && !string.IsNullOrEmpty(script.AudioFileName))
+                {
+                    string path = Path.Combine(script.AudioFilePath, script.AudioFileName);
+                    LocalSynthesizer.SetOutputToWaveFile(path);
+                    LocalPrompt.AppendText(script.Text);
+                }                  
+            });
+
+            await task;
+           
+            return Ok(script);
         }
 
     }
+
 }
