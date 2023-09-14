@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using SynthNetVoice.Data.Models;
+using System.Reflection;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -31,6 +32,9 @@ builder.Services.AddSwaggerGen(options =>
             Url = new Uri("https://www.youtube.com/@ImmanuelVanMeirhaeghe")
         }
     });
+    //Project properties: Build > Output > Documentation file must be enabled
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
 var app = builder.Build();

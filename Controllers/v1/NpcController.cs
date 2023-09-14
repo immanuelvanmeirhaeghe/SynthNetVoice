@@ -24,6 +24,11 @@ namespace SynthNetVoice.Controllers.v1
     [SupportedOSPlatform("windows")]
     public class NpcController : BaseController
     {
+        /// <summary>
+        /// Ctor.
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="config"></param>
         public NpcController(ILogger<PlayerController> logger, IConfiguration config) : base(logger, config)
         {
             LocalConversation = NewConversation();
@@ -32,7 +37,7 @@ namespace SynthNetVoice.Controllers.v1
         [Route("conversation")]
         [HttpGet]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public Conversation NewConversation()
+        private Conversation NewConversation()
         {
             return LocalOpenAIAPI.Chat.CreateConversation();
         }
@@ -40,7 +45,7 @@ namespace SynthNetVoice.Controllers.v1
         [Route("conversation/append")]
         [HttpGet]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task AppendInstructions()
+        private async Task AppendInstructions()
         {
             LocalConversation ??= NewConversation();
             LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(LocalGameName.ToString(), LocalNpcName);
@@ -52,7 +57,7 @@ namespace SynthNetVoice.Controllers.v1
         [Route("train")]
         [HttpGet]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<bool> TrainNpc()
+        private async Task<bool> TrainNpc()
         {
             LocalConversation ??= LocalOpenAIAPI.Chat.CreateConversation();
             LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(LocalGameName.ToString(), LocalNpcName);
@@ -82,18 +87,22 @@ namespace SynthNetVoice.Controllers.v1
         /// Inidicates NPC bot state.
         /// </summary>
         public static bool IsInitialized { get; set; } = false;
+        /// <summary>
+        /// Status NPC training
+        /// </summary>
         public static bool IsTrained { get; set; } = false;
 
         /// <summary>
         /// Required first, if you want an immersive NPC for your game!
-        /// When not given, uses Fallout 4 and Codsworth as defaults and default instructions.
+        /// When not given, uses Fallout 4 and MamaMurphy as defaults and default instructions.
         /// </summary>
+        /// <param name="gameName">Your game where the NPC resides</param>
         /// <param name="npcName">Your NPC's name in the game.</param>
         [Route("init")]
         [HttpPost]
         public async Task<IActionResult> InitAsync(
-            string gameName = "Fallout4",
-            string npcName = "MamaMurphy")
+            [FromQuery] string gameName = "Fallout4",
+            [FromQuery] string npcName = "MamaMurphy")
         {
             try
             {
@@ -117,12 +126,13 @@ namespace SynthNetVoice.Controllers.v1
         /// <summary>
         /// Get the currently configured instructions (system - and user - instruction) that will be used to train the NPC bot.
         /// </summary>
-        /// <returns></returns>
+        /// <param name="gameName">Your game where the NPC resides</param>
+        /// <param name="npcName">Your NPC's name in the game.</param>
         [Route("instruction")]
         [HttpGet]
         public async Task<IActionResult> GetInstruction(
-            string gameName = "Fallout4",
-            string npcName = "MamaMurphy")
+            [FromQuery] string gameName = "Fallout4",
+            [FromQuery] string npcName = "MamaMurphy")
         {
             try
             {
@@ -145,16 +155,16 @@ namespace SynthNetVoice.Controllers.v1
         /// <param name="question">Your question for this NPC when using gpt, else the text you want to hear spoken.</param>
         /// <param name="scribe">Defaults to true, transcribing answers to text and logging the conversation to local log file. When false, conversation is lost.</param>
         /// <param name="gpt">Defaults to false, using locally installed voice. When true, will use Conversation AI.</param>
-        /// <param name="gameName"></param>
-        /// <param name="npcName"></param>
+        /// <param name="gameName">Your game where the NPC resides</param>
+        /// <param name="npcName">Your NPC's name in the game.</param>
         [Route("prompt")]
         [HttpGet]
         public async Task<IActionResult> Prompt(
-            string gameName = "Fallout4",
-            string npcName = "MamaMurphy",
-            string question = "",
-            bool scribe = true,
-            bool gpt = false)
+            [FromQuery] string gameName = "Fallout4",
+            [FromQuery] string npcName = "MamaMurphy",
+            [FromQuery] string question = "",
+            [FromQuery] bool scribe = true,
+            [FromQuery] bool gpt = false)
         {
             if (!ValidateDefaultParameters(gameName.ToString(), npcName))
             {

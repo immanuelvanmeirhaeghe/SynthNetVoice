@@ -12,12 +12,19 @@ using System.Text;
 
 namespace SynthNetVoice.Controllers.v1
 {
-
+    /// <summary>
+    /// Manages audio actions.
+    /// </summary>
     [Route("audio")]
     [ApiController]
     [SupportedOSPlatform("windows")]
     public class AudioController : BaseController
     {
+        /// <summary>
+        /// Ctor
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="config"></param>
         public AudioController(ILogger<PlayerController> logger, IConfiguration config) : base(logger, config)
         {
         }
@@ -25,10 +32,7 @@ namespace SynthNetVoice.Controllers.v1
         /// <summary>
         /// Transcribe audio into whatever language the audio is in.
         /// </summary>
-        /// <param name="audioFileInfo"></param>
-        /// <param name="model"></param>
-        /// <param name="response_format"></param>
-        /// <returns></returns>
+        /// <param name="audioFileInfo">Path to input audio file</param>
         [Route("transcriptions")]
         [HttpPost]
         public async Task<IActionResult> Transcriptions(
@@ -83,22 +87,14 @@ namespace SynthNetVoice.Controllers.v1
         }
 
         /// <summary>
-        /// Creates audio file from given text.
+        ///  Creates audio file from given text.
         /// </summary>
-        /// <param name="text"></param>
-        /// <returns></returns>
+        /// <param name="script"></param>
         [Route("create")]
-        [HttpPost]    
-        public async Task<IActionResult> SpeechToText(             
-            [FromBody] Transcription script,
-            [FromQuery] string gameName = "Fallout4",
-            [FromQuery] string npcName = "MamaMurphy")
+        [HttpPost]
+        public new async Task<IActionResult> TextToSpeech(
+            [FromBody] Transcription script)
         {
-            if (!ValidateDefaultParameters(gameName, npcName))
-            {
-                return BadRequest(new { gameName, npcName });
-            }
-
             if (script == null || ( script != null && string.IsNullOrEmpty(script.Text) ) )
             {
                 return BadRequest(script);
@@ -106,11 +102,20 @@ namespace SynthNetVoice.Controllers.v1
             
             var task = new TaskFactory().StartNew(() =>
             {
-                if (script != null && !string.IsNullOrEmpty(script.AudioFilePath) && !string.IsNullOrEmpty(script.AudioFileName))
+                if (script != null
+                 && !string.IsNullOrEmpty(script.Text) 
+                 && !string.IsNullOrEmpty(script.AudioFilePath)
+                 && !string.IsNullOrEmpty(script.AudioFileName))
                 {
                     string path = Path.Combine(script.AudioFilePath, script.AudioFileName);
                     LocalSynthesizer.SetOutputToWaveFile(path);
-                    LocalPrompt.AppendText(script.Text);
+                   
+                    string content = System.IO.File.ReadAllText(script.Text);
+                    LocalPrompt.AppendText(content);
+                    LocalSynthesizer.Speak(LocalPrompt);
+
+                    script.SoundPlayer = new System.Media.SoundPlayer(path);
+                    script.SoundPlayer.Play();
                 }                  
             });
 

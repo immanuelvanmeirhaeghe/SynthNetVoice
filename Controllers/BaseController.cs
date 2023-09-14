@@ -9,7 +9,7 @@ using System.Speech.AudioFormat;
 using SynthNetVoice.Data.Enums;
 using System.Text;
 using SynthNetVoice.Data.Models;
-
+using System.Windows;
 namespace SynthNetVoice.Controllers
 {
 
@@ -19,7 +19,6 @@ namespace SynthNetVoice.Controllers
     public class BaseController : ControllerBase
     {
         private const string ConversationTemplateAppend = "<div style=\"height:auto; width:auto;\">{{__TEXT__}}</div>{{__APPEND__}}";
-
         private const string ConversationTemplateFile = "D:\\Workspaces\\VSTS\\SynthNetVoice.Data\\Logs\\log.html";
         private const string ConversationTemplateTitleParam = "{{__TITLE__}}";
         private const string ConversationTemplateTextParam = "{{__TEXT__}}";
@@ -51,7 +50,11 @@ namespace SynthNetVoice.Controllers
         /// Game of the NPC.
         /// </summary>
         public static GameNames LocalGameName { get; set; } = GameNames.Fallout4;
-
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="config"></param>
         public BaseController(ILogger<PlayerController> logger, IConfiguration config)
         {
             LocalConfiguration = config;
@@ -123,7 +126,10 @@ namespace SynthNetVoice.Controllers
             return result;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="script"></param>
         [Route("tts")]
         [HttpPost]
         [ApiExplorerSettings(IgnoreApi = true)]
@@ -139,6 +145,10 @@ namespace SynthNetVoice.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="script"></param>
         [Route("stt")]
         [HttpPost]
         [ApiExplorerSettings(IgnoreApi = true)]
@@ -149,6 +159,12 @@ namespace SynthNetVoice.Controllers
             LocalSynthesizer.SetOutputToWaveFile(script.AudioFileName, spfi);               
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameName"></param>
+        /// <param name="text"></param>
+        /// <returns></returns>
         [Route("stt/audio/script")]
         [HttpPost]
         [ApiExplorerSettings(IgnoreApi = true)]
@@ -187,6 +203,10 @@ namespace SynthNetVoice.Controllers
             return output;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="script"></param>
         [Route("stt/audio/script/path")]
         [HttpPost]
         [ApiExplorerSettings(IgnoreApi = true)]
@@ -215,7 +235,7 @@ namespace SynthNetVoice.Controllers
                     }
                     else
                     {
-                        metacontent = $"{metacontent}\n{script.AudioFileName}|{script.Text}|{script.Text}";
+                        metacontent = $"{metacontent}\n{tempFileName}|{script.Text.Trim()}|{script.Text.Trim()}";
                     }
                  
                 }               
@@ -223,6 +243,12 @@ namespace SynthNetVoice.Controllers
             System.IO.File.WriteAllText(metafilename, metacontent);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameName"></param>
+        /// <param name="npcName"></param>
+        /// <returns></returns>
         [Route("validate")]
         [HttpPost]
         [ApiExplorerSettings(IgnoreApi = true)]

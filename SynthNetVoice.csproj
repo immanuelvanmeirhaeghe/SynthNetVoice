@@ -4,15 +4,27 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.5" />
+    <None Remove="SampleInputText.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\SampleInputText.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.11" />
     <PackageReference Include="OpenAI" Version="1.7.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="System.Speech" Version="7.0.0" />
-    <PackageReference Include="System.Text.Json" Version="7.0.2" />
+    <PackageReference Include="System.Text.Json" Version="7.0.3" />
+    <PackageReference Include="System.Windows.Extensions" Version="7.0.0" />
     <PackageReference Include="Universal.Microsoft.CognitiveServices.Speech" Version="0.2.1" />
   </ItemGroup>
 
@@ -24,6 +36,12 @@
     <Reference Include="System.Windows.Extensions">
       <HintPath>..\..\..\Program Files\Microsoft Visual Studio\2022\Community\dotnet\runtime\shared\Microsoft.WindowsDesktop.App\6.0.16\System.Windows.Extensions.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Resources\TranscriptionSampleRequest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
