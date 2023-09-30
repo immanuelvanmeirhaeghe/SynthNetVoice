@@ -73,7 +73,6 @@ namespace SynthNetVoice.Controllers
         /// <summary>
         /// Log conversation text with an NPC to a given local file.
         /// </summary>
-        /// <param name="fileName">given local file</param>
         /// <param name="script">conversation text logged</param>
         /// <returns>Log conversation</returns>
         [Route("log")]
@@ -95,7 +94,7 @@ namespace SynthNetVoice.Controllers
                 template = System.IO.File.ReadAllText(LocalConversationFile);
             }
 
-            template = template.Replace(ConversationTemplateTextParam, script.Text).Replace(ConversationTemplateAppendParam, ConversationTemplateAppend);
+            template = template.Replace(ConversationTemplateTextParam, script.TextFilePath).Replace(ConversationTemplateAppendParam, ConversationTemplateAppend);
             System.IO.File.WriteAllText(LocalConversationFile, template);
             return LocalConversationFile;
         }
@@ -135,9 +134,9 @@ namespace SynthNetVoice.Controllers
         [ApiExplorerSettings(IgnoreApi = true)]
         public void TextToSpeech(Transcription script)
         {
-            if (script != null && !string.IsNullOrEmpty(script.Text) && !string.IsNullOrEmpty(script.AudioFileName))
+            if (script != null && !string.IsNullOrEmpty(script.TextFilePath) && !string.IsNullOrEmpty(script.AudioFileName))
             {
-                LocalPrompt.AppendText(script.Text);
+                LocalPrompt.AppendText(script.TextFilePath);
                 LocalSynthesizer.Speak(LocalPrompt);
 
                 script.SoundPlayer = new System.Media.SoundPlayer(script.AudioFileName);
@@ -192,7 +191,7 @@ namespace SynthNetVoice.Controllers
                 };
                 Transcription script = new Transcription
                 {
-                    Text = text,
+                    TextFilePath = text,
                     AudioFilePath = Path.Combine(LocalAudioFolder, audioPath, "wavs")
                 };
 
@@ -218,7 +217,7 @@ namespace SynthNetVoice.Controllers
             {
                 Directory.CreateDirectory(script.AudioFilePath);
             }
-            if (script != null && !string.IsNullOrEmpty(script.Text) && !string.IsNullOrEmpty(script.AudioFilePath))
+            if (script != null && !string.IsNullOrEmpty(script.TextFilePath) && !string.IsNullOrEmpty(script.AudioFilePath))
             {
                 int wavs = Directory.GetFiles(script.AudioFilePath).Length;
                 string tempFileName = $"{wavs}".PadLeft(6, '0');
@@ -231,11 +230,11 @@ namespace SynthNetVoice.Controllers
                     metacontent = System.IO.File.ReadAllText(metafilename);
                     if (string.IsNullOrEmpty(metacontent))
                     {
-                        metacontent = $"{tempFileName}|{script.Text.Trim()}|{script.Text.Trim()}";
+                        metacontent = $"{tempFileName}|{script.TextFilePath.Trim()}|{script.TextFilePath.Trim()}";
                     }
                     else
                     {
-                        metacontent = $"{metacontent}\n{tempFileName}|{script.Text.Trim()}|{script.Text.Trim()}";
+                        metacontent = $"{metacontent}\n{tempFileName}|{script.TextFilePath.Trim()}|{script.TextFilePath.Trim()}";
                     }
                  
                 }               

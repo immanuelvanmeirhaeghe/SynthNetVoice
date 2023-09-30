@@ -1,5 +1,5 @@
 {
-  "text": "D:\\Workspaces\\VSTS\\SynthNetVoice\\SampleInputText.txt",
-  "audioFilePath": "C:\\Users\\imman\\OneDrive\\Documenten\\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe!App\\Geluidsopnamen",
-  "audioFileName": "OutputTextToSpeech.mp3"
+  "textFilePath": "D:\\Workspaces\\VSTS\\SynthNetVoice\\Resources\\SampleInputText.txt",
+  "audioFilePath": "C:\\Users\\imman\\Downloads",
+  "audioFileName": "SampleInputTextToSpeech.mp3"
 }

@@ -1,3 +1,5 @@
-Hello, world!
-Salut, le monde!
-Ohayo, sekai!
+Welcome, traveller!
+
+This is a demo of my ASP.NET Core Web API for Windows-only TTS.
+
+To perform text-to-speech, a speech synthesis engine that supports your language-country code must be installed.
