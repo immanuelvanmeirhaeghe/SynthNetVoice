@@ -2,11 +2,8 @@
 using System.Runtime.Versioning;
 using System.Speech.Synthesis;
 using System.Speech.Recognition;
-using System.Numerics;
 using System.Text;
-using OpenAI_API.Moderation;
-using System;
-using System.Net;
+using SynthNetVoice.Data.Helpers;
 
 namespace SynthNetVoice.Controllers.v1
 {
@@ -18,8 +15,16 @@ namespace SynthNetVoice.Controllers.v1
     [SupportedOSPlatform("windows")]
     public class VoiceController : BaseController
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public StringBuilder RecognitionResultBuilder { get; set; }
 
+        /// <summary>
+        /// VoiceController ctor
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="config"></param>
         public VoiceController(ILogger<PlayerController> logger, IConfiguration config) : base(logger, config)
         {
             RecognitionResultBuilder = new StringBuilder();    
@@ -30,7 +35,8 @@ namespace SynthNetVoice.Controllers.v1
             {
                 LocalRecognizer.EmulateRecognize("Start listening");
             }
-            IsCompleted = false;
+
+            BaseControllerHelpers.IsCompleted = false;
             LocalRecognizer.RequestRecognizerUpdate();
         }
 
@@ -67,12 +73,12 @@ namespace SynthNetVoice.Controllers.v1
             if (voiceFound != null)
             {
                 LocalSynthesizer.SelectVoice(voiceFound.VoiceInfo.Name);
-                SelectedVoiceInfoName = voiceFound.VoiceInfo.Name;
+                BaseControllerHelpers.SelectedVoiceInfoName = voiceFound.VoiceInfo.Name;
             }
 
-            if (!string.IsNullOrEmpty(SelectedVoiceInfoName))
+            if (!string.IsNullOrEmpty(BaseControllerHelpers.SelectedVoiceInfoName))
             {
-               LocalSynthesizer.SpeakAsync($"Ok! You have selected me, {SelectedVoiceInfoName} to be the active voice.");
+               LocalSynthesizer.SpeakAsync($"Ok! You have selected me, {BaseControllerHelpers.SelectedVoiceInfoName} to be the active voice.");
                 return Ok(name);
             } 
             else
@@ -103,7 +109,6 @@ namespace SynthNetVoice.Controllers.v1
         /// <summary>
         /// Get currently active voice recognizer info.
         /// </summary>
-        /// <param name="profile"></param>
         /// <returns><see cref="RecognizerInfo"/></returns>
         [HttpGet]
         [Route("recognizer/info")]
@@ -214,13 +219,13 @@ namespace SynthNetVoice.Controllers.v1
             if (e == null)
             {
                 RecognitionResultBuilder.AppendLine("No result generated.");
-                IsCompleted = false;
+                BaseControllerHelpers.IsCompleted = false;
             }
             else
             {
-                IsCompleted = true;
+                BaseControllerHelpers.IsCompleted = true;
             }
-            RecognitionResultBuilder.AppendLine($"{nameof(IsCompleted)}: {IsCompleted}, {nameof(Result)}: {RecognitionResultBuilder}");
+            RecognitionResultBuilder.AppendLine($"{nameof(BaseControllerHelpers.IsCompleted)}: {BaseControllerHelpers.IsCompleted}, Result: {RecognitionResultBuilder}");
          
         }
 
@@ -234,20 +239,20 @@ namespace SynthNetVoice.Controllers.v1
 
             if (audioStream != null)
             {
-                LocalTextFromAudioFile = CreateAudioFile(audioFile);
-                SpeechUI.SendTextFeedback(e.Result, $"Audio file created:\t{LocalTextFromAudioFile}", false);
+                BaseControllerHelpers.LocalTextFromAudioFile = CreateAudioFile(audioFile);
+                SpeechUI.SendTextFeedback(e.Result, $"Audio file created:\t{BaseControllerHelpers.LocalTextFromAudioFile}", false);
             }
         }
 
         private string CreateAudioFile(
             RecognizedAudio audioFile)
         {
-            LocalTextFromAudioFile = Path.Combine(LocalAudioFolder, $"{nameof(LocalTextFromAudioFile)}{(new Random()).Next()}.wav");
-            FileStream waveStream = new FileStream(LocalTextFromAudioFile, FileMode.Create);
+            BaseControllerHelpers.LocalTextFromAudioFile = Path.Combine(BaseControllerHelpers.LocalAudioFolder, $"{nameof(BaseControllerHelpers.LocalTextFromAudioFile)}{(new Random()).Next()}.wav");
+            FileStream waveStream = new FileStream(BaseControllerHelpers.LocalTextFromAudioFile, FileMode.Create);
             audioFile.WriteToWaveStream(waveStream);
             waveStream.Flush();
             waveStream.Close();
-            return LocalTextFromAudioFile;
+            return BaseControllerHelpers.LocalTextFromAudioFile;
         }
 
     }

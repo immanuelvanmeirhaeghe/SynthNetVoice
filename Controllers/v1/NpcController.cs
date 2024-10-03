@@ -1,18 +1,10 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using OpenAI_API.Chat;
+﻿using Microsoft.AspNetCore.Mvc;
+using OpenAI.Chat;
+using SynthNetVoice.Data.Helpers;
 using SynthNetVoice.Data.Instructions;
 using SynthNetVoice.Data.Models;
-using System;
-using System.Net.Http;
 using System.Runtime.Versioning;
-using System.Speech.AudioFormat;
-using System.Speech.Synthesis;
 using System.Text;
-using System.Text.Json;
-using System.Media;
-using SynthNetVoice.Data.Enums;
 
 namespace SynthNetVoice.Controllers.v1
 {
@@ -31,15 +23,15 @@ namespace SynthNetVoice.Controllers.v1
         /// <param name="config"></param>
         public NpcController(ILogger<PlayerController> logger, IConfiguration config) : base(logger, config)
         {
-            LocalConversation = NewConversation();
+            NpcControllerHelpers.LocalConversation = NewConversation();
         }
 
         [Route("conversation")]
         [HttpGet]
         [ApiExplorerSettings(IgnoreApi = true)]
-        private Conversation NewConversation()
+        private ChatClient NewConversation()
         {
-            return LocalOpenAIAPI.Chat.CreateConversation();
+            return LocalOpenAIClient.GetChatClient("gpt-4o-mini");
         }
 
         [Route("conversation/append")]
@@ -47,50 +39,34 @@ namespace SynthNetVoice.Controllers.v1
         [ApiExplorerSettings(IgnoreApi = true)]
         private async Task AppendInstructions()
         {
-            LocalConversation ??= NewConversation();
-            LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(LocalGameName.ToString(), LocalNpcName);
-            LocalConversation.AppendSystemMessage(LocalSystemInstructions);
-            LocalUserInstructions = await InstructionsManager.GetUserInstructionsAsync(LocalGameName.ToString(), LocalNpcName);
-            LocalConversation.AppendUserInput(LocalUserInstructions);
+            NpcControllerHelpers.LocalMessages ??= [];
+            NpcControllerHelpers.LocalConversation ??= NewConversation();
+            NpcControllerHelpers.LocalSystemInstructions =
+                await InstructionsManager.GetSystemInstructionsAsync(BaseControllerHelpers.LocalGameName.ToString(), BaseControllerHelpers.LocalNpcName);
+            NpcControllerHelpers.LocalUserInstructions =
+                await InstructionsManager.GetUserInstructionsAsync(BaseControllerHelpers.LocalGameName.ToString(), BaseControllerHelpers.LocalNpcName);
+            NpcControllerHelpers.LocalMessages.Add(new SystemChatMessage(NpcControllerHelpers.LocalSystemInstructions));
+            NpcControllerHelpers.LocalMessages.Add(new SystemChatMessage(NpcControllerHelpers.LocalUserInstructions));
         }
 
         [Route("train")]
         [HttpGet]
         [ApiExplorerSettings(IgnoreApi = true)]
-        private async Task<bool> TrainNpc()
+        private async Task<IActionResult> TrainNpc()
         {
-            LocalConversation ??= LocalOpenAIAPI.Chat.CreateConversation();
-            LocalSystemInstructions = await InstructionsManager.GetSystemInstructionsAsync(LocalGameName.ToString(), LocalNpcName);
-            LocalConversation.AppendSystemMessage(LocalSystemInstructions);
-            LocalSystemInstructions = await InstructionsManager.GetUserInstructionsAsync(LocalGameName.ToString(), LocalNpcName);
-            LocalConversation.AppendUserInput(LocalSystemInstructions);
-            LocalConversation.AppendUserInput("What is your name?");
-            LocalConversation.AppendExampleChatbotOutput($"My name is {LocalNpcName}.");
-            
-            IsTrained = true;
-            return IsTrained;
+            try
+            {
+                await AppendInstructions();
+                NpcControllerHelpers.LocalMessages.Add(new SystemChatMessage($"When asked: What is your name? You should reply: My name is {BaseControllerHelpers.LocalNpcName}."));
+                NpcControllerHelpers.IsTrained = true;
+                return Ok(NpcControllerHelpers.IsTrained);
+            }
+            catch (Exception exc)
+            {
+                NpcControllerHelpers.IsTrained = false;
+                return Problem(exc.Message);
+            }
         }
-
-        /// <summary>
-        /// Conversation which encapsulates an AI ongoing chat.
-        /// </summary>
-        public static Conversation? LocalConversation { get; set; } = default;
-        /// <summary>
-        /// Get/set the instructions for the NPC bot..
-        /// </summary>
-        public static string LocalSystemInstructions { get; set; } = string.Empty;
-        /// <summary>
-        /// Get/set the instructions for the NPC bot..
-        /// </summary>
-        public static string LocalUserInstructions { get; set; } = string.Empty;
-        /// <summary>
-        /// Inidicates NPC bot state.
-        /// </summary>
-        public static bool IsInitialized { get; set; } = false;
-        /// <summary>
-        /// Status NPC training
-        /// </summary>
-        public static bool IsTrained { get; set; } = false;
 
         /// <summary>
         /// Required first, if you want an immersive NPC for your game!
@@ -112,14 +88,13 @@ namespace SynthNetVoice.Controllers.v1
                 }
 
                 await AppendInstructions();
-
-                IsInitialized = true;
-                return Ok(new Instruction { FromSystem = LocalSystemInstructions, FromUser = LocalUserInstructions });
+                NpcControllerHelpers.IsInitialized = true;
+                return Ok(new Instruction { FromSystem = NpcControllerHelpers.LocalSystemInstructions, FromUser = NpcControllerHelpers.LocalUserInstructions });
             }
-            catch (Exception)
+            catch (Exception exc)
             {
-                IsInitialized = false;
-                return Problem();
+                NpcControllerHelpers.IsInitialized = false;
+                return Problem(exc.Message);
             }
         }
 
@@ -136,16 +111,20 @@ namespace SynthNetVoice.Controllers.v1
         {
             try
             {
+                if (!NpcControllerHelpers.IsInitialized)
+                {
+                    return Problem("Please run npc/init first!");
+                }
                 if (!ValidateDefaultParameters(gameName.ToString(), npcName))
                 {
                     return BadRequest(new { gameName, npcName });
                 }
-                Instruction instruction = await InstructionsManager.GetInstruction(LocalGameName.ToString(), LocalNpcName);
+                Instruction instruction = await InstructionsManager.GetInstruction(BaseControllerHelpers.LocalGameName.ToString(), BaseControllerHelpers.LocalNpcName);
                 return Ok(instruction);
             }
-            catch (Exception)
+            catch (Exception exc)
             {
-                return Problem();
+                return Problem(exc.Message);
             }
         }
 
@@ -166,6 +145,10 @@ namespace SynthNetVoice.Controllers.v1
             [FromQuery] bool scribe = true,
             [FromQuery] bool gpt = false)
         {
+            if (!NpcControllerHelpers.IsInitialized)
+            {
+                return Problem("Please run npc/init first!");
+            }
             if (!ValidateDefaultParameters(gameName.ToString(), npcName))
             {
                 return BadRequest(new { gameName, npcName });
@@ -185,16 +168,20 @@ namespace SynthNetVoice.Controllers.v1
                 {
                     if (gpt)
                     {
-                        if (IsInitialized)
+                        if (NpcControllerHelpers.IsInitialized)
                         {
-                            IsTrained = await TrainNpc();
-                            if (IsTrained && LocalConversation != null)
+                            await TrainNpc();
+                            if (NpcControllerHelpers.IsTrained && NpcControllerHelpers.LocalConversation != null)
                             {
-                                LocalConversation.AppendUserInput(question);
-                                await LocalConversation.StreamResponseFromChatbotAsync(res =>
+                                NpcControllerHelpers.LocalMessages.Add(new UserChatMessage(question));
+                                var result = NpcControllerHelpers.LocalConversation.CompleteChatStreaming(NpcControllerHelpers.LocalMessages);
+                                foreach (StreamingChatCompletionUpdate completionUpdate in result)
                                 {
-                                    promptBuilder.Append(res);
-                                });
+                                    if (completionUpdate.ContentUpdate.Count > 0)
+                                    {
+                                        promptBuilder.Append(completionUpdate.ContentUpdate[0].Text);
+                                    }
+                                }
                             }
                         }
                         else
@@ -219,7 +206,7 @@ namespace SynthNetVoice.Controllers.v1
             if (scribe)
             {
                 LogConversation(script);
-                LocalLogger.Log(LogLevel.Information, nameof(Prompt), responseToPrompt);
+                LocalLogger.Log(LogLevel.Information, responseToPrompt, nameof(Prompt));
             }
 
             return Ok(script);

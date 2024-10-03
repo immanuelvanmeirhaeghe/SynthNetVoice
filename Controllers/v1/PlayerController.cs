@@ -11,10 +11,22 @@ namespace SynthNetVoice.Controllers.v1
     [SupportedOSPlatform("windows")]
     public class PlayerController : BaseController
     {
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="config"></param>
         public PlayerController(ILogger<PlayerController> logger, IConfiguration config) : base(logger, config)
         {
         }
 
+        /// <summary>
+        /// Prompt for player question, option to transcribe and use AI or not
+        /// </summary>
+        /// <param name="question"></param>
+        /// <param name="scribe"></param>
+        /// <param name="gpt"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("prompt")]
         public async Task<string> Prompt(string question = "", bool scribe = true, bool gpt = false)

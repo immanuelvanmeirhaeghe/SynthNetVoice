@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -18,13 +18,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.11" />
-    <PackageReference Include="OpenAI" Version="1.7.2" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-    <PackageReference Include="System.Speech" Version="7.0.0" />
-    <PackageReference Include="System.Text.Json" Version="7.0.3" />
-    <PackageReference Include="System.Windows.Extensions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="OpenAI" Version="2.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.8.1" />
+    <PackageReference Include="System.Speech" Version="8.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+    <PackageReference Include="System.Windows.Extensions" Version="8.0.0" />
     <PackageReference Include="Universal.Microsoft.CognitiveServices.Speech" Version="0.2.1" />
   </ItemGroup>
 

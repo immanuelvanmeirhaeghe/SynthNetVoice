@@ -1,55 +1,48 @@
 ﻿using System.Speech.Recognition;
 using Microsoft.AspNetCore.Mvc;
-using OpenAI_API;
 using SynthNetVoice.Controllers.v1;
-using System.Diagnostics;
 using System.Runtime.Versioning;
 using System.Speech.Synthesis;
 using System.Speech.AudioFormat;
 using SynthNetVoice.Data.Enums;
-using System.Text;
 using SynthNetVoice.Data.Models;
-using System.Windows;
+using OpenAI;
+using SynthNetVoice.Data.Helpers;
 namespace SynthNetVoice.Controllers
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     [Route("api")]
     [ApiController]
     [SupportedOSPlatform("windows")]
     public class BaseController : ControllerBase
     {
-        private const string ConversationTemplateAppend = "<div style=\"height:auto; width:auto;\">{{__TEXT__}}</div>{{__APPEND__}}";
-        private const string ConversationTemplateFile = "D:\\Workspaces\\VSTS\\SynthNetVoice.Data\\Logs\\log.html";
-        private const string ConversationTemplateTitleParam = "{{__TITLE__}}";
-        private const string ConversationTemplateTextParam = "{{__TEXT__}}";
-        private const string ConversationTemplateAppendParam = "{{__APPEND__}}";
-
-        public const string LocalConversationFolder = "D:\\Workspaces\\VSTS\\SynthNetVoice.Data\\Logs\\";
-        public const string LocalAudioFolder = $"D:\\Workspaces\\VSTS\\SynthNetVoice.Data\\Voices\\";
-
+        /// <summary>
+        /// The local configuration file
+        /// </summary>
         public readonly IConfiguration LocalConfiguration;
+        /// <summary>
+        /// A local logger instance for player actions
+        /// </summary>
         public readonly ILogger<PlayerController> LocalLogger;
-
-        public readonly OpenAIAPI LocalOpenAIAPI;
+        /// <summary>
+        /// Entry to sdk for OpenAI api access
+        /// </summary>
+        public readonly OpenAIClient LocalOpenAIClient;
+        /// <summary>
+        /// System.Speech.Synthesis.PromptBuilder
+        /// </summary>
         public readonly PromptBuilder LocalPrompt;
+        /// <summary>
+        /// System.Speech.Synthesis.SpeechSynthesizer
+        /// </summary>
         public readonly SpeechSynthesizer LocalSynthesizer;
+        /// <summary>
+        /// System.Speech.Recognition.SpeechRecognizer
+        /// </summary>
         public readonly SpeechRecognizer LocalRecognizer;
-        public readonly APIAuthentication LocalAPIAuthentication;
 
-        public static string LocalTextFromAudioFile { get; set; } = string.Empty;
-        public static string LocalAudioFile { get; set; } = string.Empty;
-        public static string LocalAudioFileTitle { get; set; } = string.Empty;
-        public static string LocalConversationFile { get; set; } = string.Empty;
-        public static string SelectedVoiceInfoName { get; set; } = string.Empty;
-        public static bool IsCompleted { get; set; } = false;
-        /// <summary>
-        /// Name of the NPC.
-        /// </summary>
-        public static string LocalNpcName { get; set; } = "MamaMurphy";
-        /// <summary>
-        /// Game of the NPC.
-        /// </summary>
-        public static GameNames LocalGameName { get; set; } = GameNames.Fallout4;
         /// <summary>
         /// ctor
         /// </summary>
@@ -59,15 +52,15 @@ namespace SynthNetVoice.Controllers
         {
             LocalConfiguration = config;
             LocalLogger = logger;
-            LocalTextFromAudioFile = string.Empty;
-            SelectedVoiceInfoName = string.Empty;
-            LocalConversationFile = string.Empty;
-            LocalAPIAuthentication = new APIAuthentication(LocalConfiguration.GetValue<string>("OPENAI_API_KEY"), LocalConfiguration.GetValue<string>("OPENAI_ORGANIZATION"));
-            LocalPrompt = new PromptBuilder();
-            LocalSynthesizer = new SpeechSynthesizer();
-            IsCompleted = false;
+            BaseControllerHelpers.LocalTextFromAudioFile = string.Empty;
+            BaseControllerHelpers.SelectedVoiceInfoName = string.Empty;
+            BaseControllerHelpers.LocalConversationFile = string.Empty;
+            BaseControllerHelpers.IsCompleted = false;
+
+            LocalPrompt ??= new PromptBuilder();
+            LocalSynthesizer ??= new SpeechSynthesizer();            
             LocalRecognizer ??= new SpeechRecognizer();
-            LocalOpenAIAPI = new OpenAIAPI(LocalAPIAuthentication);
+            LocalOpenAIClient ??= new(LocalConfiguration.GetValue<string>("OPENAI_API_KEY"));
         }
 
         /// <summary>
@@ -81,22 +74,24 @@ namespace SynthNetVoice.Controllers
         public string LogConversation(
             Transcription script)
         {
-            string title = $"Prompt_{LocalNpcName}_{LocalGameName}";
-            LocalConversationFile = Path.Combine(LocalConversationFolder, $"{title}_{DateTime.Now:yyyyddMM}.html");
+            string title = $"{nameof(LocalPrompt)}_{BaseControllerHelpers.LocalNpcName}_{BaseControllerHelpers.LocalGameName}";
+            BaseControllerHelpers.LocalConversationFile = Path.Combine(BaseControllerHelpers.LocalConversationFolder, $"{title}_{DateTime.Now:yyyyddMM}.html");
             string template;
-            if (!System.IO.File.Exists(LocalConversationFile))
+            if (!System.IO.File.Exists(BaseControllerHelpers.LocalConversationFile))
             {
-                template = System.IO.File.ReadAllText(ConversationTemplateFile);
-                template = template.Replace(ConversationTemplateTitleParam, title);
+                template = System.IO.File.ReadAllText(BaseControllerHelpers.ConversationTemplateFile);
+                template = template.Replace(BaseControllerHelpers.ConversationTemplateTitleParam, title);
             }
             else
             {
-                template = System.IO.File.ReadAllText(LocalConversationFile);
+                template = System.IO.File.ReadAllText(BaseControllerHelpers.LocalConversationFile);
             }
 
-            template = template.Replace(ConversationTemplateTextParam, script.TextFilePath).Replace(ConversationTemplateAppendParam, ConversationTemplateAppend);
-            System.IO.File.WriteAllText(LocalConversationFile, template);
-            return LocalConversationFile;
+            template = template.Replace(
+                BaseControllerHelpers.ConversationTemplateTextParam,
+                script.TextFilePath).Replace(BaseControllerHelpers.ConversationTemplateAppendParam, BaseControllerHelpers.ConversationTemplateAppend);
+            System.IO.File.WriteAllText(BaseControllerHelpers.LocalConversationFile, template);
+            return BaseControllerHelpers.LocalConversationFile;
         }
 
         /// <summary>
@@ -171,16 +166,16 @@ namespace SynthNetVoice.Controllers
         {
             var task = new TaskFactory().StartNew( () =>
             {
-                if (string.IsNullOrEmpty(SelectedVoiceInfoName))
+                if (string.IsNullOrEmpty(BaseControllerHelpers.SelectedVoiceInfoName))
                 {
                     var voice = LocalSynthesizer.GetInstalledVoices().FirstOrDefault(v => v.Enabled == true);
                     if (voice != null)
                     {
-                        SelectedVoiceInfoName = voice.VoiceInfo.Name;
+                        BaseControllerHelpers.SelectedVoiceInfoName = voice.VoiceInfo.Name;
                     }                  
                 }
-                LocalSynthesizer.SelectVoice(SelectedVoiceInfoName);
-                string voicename = SelectedVoiceInfoName.ToLower().Replace(" ", "_");
+                LocalSynthesizer.SelectVoice(BaseControllerHelpers.SelectedVoiceInfoName);
+                string voicename = BaseControllerHelpers.SelectedVoiceInfoName.ToLower().Replace(" ", "_");
                 GameNames game = Enum.Parse<GameNames>(gameName);
                 string audioPath = game switch
                 {
@@ -189,10 +184,10 @@ namespace SynthNetVoice.Controllers
                     GameNames.None => $"other_{voicename}",
                     _ => $"x_{voicename}",
                 };
-                Transcription script = new Transcription
+                Transcription script = new()
                 {
                     TextFilePath = text,
-                    AudioFilePath = Path.Combine(LocalAudioFolder, audioPath, "wavs")
+                    AudioFilePath = Path.Combine(BaseControllerHelpers.LocalAudioFolder, audioPath, "wavs")
                 };
 
                 return script;
@@ -257,9 +252,10 @@ namespace SynthNetVoice.Controllers
             {
                 return false;
             }
-            LocalNpcName = npcName.Trim();
-            LocalGameName = Enum.Parse<GameNames>(gameName);
-            if (LocalGameName == GameNames.None || string.IsNullOrEmpty(LocalNpcName))
+
+            BaseControllerHelpers.LocalNpcName = npcName.Trim();
+            BaseControllerHelpers.LocalGameName = Enum.Parse<GameNames>(gameName);
+            if (BaseControllerHelpers.LocalGameName == GameNames.None || string.IsNullOrEmpty(BaseControllerHelpers.LocalNpcName))
             {
                 return false;
             }

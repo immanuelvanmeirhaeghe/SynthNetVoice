@@ -1,13 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using OpenAI_API.Moderation;
+﻿using Microsoft.AspNetCore.Mvc;
 using SynthNetVoice.Data.Enums;
+using SynthNetVoice.Data.Helpers;
 using SynthNetVoice.Data.Models;
 using System.Media;
 using System.Runtime.Versioning;
-using System.Speech.AudioFormat;
 using System.Speech.Recognition;
-using System.Speech.Synthesis;
 using System.Text;
 
 namespace SynthNetVoice.Controllers.v1
@@ -52,15 +49,15 @@ namespace SynthNetVoice.Controllers.v1
                 if (audioFileInfo != null && !string.IsNullOrEmpty(audioFileInfo.FilePath))
                 {
                     string[] fileParts = audioFileInfo.FilePath.Split("\\");
-                    LocalAudioFile = fileParts[fileParts.Length - 1];
-                    LocalAudioFileTitle = LocalAudioFile.Split(".")[0];
-                    string LocalAudioFilePath = audioFileInfo.FilePath.Replace(LocalAudioFile, string.Empty) ;
-                    LocalTextFromAudioFile = Path.Combine(LocalAudioFilePath, $"{LocalAudioFileTitle}.txt");
-                    string[] localParts = LocalAudioFile.Split("_");
+                    BaseControllerHelpers.LocalAudioFile = fileParts[fileParts.Length - 1];
+                    BaseControllerHelpers.LocalAudioFileTitle = BaseControllerHelpers.LocalAudioFile.Split(".")[0];
+                    string LocalAudioFilePath = audioFileInfo.FilePath.Replace(BaseControllerHelpers.LocalAudioFile, string.Empty) ;
+                    BaseControllerHelpers.LocalTextFromAudioFile = Path.Combine(LocalAudioFilePath, $"{BaseControllerHelpers.LocalAudioFileTitle}.txt");
+                    string[] localParts = BaseControllerHelpers.LocalAudioFile.Split("_");
                     if (localParts != null && localParts.Length == 3)
                     {
-                        LocalNpcName = localParts[1];
-                        LocalGameName = Enum.Parse<GameNames>(localParts[2]);
+                        BaseControllerHelpers.LocalNpcName = localParts[1];
+                        BaseControllerHelpers.LocalGameName = Enum.Parse<GameNames>(localParts[2]);
                     }
                     SpeechRecognitionEngine LocalRecognitionEngine = new SpeechRecognitionEngine
                     {
@@ -75,16 +72,16 @@ namespace SynthNetVoice.Controllers.v1
                     RecognitionResult result =  LocalRecognitionEngine.Recognize();
                     if (result != null)
                     {
-                        System.IO.File.WriteAllText(LocalTextFromAudioFile, result.Text);
+                        System.IO.File.WriteAllText(BaseControllerHelpers.LocalTextFromAudioFile, result.Text);
                         LocalPrompt.AppendText(result.Text);
                         LocalSynthesizer.Speak(LocalPrompt);
 
                         script = new Transcription
                         {
-                            TextFilePath = LocalTextFromAudioFile,
+                            TextFilePath = BaseControllerHelpers.LocalTextFromAudioFile,
                             SoundPlayer = new SoundPlayer(audioFileInfo.FilePath)
                         };
-                        LocalTextFromAudioFile = LogConversation(script);
+                        BaseControllerHelpers.LocalTextFromAudioFile = LogConversation(script);
                     }
                 }           
                 return script;
